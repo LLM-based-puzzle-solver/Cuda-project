@@ -1,0 +1,51 @@
+puzzle,answer,difficulty
+Anna ma więcej jabłek niż Basia. Basia ma więcej niż Celina. Kto ma najwięcej jabłek?,Anna,easy
+"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,easy
+Która liczba jest większa: 35 czy 53?,53,easy
+"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,easy
+"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,easy
+"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,easy
+2+2*2 = ?,6,easy
+"W pokoju są 3 lampy, każda ma 2 żarówki. Ile żarówek?",6,easy
+"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,easy
+Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,easy
+Jeden kwiat potrzebuje 2 litrów wody. Ile litrów na 4 kwiaty?,8,easy
+W klasie są 24 dzieci. Ile rąk razem?,48,easy
+Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,easy
+Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,easy
+"Olek ma mniej książek niż Paweł, a Paweł mniej niż Kasia. Kto ma najwięcej książek?",Kasia,easy
+Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,easy
+Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,easy
+Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,easy
+Czy 14 jest parzyste i większe niż 10?,tak,easy
+Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,easy
+Masz 7 pomarańczy i oddajesz 2. Ile masz?,5,easy
+Liczba 9 większa niż 6. Prawda czy fałsz?,prawda,easy
+Pociąg wyjechał o 8:00 i jechał 2h. O której dotarł?,10:00,easy
+"Kasia ma 4 jabłka, Michał 5. Kto ma więcej?",Michał,easy
+Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,easy
+"W sklepie są czerwone, zielone i żółte jabłka. Zielonych jest więcej niż czerwonych, ale mniej niż żółtych. Których jest najwięcej?",żółte,medium
+"W klasie jest 20 dzieci. 12 lubi lody, 15 ciasto, 5 oba. Ile tylko lody?",7,medium
+Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,medium
+"Karolina, Weronika i Alicja idą: Weronika, Karolina, Alicja. Kto idzie drugi?",Karolina,medium
+3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,medium
+"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,medium
+Stół ma 4 nogi. 5 stołów ile nóg?,20,medium
+Rodzice i 3 dzieci. Ilu członków rodziny?,5,medium
+"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,medium
+Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,medium
+5 klas po 20 uczniów. Ilu uczniów?,100,medium
+Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11",medium
+Która liczba większa: 3/4 czy 5/6?,5/6,medium
+"Masz 5€, zakup kosztuje 7€. Ile ci brakuje?",2,medium
+Kamil nie wygrał. Marta lepsza niż Patryk. Kto wygrał?,Marta,medium
+"A-B krótsze niż A-C, B-C dłuższe niż A-B. Jaka najkrótsza droga?",A-B,hard
+"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,hard
+"Alicja mówi prawdę w pon i śr. Dziś mówi, że jutro będzie kłamać. Jaki dzień?",wtorek,hard
+"W pudełku kule, szansa na dwie białe 1/2. Ile kul?",3 białe i 1 czarna,hard
+"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski",hard
+"Gdyby dziś było jutro, dziś byłby piątek. Jaki dziś dzień?",czwartek,hard
+"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18",hard
+5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,hard
+Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,hard
+Dwóch ojców i dwóch synów łowią 3 ryby. Jak to możliwe?,"Dziadek, ojciec i syn",hard
