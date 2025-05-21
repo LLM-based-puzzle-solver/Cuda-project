@@ -1,0 +1,54 @@
+puzzle,answer,difficulty
+"Mama Kasi ma trzy córki: Anna, Maria i...?",Kasia,easy
+"Jaką liczbę należy wstawić: 2, 4, 8, 16, ?",32,easy
+"Ile razy można odjąć 10 od 100?",1,easy
+"Ile nóg mają 3 psy i 2 ptaki?",14,easy
+"Jaką liczbę należy wstawić: 1, 4, 9, 16, ?",25,easy
+"Jaką liczbę należy wstawić: 3, 6, 12, 24, ?",48,easy
+"Jaka jest następna liczba w ciągu: 2, 3, 5, 7, 11, ?",13,easy
+"Która liczba pasuje do wzoru: 1=1, 2=4, 3=9, 4=16, 5=?",25,easy
+"Co jest cięższe: kilogram ołowiu czy kilogram pierza?",równe,easy
+"Które słowo nie pasuje: jabłko, pomarańcza, banan, marchewka?",marchewka,easy
+"Jaki jest następny dzień tygodnia po dwóch piątkach?",niedziela,easy
+"Jeśli masz 10 jabłek i oddasz 4, to ile masz?",10,easy
+"Jeśli samochód jedzie z prędkością 60 km/h, ile czasu zajmie mu przejechanie 180 km?",3,easy
+"Co będzie za dwa dni, jeśli wczoraj był wtorek?",czwartek,easy
+"Jaką liczbę należy wstawić: 21, 18, 15, 12, ?",9,easy
+"Ile kątów ma ośmiokąt?",8,easy
+"Która godzina będzie za 9 godzin, jeśli teraz jest 16:00?",1:00,easy
+"Co się stanie, jeśli dodasz 1 do największej liczby jednocyfrowej?",10,easy
+"Jakie są dwa razy dwa razy dwa?",8,easy
+"Jeśli w lesie są 4 drzewa, a na każdym 3 ptaki, to ile jest nóg (ptasich)?",24,easy
+"Jakie cyfry trzeba wstawić: _, 2, 4, 8, 16?",1,easy
+"Jaką liczbę trzeba wstawić: 5, 10, 20, 40, ?",80,easy
+"Ile jest liter w słowie „sześć”?",5,easy
+"Jaką literę ma najwięcej razy w alfabecie polskim?",a,easy
+"Jaką literę należy wpisać: B, C, D, F, G...?",H,easy
+"Jeśli dzisiaj jest czwartek, to jaki dzień będzie za 3 dni?",niedziela,medium
+"Jeśli 10 ludzi buduje dom w 10 dni, to ilu potrzeba, by zbudowali 2 domy w 10 dni?",20,medium
+"Jeśli dziś jest środa, a za 45 dni będzie sobota, to jaki dzień był 2 dni temu?",poniedziałek,medium
+"Jeśli 5 maszyn robi 5 produktów w 5 minut, ile produktów zrobi 1 maszyna w 5 minut?",1,medium
+"Z jakiej liczby trzeba odjąć 1, żeby otrzymać jej połowę?",2,medium
+"Jeśli 3 osoby zjedzą pizzę w 6 minut, ile czasu zajmie jednej osobie zjedzenie jednej pizzy?",18,medium
+"Jakie dwie liczby dają 10, a pomnożone dają 21?",3 i 7,medium
+"Jeśli dziś jest poniedziałek, a za 100 dni też jest poniedziałek, to ile dni ma tydzień?",7,medium
+"Jeśli dzisiaj pada, a jutro nie pada, a pojutrze znów pada, to który to dzień tygodnia, jeśli dzisiaj jest poniedziałek?",środa,medium
+"Ile par nóg ma 10 osób?",10,medium
+"Jakie dwie liczby dają 100 i różnią się o 20?",60 i 40,medium
+"Jeśli 4 dzieci zjadają 4 lizaki w 4 minuty, to ile dzieci zje 20 lizaków w 20 minut?",4,medium
+"Jeśli zegar wskazuje 3:15, to jaki kąt tworzą wskazówki?",7.5,hard
+"Jeśli w pokoju są cztery kąty, a w każdym kącie siedzi kot, a przed każdym kotem są trzy koty, ile jest kotów w pokoju?",4,hard
+"Jaką literę powinno się wpisać jako następną w ciągu: A, C, F, J, O...?",U,hard
+"Jeśli 8 osób rozmawia przez telefon, a każda z każdą tylko raz, ile było rozmów?",28,hard
+"Jeśli 2+3=10, 7+2=63, to ile to 6+5?",66,hard
+"Jeśli jutro będzie wczoraj, to jaki dzień tygodnia jest dzisiaj?",piątek,hard
+"Jeśli 1=5, 2=25, 3=325, to ile to 4?",4325,hard
+"Jakie liczby dodane dają 100, ale żadna z nich nie jest parzysta?",niemożliwe,hard
+"Jeśli na drzewie siedzą 4 ptaki i jeden odleci, ile zostanie?",0,hard
+"Ile kwadratów ma szachownica 8x8?",204,hard
+"Jeśli 1=3, 2=3, 3=5, 4=4, 5=4, to ile to 6?",3,hard
+"Masz 9 kul, jedna waży mniej – jak w 2 ważeniach znaleźć tę jedną?",waga,hard
+"Ile razy w ciągu dnia wskazówki zegara pokrywają się?",22,hard
+
+
+

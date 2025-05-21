@@ -1,0 +1,51 @@
+puzzle,answer,difficulty
+"Co ma ręce, ale nie może klaskać?",zegarek,easy
+"Jaką liczbę należy wstawić: 10, 20, 30, ?, 50",40,easy
+"Ile miesięcy w roku ma 28 dni?",12,easy
+"Co zawsze rośnie, ale nigdy nie maleje?",wiek,easy
+"Jaką liczbę należy wstawić: 100, 90, 80, ?, 60",70,easy
+"Ile sekund ma minuta?",60,easy
+"Co możesz złamać, nie dotykając tego?",obietnicę,easy
+"Co jest pełne dziur, ale trzyma wodę?",gąbka,easy
+"Jaką liczbę należy wstawić: 2, 3, 5, 8, 12, ?",17,easy
+"Co ma głowę i ogon, ale nie ma ciała?",moneta,easy
+"Ile liter „a” jest w słowie „ananas”?",3,easy
+"Jaki dzień tygodnia występuje najczęściej w roku?",poniedziałek,easy
+"Co zawsze nadchodzi, ale nigdy nie przychodzi?",jutro,easy
+"Jaką liczbę należy wstawić: 1, 11, 21, 1211, ?",111221,easy
+"Ile nóg ma pająk?",8,easy
+"Jakie słowo zaczyna się na „e”, a zawiera tylko jedną literę?",koperta,easy
+"Jeśli kwiat rośnie codziennie dwa razy szybciej i potrzebuje 10 dni, aby zakryć staw, to ile dni zajmie pokrycie połowy stawu?",9,easy
+"Ile dni ma tydzień?",7,easy
+"Co jest białe, czarne i czerwone?",gazeta,easy
+"Co przychodzi raz w minucie, dwa razy w momencie, ale nigdy w tysiącu lat?",litera m,easy
+"Ile cyfr ma liczba 1 000 000?",7,medium
+"Jaki jest wynik: 3 + 3 × 3 – 3?",9,medium
+"Jaki kształt ma znak stopu?",ośmiokąt,medium
+"Jaką literę należy wpisać: Z, Y, X, W, ?",V,medium
+"Jeśli liczba x jest większa od y, a y większe od z, to która liczba jest największa?",x,medium
+"Jakie dwie liczby po dodaniu dają 100, a po odjęciu 20?",60 i 40,medium
+"Jaką liczbę należy wstawić: 1, 3, 6, 10, 15, ?",21,medium
+"Zegar pokazuje 6:00 – jaki kąt tworzą wskazówki?",180,medium
+"Co ma zęby, ale nie gryzie?",grzebień,medium
+"Ile razy trzeba przeciąć tort, by uzyskać 8 kawałków?",3,medium
+"Co ma korzenie, ale nie rośnie, ma koronę, ale nie rządzi?",góra,medium
+"Co można złapać, ale nie można rzucić?",przeziębienie,medium
+"Jakie liczby spełniają warunki: suma 10, iloczyn 24?",4 i 6,medium
+"Jeśli dziś jest piątek, jaki dzień tygodnia będzie za 500 dni?",wtorek,medium
+"Masz 3 wiadra: 8l, 5l i 3l. Jak odmierzyć 4l?",napełnić 5l i przelać 1l do 3l,medium
+"Z jakich liter składa się słowo „liter”?",l, i, t, e, r,medium
+"Ile kół ma samochód ciężarowy (wliczając zapasowe)?",5,medium
+"Jeśli 2=6, 3=12, 4=20, 5=?",30,medium
+"Jakie są dwie kolejne liczby, których iloczyn to 132?",11 i 12,medium
+"Jaki miesiąc ma 30 dni, jeśli luty ma 29?",każdy oprócz lutego,medium
+"Jak ułożyć 8 ósemek, by dały 1000?",888 + 88 + 8 + 8 + 8 = 1000,hard
+"Jakiej liczby brakuje: 7, 10, 8, 11, 9, 12, ?",10,hard
+"Jeśli 6=30, 5=20, 4=12, 3=6, 2=2, to 1=?",0,hard
+"Jakie są dwie liczby, których różnica i iloczyn są równe?",4 i 2,hard
+"Zegar cyfrowy pokazuje 12:34 – kiedy znowu liczby będą rosnąć po sobie?",23:45,hard
+"Ile razy cyfry 1 i 0 występują od 1 do 100?",21 i 11,hard
+"Masz 3 przełączniki i zamknięte drzwi. Tylko jeden zapala światło za drzwiami. Jak sprawdzić który, otwierając drzwi tylko raz?",przełącz i sprawdź ciepło żarówki,hard
+"Jakiego słowa szukasz, jeśli wszystkie litery są różne, ma 5 liter, i żadna się nie powtarza?",żadne,hard
+"Co jest bardziej nieprzewidywalne niż chaos, ale bardziej uporządkowane niż losowość?",algorytm losowy,hard
+"Co ma więcej niż jedno znaczenie, lecz jest jednowyrazowe i jednosylabowe?",klucz,hard
