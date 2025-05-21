@@ -34,7 +34,7 @@ puzzle,answer,difficulty
 "Jakie liczby spełniają warunki: suma 10, iloczyn 24?",4 i 6,medium
 "Jeśli dziś jest piątek, jaki dzień tygodnia będzie za 500 dni?",wtorek,medium
 "Masz 3 wiadra: 8l, 5l i 3l. Jak odmierzyć 4l?",napełnić 5l i przelać 1l do 3l,medium
-"Z jakich liter składa się słowo „liter”?",l, i, t, e, r,medium
+"Z jakich liter składa się słowo „liter”?","l, i, t, e, r",medium
 "Ile kół ma samochód ciężarowy (wliczając zapasowe)?",5,medium
 "Jeśli 2=6, 3=12, 4=20, 5=?",30,medium
 "Jakie są dwie kolejne liczby, których iloczyn to 132?",11 i 12,medium
