@@ -1,962 +1,975 @@
 puzzle_id,puzzle,ground_truth,model_answer,strategy,difficulty
-0,Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,"1. Pierwsze należy odliczyć liczby – sumę 5 + 6 i iloczyn 2 * 6.
-    Suma: 11
-    Iloczyn: 12
+0,Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,"1. Dla porządku, podajemy kolejno liczby, a następnie porównywamy ich wielkości:
+    - Suma 5 i 6 = 11
+    - Iloczyn 2 i 6 = 12
 
-Odpowiedź: Większa jest suma 5 i 6 czyli 11.",Zero-Shot,easy
-0,Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,Odpowiedź: Iloczyn 2 i 6 jest większy.,One-Shot,easy
-0,Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,Odpowiedź: Iloczyn 2 i 6 jest większy.,Few-Shot,easy
-0,Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,"1. Analizujemy problem - ma to co do zagadki z matematyki, dotyczy porównania dwóch wielkości wynikających z różnych operacji arytmetycznych (suma i iloczyn).
+2. Porównanie:
+   - Iloczyn 2 i 6 jest większy od sumy 5 i 6.",Zero-Shot,easy
+0,Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,"Odpowiedź: Czyli suma 5 i 6 czy iloczyn 2 i 6, największą wartość daje iloczyn 2 i 6, bo liczba 2 używamy dwukrotnie w mnożeniu. Dlatego odpowiedź: Czyli iloczyn 2 i 6 jest większy niż suma 5 i 6.",One-Shot,easy
+0,Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,Odpowiedź: Iloczyn 2 i 6,Few-Shot,easy
+0,Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,"1. Przejrzyjemy problem dokładnie:
+     - Podajemy dane wejściowe: Suma = 5 + 6, Iloczyn = 2 * 6
 
-2. Rozbijamy problem na mniejsze kroki - porównamy pojedyncze sumy 5 + 6 oraz pojedynczy iloczyn 2 * 6.
+  2. Rozbijemy problem na mniejsze kroki:
+     - Obliczymy sumę: Suma = 11
+     - Obliczymy iloczyn: Iloczyn = 12
 
-3. Rozwiązujemy każdy krok osobno:
-   - Suma 5 + 6 = 11 (lub więcej, jeśli dostępujesz do sumy jakiś wcześniejszymi operacjami, np. liczba 7 lub 10+1)
-   - Iloczyn 2 * 6 = 12
+  3. Rozwiązujemy każdy krok osobno:
+     - Określamy, które z liczb jest większe: 11 czy 12?
 
-4. Wyciągamy ostateczny wniosek:
-    - Porównując obie wartości uzyskaną w kroku 3, dowiadujemy się, że iloczyn jest większy od sumy.
+  4. Wyciągnijmy ostateczny wniosek:
+     - Liczba 12 jest większa od liczby 11, więc większą z sumy 5 i 6 oraz iloczynem 2 i 6 jest liczba 12.
 
-Odpowiedź: Iloczyn 2 i 6 jest większy niż suma 5 i 6.",Zero-Shot CoT,easy
-0,Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,"1. Analizuję problem: Zadana jest zagadka porównywania dwóch wartości, tj. sumy dwóch liczb i ilorazu dwóch liczb.
+Odpowiedź: Większa jest liczba 12, a ta to jest iloczyn 2 i 6.",Zero-Shot CoT,easy
+0,Która większa: suma 5 i 6 czy iloczyn 2 i 6?,iloczyn,"1. Analizujemy problem: Zadana jest prosta zagadka dotycząca porównania dwóch wielkości.
 
-  2. Rozbijam problem na mniejsze kroki: Przeanalizuję wartość poszczególnych wyrażeń (suma 5+6 oraz iloczyn 2*6).
+  2. Rozbijamy problem na mniejsze kroki: Z sumy 5 i 6 musimy ustalić, czy to większa wartość od iloczynu 2 i 6.
 
-  3. Rozwiążym każdy krok osobno: Sumując liczby, mamie 11, a dla ilorazu otrzymuję wartość 12.
+  3. Rozwiązujemy każdy krok osobno:
+     - Suma 5 + 6 = 11
+     - Iloczyn 2 * 6 = 12
 
-  4. Wyciągnijem ostateczny wniosek: Porównując dwie liczby (11 i 12), stwierdzam, że większą z nich jest wartość 12, która została uzyskana dla iloczynu.
+  4. Wyprowadzamy ostateczny wniosek: Z sumy 5 i 6 dostaliśmy 11, a z iloczynu 2 i 6 - 12. Dla większej liczby należy wybrać liczbę 11, co oznacza, że suma 5 + 6 jest większa od iloczynu 2 * 6.
 
-Odpowiedź: Większa wartość to iloczyn 2*6 (12).",Few-Shot CoT,easy
+Odpowiedź: Suma 5 + 6 jest większa od iloczynu 2 * 6.",Few-Shot CoT,easy
 1,Kamil nie wygrał. Marta lepsza niż Patryk. Kto wygrał?,Marta,Odpowiedź: Marta,Zero-Shot,medium
-1,Kamil nie wygrał. Marta lepsza niż Patryk. Kto wygrał?,Marta,"Odpowiedź: Kamil nie wygrał, ponieważ Marta lepsza niż Patryk. Zatem z pewnością Patryk nie wygrał. Nie wiadomo kto wygrał, tylko że nie był to Kamil.",One-Shot,medium
-1,Kamil nie wygrał. Marta lepsza niż Patryk. Kto wygrał?,Marta,"Odpowiedź: Kamil nie wygrał, ponieważ on lepsi jest Martce i Marta lepsza niż Patryk, więc wzięcie kolejność osób położonych od dołu w dół daje Martce jako zwyciężczyni.",Few-Shot,medium
-1,Kamil nie wygrał. Marta lepsza niż Patryk. Kto wygrał?,Marta,"1. Analiza problemu:
-     - Kamil nie wygrał (znaczy, że przegrał lub uczestniczył w zawodach)
-     - Marta lepsza niż Patryk (tylko trójka osób uczestniczyło w zawodach, więc muszą się porównywać)
+1,Kamil nie wygrał. Marta lepsza niż Patryk. Kto wygrał?,Marta,"Odpowiedź: Kamil nie wygrał, ponieważ został wymieniony w pierwszej części zagadki i nie powiedziano, że jakiś inny uczestnik wygrał. Z drugiej strony, Marta lepsza niż Patryk, co oznacza, że obaj nie mogli wygrać (bo Marta lepsza) albo Marta wygrała (ale wtedy Patryk nie wygrał). Wobec braku informacji o zwycięstwie innego uczestnika można powiedzieć, że wygrana pozostaje niewiadoma.",One-Shot,medium
+1,Kamil nie wygrał. Marta lepsza niż Patryk. Kto wygrał?,Marta,"Odpowiedź: Nie ma możliwości ustalenia odpowiedzi ze zadania, ponieważ nie podano informacji kto są pozostałe osoby (nie wiadomo czy Patryk i Kamil są te same osoby) i jaki kontekst jest przy zadaniu. Wymagana dodatkowa informacja to nazwy wszystkich uczestników, a także jakie są kryteria wygrywania.",Few-Shot,medium
+1,Kamil nie wygrał. Marta lepsza niż Patryk. Kto wygrał?,Marta,"1. Analizujemy problem:
+     - Kamil nie wygrał (znaczy, że zagrał i przegrał).
+     - Marta lepsza niż Patryk (Marta ma wyższe umiejętności, odwagę czy moce, dzięki którym może pokonać lub wygrać w grze).
+  2. Rozbijamy problem na mniejsze kroki:
+     - Czy Marta i Patryk mogli grać z Kamilem? (Tak, ponieważ znajomo się ze Kamil przegrał i ich nazwy są wymienione razem).
+     - Czy Kamil mógł wygrać z Martą? (Nie, gdyż wyraźnie podano, że przegrał).
+  3. Rozwiązujemy każdy krok osobno:
+     - Jeśli Marta i Patryk grali między sobą, to który z nich wygrał? (Marta, ponieważ lepsza od Patryka).
+  4. Wyciągamy ostateczny wniosek:
+     - Kto z trójki osób, czyli Kamil, Marta i Patryk, wygrał grę? (Marta).
 
-  2. Rozbicie problemu na kroki:
-     - Kto przegrał? (Kamil)
-     - Czy Marta i Patryk uczestniczyli w zawodach? (Tak)
-     - Jeśli Marta jest lepsza niż Patryk, to Patryk musi być gorszy od Kamilia lub ukończyć zawody z równym wynikiem.
-     - Można założyć, że wszystkie osoby kończą zawody ze względu na porównanie ich umiejętności.
-
-  3. Rozwiązanie każdego kroku:
-     - Kto przegrał? (Kamil)
-     - Czy Marta i Patryk uczestniczyli w zawodach? (Tak)
-     - Wobec porównania między Martą a Patrykiem, muszą się umieścić poza Kamilem, gdyż Marta lepsza od Patryka.
-
-  4. Wniosek:
-     Odpowiedź: Patryk lub Trzecia osoba.",Zero-Shot CoT,medium
-1,Kamil nie wygrał. Marta lepsza niż Patryk. Kto wygrał?,Marta,"1. Analityczne przyjrzenie się problemowi: Zostały podane trzy osoby - Kamil, Marta i Patryk, a stwierdzono, że Kamil nie wygrał i również, że Marta jest lepsza od Patryka.
-
-  2. Rozbicie problemu na mniejsze kroki: Wynik pojedynczej gry musi się zdecydują o tym, kto wygrał. Przedstawimy to następująco - Kamil grał z Martą i Patrykiem osobno i wyniki były:
-     - Gra 1: Kamil vs Marta -> Marta wygrała
-     - Gra 2: Kamil vs Patryk -> Wynik tego pojedynczego spotkania jest nieznany
-
-  3. Rozwiązywanie każdego kroku osobno: W grze 1, gdy Marta wygrała, oznacza to, że ona jest lepsza od Kamilia w grze bezpośredniej. Oznacza to również, że nie może być lepszy niż Patryk, ponieważ Marta jest lepsza niż Patryk, a Kamil nie wygrał. To implikuje, że:
-     - Gra 2: Patryk wygrał
-
-  4. Wyciągnięcie ostatecznego wniosku: Gdyby Kamil mógł wygrać, to musiałby wygrać zarówno z Martą i z Patrykiem, co jest sprzeczne z faktem, że Marta wygrała z Kamilem. Oznacza to, że Kamil musi być gorszy od obu - Marty i Patryka. Ostatecznie, nie może być najlepszym spośród trzech, bo wtedy musiałby wygrać, a zarówno Marta, jak i Patryk są lepsi niż on.
-
-Odpowiedź: Kamil jest gorszy od Marty i Patryka.",Few-Shot CoT,medium
-2,"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,"Liczba pierwsza: 7
-   Liczba druga: 12
-
-Odpowiedź: 7 i 12",Zero-Shot,medium
-2,"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,"Odpowiedź: 6 i 11 (bo jeśli liczbę A nazwiemy 6, to A-5 = 11, dlatego B=A+5 = 11)",One-Shot,medium
-2,"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,Odpowiedź: 8 i 13,Few-Shot,medium
-2,"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,"1. Analizacja problemu: Dwa liczby mają różnicę 5 i sumę 17. Zadanie polega na znalezieniu tych dwóch liczb.
-
+Odpowiedź: Marta",Zero-Shot CoT,medium
+1,Kamil nie wygrał. Marta lepsza niż Patryk. Kto wygrał?,Marta,"1. Analiza problemu: Zadana jest relacja porównywania osób (Marta > Patryk) i informacja, że Kamil nie wygrał.
   2. Rozbicie problemu na mniejsze kroki:
-     - Pobierz dowolną z liczb (x).
-     - Wyznacz drugą liczbę (y), która różni się od x o 5 jednostek.
+     - Wykluczenie Kamilia z konkursu bo on nie wygrał.
+     - Pozostaje więc porównanie Marty i Patryka.
+  3. Rozwiązanie każdego kroku osobno:
+     - Wykluczenie Kamilia z konkursu uniemożliwia przypisanie wygranej mu.
+     - Porównanie Marty i Patryka pozwala stwierdzić, że Marta jest lepsza od Patryka. W takim przypadku jeśli wygrał ktoś to musi być Marta, bo ona jest lepsza niż Patryk i nie może być Kamil (wykluczony z konkursu).
+  4. Ostateczny wniosek:
+     - Odpowiedź: Marta",Few-Shot CoT,medium
+2,"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,"1. Ja rozpoczynam rozważaniem wartości pierwszej liczby (należy zauważyć, że nie mówię o jej nazwie).
+2. Więc pierwsza liczba + Druga Liczba = 17
+3. Najmniejszą liczbą pierwszą jest 2, ale gdyby była to druga liczba i pierwsza równa się 17-2=15, to nie spełniałaby warunku że obie są różne o 5. Więc mniejsze rozwiązanie musi być liczbą parzystą (aby jej poprzednik był liczbą oddziałkową).
+4. Więc można zrobić kilka prób rozpoczynając od 2 i dodatkowe 2-ki aż do momentu gdy otrzymamy sumę równą 17.
+5. Dla przykładu: 2+14=16, ale już nie jest to liczba parzysta.
+6. Dalej możemy posunąć się o kolejne 2-ki (czyli 4, 6, 8) aż do momentu gdy otrzymamy sumę równą 17. Ale 8+9=17, ale to liczby są te same i nie spełniają warunku.
+7. Dalej może być kolejne parzyste liczby: 10+7=17. A teraz już różnią się o 5 (10-7=3). Zauważamy, że suma jest większa niż potrzebna, jednak poprzednik liczby 10 (9) nie jest liczbą parzystą, dlatego musimy szukać rozwiązania o inny sposób.
+8. Widzieliśmy że pierwsza liczba jest mniejsza od drugiej i różni się od niej 5. Może być to więc pierwsza liczba=10-5=5, a druga liczba=17-10+5=12. Jednak ten kombinat nie spełnia warunku że obie liczby różnią się o 5.
+9. W końcu musimy szukać rozwiązania na przekór naszym wcześniejszym założeniom i sprawdzić czy pierwsza liczba jest mniejsza niż druga a różni się od niej o 5, a suma ich równa się 17. Wtedy może być to pierwsza liczba=2 (wymagane żeby mogła być poprzednikiem liczby 7), a druga liczba=9. Jednak też tutaj nie spełniona warunek, że obie liczby różnią się o 5 (4 i 9).
+10. W końcu trzeba szukać rozwiązania na przekór naszym wcześniejszym założeniom, aby sprawdzić czy pierwsza liczba jest większa niż druga a różni się od niej o 5, a suma ich równa się 17. Wtedy może być to pierwsza liczba=12 (wymagane żeby mogła być poprzednikiem liczby 7), a druga liczba=7. Teraz wszystkie warunki są spełnione!
 
-  3. Rozwiązanie każdego kroku:
+Odpowiedź: Pierwsza liczba: 7, Druga Liczba: 12.",Zero-Shot,medium
+2,"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,Odpowiedź: 6 i 11,One-Shot,medium
+2,"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,Odpowiedź: 8 oraz 12,Few-Shot,medium
+2,"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,"1. Analizuję problem i zauważam, że mówi się o dwóch liczbach różniących się o 5 oraz o ich sumie równej 17.
+  2. Rozbiję ten problem na dwa kroki:
+     - Znajdę pierwszą liczbę (mówimy, że jest A).
+     - Znajdę drugą liczbę, która będzie różniła się od pierwszej o 5 (będzie to B = A + 5).
+  3. Krok 1:
+      Wiem, że czyśćca liczba nie może być ujemna, więc najmniejszą możliwą pierwszą liczbą będzie 2, aby móc sumować ją z następną i uzyskać 17.
+  4. Krok 2:
+      A = 2
+      B = A + 5 = 2 + 5 = 7
+  5. Konkluduję, że najmniejsze liczby różniące się o 5 to 2 i 7.
 
-     - Przyjmij x jako liczbe1. Wtedy liczba2 (y) będzie miała wartość x+5.
+Odpowiedź: Liczby różniące się o 5 to 2 i 7.",Zero-Shot CoT,medium
+2,"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,"1. Analiza problemu: Dwie liczby różnią się o 5, a ich suma to 17. To dwie niewiadome liczby, które spełniają te zależności.
 
-  4. Wyciągnięcie ostatecznego wniosku:
+  2. Rozbicie problemu na mniejsze kroki: Znajdźiemy pierwszą liczbę (n1), a następnie drugą liczbę (n2) tak, aby n1 + n2 = 17 i n1 - n2 = 5.
 
-     - Teraz wystarczy sprawdzić, czy suma tych dwóch liczb to 17. Jeśli tak, to znaleziono odpowiedź; jeśli nie, to musimy spróbować jeszcze inne wartości x.
-     - Sprawdź właśnie: x = 6 i y = x+5 = 11. Suma liczb jest 17. Odpowiedź: Liczby to 6 i 11.",Zero-Shot CoT,medium
-2,"Dwie liczby różnią się o 5, a ich suma to 17. Jakie to liczby?",6 i 11,"1. Analityczne przeglądanie problemu - Zakładam, że mamy dwie liczby naturalne n1 i n2 takie, że n1 - n2 = 5 i n1 + n2 = 17.
+  3. Rozwiązanie kroku: Dla uproszczenia zbioru możliwych rozwiązań, zobaczemy pierwsze liczby z wielokrotnościami 5 (5, 10, 15...) i próbujemy znaleźć drugą liczbę taką, aby ich suma była równa 17.
 
-  2. Rozbicie problemu na mniejsze kroki - Zaczynam od tego, jakiego rodzaju liczby te mogą być, czyli parzyste lub nieparzyste. Więc będzie 3 możliwości:
-      a) Obie liczby są parzyste i różnią się o 5;
-      b) Obie liczby są nieparzyste i różnią się o 5;
-      c) Jedna jest parzysta, druga nieparzysta.
+  4. Rozwiązanie całego problemu: Testujemy kolejne pary liczb i sprawdzamy czy spełniają warunki, dopóki nie znajdujemy rozwiązania. Zgodnie z testowanymi parami przebiegiem testów są następujące wielokrotności 5:
+    - (5 + 12) = 17 i (5 - 12) = -7, ale nie spełniają warunku aby suma była równa 17.
+    - (10 + 7) = 17 i (10 - 7) = 3, spełniamy warunek.
 
-  3. Rozwiązanie każdego kroku - Probuję wyeliminować te możliwości odpowiednimi rozważaniami:
-      a) W przypadku obu parzystych, liczby są więc równe 2(x + 1) i 2(x - 5), gdzie x jest wspólną wielokrotnością. Jednak nie można, żeby dwie wielokrotności były różniące się o 5 (zobacz własność modulo). Więc ta możliwość nie jest prawidłowa.
-      b) W przypadku obu nieparzystych, liczby są równe 2x + 1 i 2(x + 5), a ponieważ suma jest parzysta (17 = 2*8), to jedna z liczb musi być mniejsza od drugiej o 2. Jednak tez w tym przypadku nie można było, że dwie liczby są różniące się o 5 i są oddzielone o 2 (zobacz własność modulo). Więc ta możliwość nie jest prawidłowa.
-      c) Może to być jedna parzysta a druga nieparzysta. Rozważam liczby parzyste i nieparzyste, które są względem siebie różniące się o 5:
-          - Parzysta: 2n (gdzie n jest naturalne)
-          - Nieparzysta: 2n + 1
-          Teraz muszę znaleźć jedną liczbę parzystą, która dzieli sumę 17 i różni się o 5 od drugiej. Szukając takich liczb, stwierdzałem że:
-           - 2n = 17 → n = 8 (nie może to być pierwsza liczba, bo wtedy druga byłaby nieparzysta)
-           - 2(n + 5) = 17 → n = 4 (jest parzysta, a różni się o 5 od liczby znalezionej poprzednio, to jest pierwsza liczba).
-      Więc w przypadku c) liczby są: 8 i 4.
-
-  4. Wyciąganie ostatecznego wniosku - Odpowiedź: Liczby są 4 i 13 (bo 4 + 13 = 17, a różnią się o 5).",Few-Shot CoT,medium
+Odpowiedź: Dwie liczby są 10 i 7.",Few-Shot CoT,medium
 3,"Gdyby dziś było jutro, dziś byłby piątek. Jaki dziś dzień?",czwartek,Odpowiedź: Piątek,Zero-Shot,hard
 3,"Gdyby dziś było jutro, dziś byłby piątek. Jaki dziś dzień?",czwartek,Odpowiedź: poniedziałek,One-Shot,hard
-3,"Gdyby dziś było jutro, dziś byłby piątek. Jaki dziś dzień?",czwartek,Odpowiedź: wtorek,Few-Shot,hard
-3,"Gdyby dziś było jutro, dziś byłby piątek. Jaki dziś dzień?",czwartek,"1. Analiza problemu: Otrzymujemy dwie zdanie dotyczące czasu – ""Dziś jest"" i ""Dziś byłby piątkiem"". Wiemy, że gdy jakiś dzień jest piątką, to ten dzień nie może być dziś.
+3,"Gdyby dziś było jutro, dziś byłby piątek. Jaki dziś dzień?",czwartek,Odpowiedź: poniedziałek,Few-Shot,hard
+3,"Gdyby dziś było jutro, dziś byłby piątek. Jaki dziś dzień?",czwartek,"1. Analizacja problemu:
+     Ten problem dotyczy porównania dwóch okresów czasu - dzisiaj i jutro.
 
-  2. Rozbicie problemu na mniejsze kroki: Ustalenie czy zdanie ""Dziś byłby piątkiem"" jest prawdziwe lub fałszywe w kontekście aktualnej chwili. Jeżeli to zdanie jest fałszywe, to dziś musi być innym dniem niż piątek.
+  2. Rozbicie problemu na mniejsze kroki:
+     - Jaki jest dzień, gdyby dziś było jutro? (Następny dzień po dziś)
+     - Dzisiaj co więc jest? (Dzień przed następnym dniem po dziś)
 
-  3. Rozwiązanie kroku: Zdanie ""Dziś byłby piątkiem"" zawiera przysługę – użycie czynnej formy czasu przyszłego w odniesieniu do chwili obecnej. Wszystkie zdania dotyczące czynności, które mają miejsce w przyszłości lub przeszłości są fałszywe w chwili obecnej, gdyż nie odpowiadają rzeczywistości. Zatem ""Dziś byłby piątkiem"" to zdanie fałszywe i dziś musi być innym dniem niż piątek.
+  3. Rozwiązanie każdego kroku osobno:
+     - Jeżeli jutro byłby piątek, to dzisiaj musi być czwartek (bo jest dzień przed piątkiem).
+     - Gdyby dzisiaj było piątek, to nie mogłoby zostać piątek jutro, bo to by był ten sam dzień. W takim wypadku ostatni dzień miałby nazwa 'piątek'.
 
-  4. Ostateczny wniosek: Dziś jest innym dniem niż piątek. Odpowiedź: Dziś jest (nazwa innego dnia, na przykład ""Wtorek"").",Zero-Shot CoT,hard
-3,"Gdyby dziś było jutro, dziś byłby piątek. Jaki dziś dzień?",czwartek,"1. Analityczne rozbicie problemu: W tej zagadce stwierdza się, że jeżeli by to jutro było piątek, to dziś musi być inny dzień (zaloty na piątki są jednorazowe).
+  4. Ostateczny wniosek:
+     - Dzisiaj jest czwartek (bo jutro byłoby piątek, a dzisiaj to dzień przed następnym).",Zero-Shot CoT,hard
+3,"Gdyby dziś było jutro, dziś byłby piątek. Jaki dziś dzień?",czwartek,"1. Analizuję problem: Została podana zagadka dotycząca relacji między danymi czasami w tygodniu. Odpowiada na pytanie, jaki dzień jest dziś. Jeżeli było jutro piątek, to dziś musiałoby być środę.
 
-  2. Rozbicie problemu na mniejsze kroki: Najpierw sprawdź, co dzieje się jeżeli to jutro jest piątek i potem użyj tej informacji, aby wyciągnąć wniosek o dzisiejszym dniu.
+  2. Rozbijam problem na mniejsze kroki: Rozważam wszystkie dni tygodnia (poniedziałek, wtorek, środa, czwartek, piątek i sobota) i sprawdzam, które z nich odpowiada zaświadczeniu, że jutro byłoby piątek.
 
-  3. Rozwiązanie każdego kroku: Jeżeli to jutro jest piątek, to dziś musi być inny dzień (zaloty na piątki są jednorazowe). Teraz użyj tego faktu do wyciągnięcia wniosków.
+  3. Rozwiązuję każdy krok osobno: Rozważam wszystkie dni tygodnia (poniedziałek, wtorek, środa, czwartek, piątek i sobota) i dla każdego z nich sprawdzam czy jest to prawda, że jeśli było jutro piątek, to dziś musiałoby być ten danym dniem.
 
-  4. Ostateczne rozumowanie i odpowiedź: Jeżeli to jutro jest piątek, dziś musi być inny dzień. Gdybyśmy już byli w piątku, to jutro miałoby być sobota (sobota jest dniem po piątku). Jednak na początku zagadki stwierdzono, że jeżeli to jutro będzie piątek, dziś musi być inny dzień. Więc dziś musi być wtorek (najbliższy dzień, który nie jest piątką).
-   Odpowiedź: wtorek",Few-Shot CoT,hard
-4,Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,"Odpowiedź: 3 (Jacek sam jest jednym z braci, a każda z jego siostr ma jeszcze po jednym bracu)",Zero-Shot,easy
-4,Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,Odpowiedź: 3 (Jacek i jego dwa sistry mają razem trzech braci),One-Shot,easy
-4,Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,Odpowiedź: 3,Few-Shot,easy
-4,Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,"1. Analizuję problem: Jacek ma dwie siostry, co oznacza że ma trzy kobiety z rodziny (Jacek i 2 siostry). Każda z jego sióstr posiada brata, który nie musi być Jacekiem.
+  4. Wyciągam ostateczny wniosek: Załóżmy, że było jutro piątek. Wtedy dziś nie mógłby być wtorek (bo jutra byłby piątek, a wtorek jest przed piątkiem). Nie może być sobota (bo jutra byłby piątek, a sobota jest po piątku). Poniedziałek jest przed piątkiem i nie jest dzisiaj. Czwartek jest po wtorku i poniedziałku, nie może być go dzisiaj. Tym samym musi to być środa (bo jutra byłby piątek, a dziś musiałoby być danym dniem po wtorku, poniedziałku i czwartku).
 
-  2. Rozbijam problem na mniejsze kroki:
-     - Kto jest Jacekiem? Wiemy że to on.
-     - Jaki liczba sióstr ma? Wiemy, że 2.
-     - Każda z jego sióstr posiada brata. Musimy sprawdzić czy ten brat jest jedynym bratem w tej rodzinie i czy nie może być jeszcze innych braci.
+  5. Przedstawiam ostateczną odpowiedź: Dziś jest środa.
 
-  3. Rozwiązuję każdy krok osobno:
-     - Każda z jego sióstr posiada brata: Mogą to być bracia bliźniacy, jednak aby odpowiedź była jedna, musimy znaleźć przypadek gdzie jest tylko jeden brat.
-     - Możemy wykluczyć sytuację gdyby to byli bliźniacy z powodu prawa o jednym narodzeniu i wszystko wskazuje na to że nie są to bliźniacy, gdyż pojawiłby się drugi brat wtedy.
-     - Jeśli nie są bliźniacy, jedna z jego sióstr musi mieć jeszcze inną siostrę (trzecią) i brata, który jest bratem tylko jej, a nie Jaceka.
+Odpowiedź: Dziś jest środa.",Few-Shot CoT,hard
+4,Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,Odpowiedź: Jest 3 braci. (Ponieważ Jacek ma dwa braci i każda z jego sióstr również ma brata.),Zero-Shot,easy
+4,Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,"Odpowiedź: 3 (Jacek, jego brat i druga siostra mają swego brata)",One-Shot,easy
+4,Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,"Odpowiedź: 3 (Jacek ma dwie siostry, każda ma brata, więc mają trzy razem)",Few-Shot,easy
+4,Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,"1. Analiza problemu: Znajomość Janka z jego dwiema siostrami oraz każdą z nich ma brata wskazuje, że w rodzinie Janka jest co najmniej trzy osoby (Jacek i dwa bratni).
+  2. Rozbiórka problemu:
+      - Analizujemy liczbę rodzeństwa Janka. Jest to dwie siostry.
+      - Na każdego z jego rodzeństwa ma on brata.
+  3. Rozwiązanie kroków:
+      - Wiemy, że w rodzinie jest co najmniej trzy osoby (Jacek i dwa bratni). Ponieważ każde z dwóch rodzeństwa Janka ma brata, nie może być ich tylko 3. Jeśli było 3 to żaden z nich nie miałby brata.
+      - Więc jest tu co najmniej czwórka (Jacek, jego dwie siostry oraz dwa bratni). Jednak pojawiłoby się sprzeczność, gdyby każda z dwóch siostr miała swego brata. Wówczas miałaby ona co najmniej jednego brata a samego Janka by jeszcze musiało być.
+      - Ostatecznie można założyć, że poza rodziną Janka jest inny brat i ten jest ojcem jego dwóch siostier oraz jest również bratem dla dwóch innymi rodzeństw (najpierw trzech osób w rodzinie Janka - Jacek, jego dwa siostry oraz ten brat - a później jeszcze kolejne rodzeństwo).
+  4. Ostateczny wniosek:
+      - Odpowiedź: W sumie jest tu sześcioro (Jacek z dwójką siostr i czwórką braci).",Zero-Shot CoT,easy
+4,Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,"1. Analizowanie problemu: Jacek ma dwie siostry i każda z nich ma brata. Wynika to, że istnieją co najmniej trzy osoby w rodzinie Jaczka: dwie siostry oraz jeden brat który jest ich wspólnym rodzeństwem.
 
-  4. Wyciągam ostateczny wniosek:
-     - Istnieje brat dla jednej z jego sióstr, który nie może być Jacekiem, ale ma jeszcze innych siostr. W przypadku takim musi istnieć jeszcze co najmniej jeden brat w tej rodzinie.
-     - Odpowiedź: Istnieje co najmniej jeden brat w tej rodzinie, ale nie mamy informacji na ile ich jest.",Zero-Shot CoT,easy
-4,Jacek ma dwie siostry. Każda ma brata. Ilu jest braci?,1,"1. Analiza problemu: W tekście podanym mówi się, że Jacek ma dwie siostry i każda z nich ma brata. Nie mamy żadnych innych informacji dotyczących ich liczby oraz identyfikacji pozostałych osób.
+  2. Rozbijanie problemu na mniejsze kroki: Aby rozwiązać zagadkę, należy wyznaczyć liczbę braci w rodzinie Jaczka. Znajomość istnienia dwóch siostr i faktu, że każda ma wspólnego brata, może nam pomóc odpowiednio rozważać relacje między nimi.
+
+  3. Rozwiązywanie kroków: Siostry Jaczka są dwie i mają wspólnego brata. Więc znamy istnienie jednego brata w rodzinie Jaczka, który jest wspólnym rodzeństwem dla dwóch osób – siostry. W rodzinie Jaczka musi być jeszcze jedna osoba poza nimi, którą możemy uznawać za brata, bo oprócz siebie i dwóch swoich siostier Jacek nie ma innych bliskich w tym rodzinie.
+
+  4. Ostateczny wniosek: Ilu jest braci w rodzinie Jaczka? Wynika z poprzednich kroków, że jest tylko jeden brat w rodzinie Jaczka.
+
+Odpowiedź: Ilu jest braci w rodzinie Jaczka? 1",Few-Shot CoT,easy
+5,Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,Odpowiedź: 45,Zero-Shot,hard
+5,Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,Odpowiedź: 45 (gdyż po dwie osoby w każdej parze podają sobie ręce),One-Shot,hard
+5,Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,"Odpowiedź: 45 (oraz należy pamiętać, że każdy osobnik podaje swoją rękę do każdego innego - więc liczba podań równa się połowie liczby osób, podniesionej do kwadratu)",Few-Shot,hard
+5,Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,"1. Analiza problemu: Podanie ręki to spotkanie dłonią z drugim osobą, więc liczba podań jest liczbą par, w której każda para składa się z dwóch osób.
 
   2. Rozbicie problemu na kroki:
-      - Zostaniemy pomysłowo i zastanowimy się, co w ogóle oznacza 'brat'. W tym przypadku jest to syn tego samego ojca i matki.
-      - Zauważmy, że Jacek ma dwie siostry, a każda z nich ma brata. Oznacza to, że ich braćmi są ten sami osoby. Można domysłać się, że każdej z siostr Janka jest synem innego mężczyzny (ojca).
-      - Teraz rozważmy wszystkie możliwe scenariusze. Każda z trzech siostier musi mieć jedynie jednego brata. Można powiedzieć, że nie ma dwóch, trójki czy też żadnych braci.
-      - Teraz musimy odpowiedzieć na pytanie: 'Ilu jest braci?'. Dla każdej z siostier jest tylko jeden brat. Zatem liczba braci to 3 (jedno dla każdej siostry).
+      - Oblicz liczbę osób w grupie (10 osób).
+      - Oblicz liczbę par, które mogą być utworzone między tymi osobami (pomniejsz o 1 liczbę par, gdyż jedna para obejmuje dwie osoby i jest to taka sama para z odwrotną parą).
 
-  3. Każdy krok osobno:
-      - Rozumowanie nad sensem słowa 'brat' w tym przypadku i ustalenie, że jest to syn tego samego ojca i matki.
-      - Zauważenie, że każda z trzech siostier posiada brata.
-      - Wykluczenie możliwości istnienia dwóch czy też większej liczby braci dla jednej z siostier.
-      - Ustalenie, że liczbą braci jest 3 (jedno dla każdej siostry).
+  3. Rozwiązanie kroków:
+      - Liczba osób = 10 (liczba niezmieniona)
+      - Liczba par = (10 * 9) / 2 (mnożenie liczby osób z liczbą osobami, które pozostają po odjęciu jednej pary i dzielenie przez 2)
+         = (10 * 9) / 2 = 45 / 2 = 22,5
+      - Wartość liczby par całkowita: 22
 
-  4. Ostateczny wniosek: 'Odpowiedź: 3'",Few-Shot CoT,easy
-5,Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,Odpowiedź: 45 (gdyż każda para jest połączeniem dwóch osób),Zero-Shot,hard
-5,Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,"Odpowiedź: 45 (gdyż po dwie ręce ma się każdy parzący, czyli 10 osobom to 10 * 2 = 20 dłoni; ale ponieważ pojedynek dłoni nie liczony jest w sumie, odpowiedź to 45)",One-Shot,hard
-5,Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,"Odpowiedź: 45 (pośrodku każdy z dwóch sąsiednich, więc połowa liczby osób podwójona)",Few-Shot,hard
-5,Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,"1. Analityczne rozbijamy zagadkę na mniejsze kroki, w tym przypadku każdą osobę jest krokiem i liczba 10 to liczba kroków.
-  2. Na każdym kroku (osóbce) podaje się rękę innym uczestnikowi imprezy, a ten inny osobie to podanie ręki jest także krokiem dla drugiej osoby.
-  3. Dlatego przyjmujemy, że każde podanie ręki jest dwukrotnym krokiem - jeden dla podającego i jeden dla przyjmującego. W związku z tym mamy 20 kroków na podania rąk (10 osób * 2).
-  4. Odpowiedź: 20",Zero-Shot CoT,hard
-5,Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,"1. Analizujemy problem - Znamy, że na imprezie jest 10 osób.
-  2. Rozbijamy problem - Każda z 10 osób podaje swoją rękę każdemu innemu gościowi raz.
-  3. Rozwiązywanie kroku po kroku:
-     - Ponieważ wszystkie 10 osoby podają swoją rękę, to każdy podaje swoją rękę 9 razy do innych gości (gdyż nie podaje sobie samej ręki).
   4. Ostateczny wniosek:
-     - Każda osoba podaje swoją rękę 9 razy, ale jedno podanie liczy się dwukrotnie, gdy dwa goście podają sobie ręce. W sumie jest to 18 podań, ale z powodu powtórzenia liczymy tylko połowę tych podań, czyli 9 podań.
-     - Odpowiedź: Każda osoba podaje swoją rękę 9 razy (a w sumie jest to 90 podań, z czego liczymy połowę tych podań).",Few-Shot CoT,hard
+     Odpowiedź: Ile podań? - 22 (nie można jednej osoby dać sobie rękę, więc liczba podań musi być cała).",Zero-Shot CoT,hard
+5,Na imprezie 10 osób podaje sobie ręce. Ile podań?,45,"1. Analiza problemu: W imprezie biorą udział 10 osób, a poszczególne osoby podają sobie ręce. Zadaniem jest wyliczenie liczby podań.
+
+  2. Rozbicie problemu na mniejsze kroki: Każde spotkanie dwóch osób wymaga jednego podania ręki, czyli iloczyn liczby spotkań (podań) jest równy liczbie par z udziałem każdej z osób.
+
+  3. Rozwiązanie kroku: Liczba par z udziałem osoby A, to samo z udziałem osoby B i C itd. (po 9 takich par dla każdej osoby). Dla liczby 10 osób złożona jest z 5 par (A i sam się), które nie potrzebują żadnego podania, oraz z 45 par (każda para poza 5 z poprzedniego kroku). Ostatecznie otrzymamy liczbę par jako sumę tych dwóch zbiorów:
+   - 10 osób – 5 niepotrzebnych par = 5 osób * (9/2) + (10-5)*(45/2) = 25 osób * 4.5 + 30 * 22.5 = 112.5, jednak liczba par musi być całkowita, więc najbliższa całkowita wartość to 113.
+
+  4. Ostateczny wniosek: Liczba podań podczas imprezy wynosi 113.
+
+Odpowiedź: 113",Few-Shot CoT,hard
 6,"W klasie jest 20 dzieci. 12 lubi lody, 15 ciasto, 5 oba. Ile tylko lody?",7,Odpowiedź: 12,Zero-Shot,medium
 6,"W klasie jest 20 dzieci. 12 lubi lody, 15 ciasto, 5 oba. Ile tylko lody?",7,Odpowiedź: 12,One-Shot,medium
 6,"W klasie jest 20 dzieci. 12 lubi lody, 15 ciasto, 5 oba. Ile tylko lody?",7,Odpowiedź: 12,Few-Shot,medium
-6,"W klasie jest 20 dzieci. 12 lubi lody, 15 ciasto, 5 oba. Ile tylko lody?",7,"1. Analizuję problem: W klasie jest 20 dzieci i każde z nich lubi co najwyżej jeden z dwóch produktów - lody lub ciasto. Zna się, że ilu dzieci lubi lody i ilu ciasta.
+6,"W klasie jest 20 dzieci. 12 lubi lody, 15 ciasto, 5 oba. Ile tylko lody?",7,"1. Analizujemy problem: 20 dzieci w klasie. Dla każdej z nich mówi się, czy lubią lody lub ciasto lub oba.
+  2. Rozbijamy problem na kroki: Wyliczamy ile dzieci lubi lody, ile ciasto i ile oba.
+  3. Wykonujemy każdy krok osobno: Z liczby 20 odróżniamy 12 dzieci, które lubią lody, 15, które lubią ciasto oraz 5 dzieci, które lubią oba.
+  4. Ostateczny wniosek: Odpowiedź: 12 (lodami lubią tylko 12 dzieci).",Zero-Shot CoT,medium
+6,"W klasie jest 20 dzieci. 12 lubi lody, 15 ciasto, 5 oba. Ile tylko lody?",7,"1. Analyze the problem: There are 20 children in the class. Some like ice cream (lodki), some like cake (ciasto) and some like both. The task is to find out how many children only like ice cream.
 
-  2. Rozbiję problem na kroki:
-     - Wyobraź sobie 20 dzieci, które muszą być sklasyfikowane jako lubiących tylko lodów, tylko ciasteczka lub oboje.
+  2. Break down the problem into smaller steps:
+     - Identify the number of children who like ice cream (lody).
+     - Identify the number of children who like cake (ciasto).
+     - Identify the number of children who like both.
+     - Subtract the number of children who like cake or both from the total number who like ice cream to find out how many only like ice cream.
 
-  3. Rozwiążę kroki osobno:
-     - Pierwszy krok: Zna się, że 12 dzieci lubi lody i 15 ciasto. To oznacza, że łącznie 27 dzieci jest tych, których co najwyżej jeden z upodobania to ciasteczko albo lodów (bo 12 + 15 = 27).
-     - Drugi krok: W klasie jest 20 dzieci i więc pozostaje 3 dziecko, które nie było liczone podczas pierwszego kroku. Nie wiemy czy to dziecko lubi tylko lodów, tylko ciasteczka albo oba, jednak ostatniego dziecka nie liczymy w odpowiedzi, bo chcemy znaleźć ilu dzieci lubi lody.
-     - Trzeci krok: Zna się, że 5 dzieci lubią oba produkty. To oznacza, że z 3 pozostałych dzieci tylko trzech może lubić lodów. Dlatego bo ile dzieci lubi co najwyżej jeden z produktów to jest równe sumie dzieci lubiących tylko ciasteczka i dzieci lubiących oba produkty (bo 15 + 5 = 20).
-     - Czwarty krok: Zna się, że nie liczymy ostatniego dziecka w odpowiedzi, bo jest to dziecko, które nie było liczone podczas pierwszego kroku.
+  3. Solve each step:
+     - We know that 12 children like ice cream (lody).
+     - We know that 15 children like cake (ciasto).
+     - We are given that 5 children like both.
 
-  4. Wyciągnij ostateczny wniosek: Znając, że z 3 pozostałych dzieci tylko trzech może lubić lodów, to znaczy, że ilu dzieci lubi tylko lody to jest równe ich liczbie. Odpowiedź: 3 dzieci lubią tylko lody.",Zero-Shot CoT,medium
-6,"W klasie jest 20 dzieci. 12 lubi lody, 15 ciasto, 5 oba. Ile tylko lody?",7,"1. Analizacja problemu: Mamy przed sobą informację o ilości dzieci w klasie (20) i ich preferencjach co do ceników - lody lub ciasto. Dzieci lubią albo jedno, albo drugie, bądź oba.
-  2. Rozbicie problemu na mniejsze kroki:
-     a) Zliczenie dzieci, które lubią lody (12).
-     b) Zliczenie dzieci, które lubią ciasto (15).
-     c) Zliczenie dzieci, które lubią oba (5).
-  3. Rozwiązanie każdego kroku:
-      a) 12 dzieci lubią lody.
-      b) 15 dzieci lubią ciasto.
-      c) 5 dzieci lubią oba.
-  4. Wyciągnięcie ostatecznego wniosku: Dla tych dzieci, które lubią jeden z produktów (lody lub ciasto), nie musimy ich liczyć ponownie, bo te, którzy lubią oba, byli już liczeni w tym zbiorze. Więc łączna liczba dzieci, które lubią lody lub ciasto wynosi: 12 (lody) + 15 (ciasto) - 5 (obaj).
+  4. Combine the steps and draw a conclusion:
+     - To find out how many children only like ice cream, we need to subtract those who like cake or both from those who like ice cream.
+     - So, the number of children who only like ice cream is 12 (children who like ice cream) - 5 (children who like both) - 0 (since there are no children who only like cake).
 
-Odpowiedź: Ile tylko lody? 17",Few-Shot CoT,medium
-7,"W sklepie są czerwone, zielone i żółte jabłka. Zielonych jest więcej niż czerwonych, ale mniej niż żółtych. Których jest najwięcej?",żółte,Odpowiedź: Zielonych jabłek jest najwięcej.,Zero-Shot,medium
-7,"W sklepie są czerwone, zielone i żółte jabłka. Zielonych jest więcej niż czerwonych, ale mniej niż żółtych. Których jest najwięcej?",żółte,"Odpowiedź: Żółtych (jakże cudny, że nie są to jabłka zielone właśnie)",One-Shot,medium
+Odpowiedź: 7",Few-Shot CoT,medium
+7,"W sklepie są czerwone, zielone i żółte jabłka. Zielonych jest więcej niż czerwonych, ale mniej niż żółtych. Których jest najwięcej?",żółte,Odpowiedź: Żółtych (bo jest więcej zielonych i czerwonych niż żółtych),Zero-Shot,medium
+7,"W sklepie są czerwone, zielone i żółte jabłka. Zielonych jest więcej niż czerwonych, ale mniej niż żółtych. Których jest najwięcej?",żółte,"Odpowiedź: żółtych (lub, jeśli sklep ma też inne kolory jabłek poza wymienionymi trzema – czerwonymi, zielonymi i żółtymi – nie dane są pewne informacje aby powiedzieć jakiekolwiek inne kolory jabłek mają być najwięcej)",One-Shot,medium
 7,"W sklepie są czerwone, zielone i żółte jabłka. Zielonych jest więcej niż czerwonych, ale mniej niż żółtych. Których jest najwięcej?",żółte,Odpowiedź: żółtych,Few-Shot,medium
-7,"W sklepie są czerwone, zielone i żółte jabłka. Zielonych jest więcej niż czerwonych, ale mniej niż żółtych. Których jest najwięcej?",żółte,"1. Analizuję problem dokładnie:
-     - W sklepie są jabłka trzech różnych kolorów: czerwone, zielone i żółte.
-     - Zielonych jest więcej niż czerwonych, ale mniej niż żółtych.
-    2. Rozbiję problem na mniejsze kroki:
-     - Sprawdzenie ilości jabłek każdego koloru (czerwone, zielone i żółte).
-     - Porównanie liczby czerwonych z liczbą zielonych oraz porównanie liczby czerwonych i żółtych.
-    3. Rozwiążę każdy krok osobno:
-       - Czerwone jabłka: X
-       - Zielone jabłka: Y (więcej niż czerwone, ale mniej niż żółte)
-       - Żółte jabłka: Z (mniejsza liczba od zielonych)
-    4. Wyciągnij ostateczny wniosek:
-       - Nie można powiedzieć, ile jest żółtych jabłek, bo tylko że jest ich mniej niż zielonych.
-       - Można powiedzieć, że liczba zielonych musi być większa od liczby czerwonych i mniejsza od liczby żółtych (Z > Y > X). Jedynie liczby te nie są znane.
-       - Nie można powiedzieć, ile jest zielonych jabłek, bo nie ma informacji o ilości czerwonych jabłek (nie wiemy, czy Z > X lub Y > X).
-       Odpowiedź: Nie można określić liczby zielonych jabłek bez wiedzy o liczbie czerwonych jabłek.",Zero-Shot CoT,medium
-7,"W sklepie są czerwone, zielone i żółte jabłka. Zielonych jest więcej niż czerwonych, ale mniej niż żółtych. Których jest najwięcej?",żółte,"1. Analiza problemu:
-     - W sklepie są trzy jabłka różnych kolorów: czerwone, zielone i żółte.
-     - Zielonych jest więcej niż czerwonych, ale mniej niż żółtych.
-     - Połączone to oznacza, że liczba żółtych jest większa od liczby zielonych i równa lub większa od liczby czerwonych.
+7,"W sklepie są czerwone, zielone i żółte jabłka. Zielonych jest więcej niż czerwonych, ale mniej niż żółtych. Których jest najwięcej?",żółte,"1. Analiza problemu: Rozważam sklep, w którym są jabłka czerwone, zielone i żółte. Liczba każdego rodzaju nie jest podana, ale informują, że zielonych jest więcej niż czerwonych, ale mniej niż żółtych.
 
-  2. Rozbicie problemu na mniejsze kroki:
-     - Sprawdź ile jest żółtych jabłek, ponieważ liczba ta musi być największa.
-     - Następnie sprawdź, ile jest czerwonych jabłek, ale niechcący będziemy mieli wiemy, że ich liczba nie może być większa niż zielonych, a żółtych musi być więcej.
-     - Ostatecznie sprawdź, ile jest zielonych jabłek, ponieważ są one pomiędzy liczbą czerwonych i żółtych.
+  2. Rozbiórka problemu na kroki:
+      - Sprawdzenie liczby czerwonych jabłek (oznaczone C) i zielonych jabłek (Z).
+      - Wymiaruję, ile może być żółtych jabłek (Ż), aby spełnić warunek zadania.
 
-  3. Rozwiązanie każdego kroku:
-     - Sprawdzamy ilu jest żółtych jabłek. Znajdujemy, że mamy najwięcej żółtych.
-
-  4. Wnioski:
-     - Odpowiedź: żółte",Few-Shot CoT,medium
-8,Rodzice i 3 dzieci. Ilu członków rodziny?,5,Odpowiedź: Rodzina składa się z 5 osób - rodziców i trzech dzieci.,Zero-Shot,medium
-8,Rodzice i 3 dzieci. Ilu członków rodziny?,5,Odpowiedź: Rodzina liczy 5 osób (rodzice i 3 dzieci).,One-Shot,medium
-8,Rodzice i 3 dzieci. Ilu członków rodziny?,5,"Rodziców jest tylko jeden, więc w całej rodzinie jest tylko ich jeden plus trzy dzieci, to znaczy ilu: Odpowiedź: 4",Few-Shot,medium
-8,Rodzice i 3 dzieci. Ilu członków rodziny?,5,"1. Analiza problemu: Z problemu wynika, że chcemy wyliczyć ilu osób ma rodzinę składającą się z rodziców i dzieci.
-
-  2. Rozbicie problemu na mniejsze kroki:
-     - Pobierz liczbę osób w rodzinie z dziećmi (dzieci + rodzice).
-     - Odrzuć liczbę dzieci, gdyż chcemy wyliczyć ilu ma rodziców.
-
-  3. Rozwiązanie kroku:
-      Liczba osób w rodzinie z dziećmi = Dzieci + Rodzice (nieznana liczba)
-      Zna jest tylko liczba dzieci, równa jest ona 3.
-
-  4. Wynik:
-     Liczba osób w rodzinie z dziećmi = Dzieci + Rodzice (nieznana liczba) = 3 + (Nieznana liczba Rodziców).
-     Odpowiedź: Nieznana liczba Rodziców.",Zero-Shot CoT,medium
-8,Rodzice i 3 dzieci. Ilu członków rodziny?,5,"1. Analizuję problem - Rodzice i 3 dzieci są częścią jednej rodziny, więc licząc ich razem otrzymamy liczbę członków tej rodziny.
-
-  2. Rozbijam problem na mniejsze kroki - Liczę rodziców i liczę dzieci.
-
-  3. Rozwiążę każdy krok osobno:
-     - Rodziców licząc w ogóle, to prawdopodobnie złoży się z jednej pary (mają więc po 1 rodzicowi).
-     - Dzieci liczę w sumie, ponieważ nie podano żadnych informacji o liczbie poszczególnych dzieci. Wiemy tylko, że jest trzech z nich (tj. 3 dzieci to ilość).
-
-  4. Wyciągniję ostateczny wniosek:
-     - Liczbę rodziców: 2 (po jednej parze)
-     - Liczbę dzieci: 3 (trzech z nich)
-     - Więc ilość członków całej rodziny to: 2 (rodzice) + 3 (dzieci). Odpowiedź: 5 członków.",Few-Shot CoT,medium
-9,Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,Odpowiedź: Basia zapłaciła 6 zł.,Zero-Shot,easy
-9,Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,Odpowiedź: 6 zł,One-Shot,easy
-9,Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,Odpowiedź: 6 zł,Few-Shot,easy
-9,Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,"1. Analiza problemu: Basia kupiła 3 ciastka, a każde ciasteczko kosztuje 2 zł.
-
-  2. Rozbicie problemu na mniejsze kroki: Wyliczenie ceny jednego ciastka i sumowanie cen wszystkich trzech ciastek.
-
-  3. Rozwiązanie każdego kroku: Cena jednego ciastka = 2 zł. Suma cen wszystkich trzech ciastek = 2zł + 2zł + 2zł = 6zł.
-
-  4. Wnioskowanie: Odpowiedź: Basia zapłaciła 6 zł.",Zero-Shot CoT,easy
-9,Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,"1. Analizujemy problem: Basia kupiła 3 ciastka, a każde ciasteczko kosztuje 2 zł.
-
-  2. Rozbijamy problem na mniejsze kroki: Znamy liczbę ciastek (3), a każdy kosztuje nas ten sam samo wysoki kwotę (2 zł). Teraz trzeba obliczyć ile razy musimy pomnożyć cenę jednego ciasta, aby otrzymali sumę ile zapłaciła Basia.
-
-  3. Obliczamy każdy krok osobno: 2 zł (cena jednego ciastka) malowane przez liczbę ciastek daje nam sumę, jaką zapłaciła Basia.
-
-   4. Wyciągnij ostateczny wniosek: Mnożąc cenę jednego ciastka (2 zł) przez ilość ciastek (3), otrzymamy 6 zł jako sumę, jaką zapłaciła Basia.
-
-Odpowiedź: Basia zapłaciła 6 zł.",Few-Shot CoT,easy
-10,Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,"Odpowiedź: 2 zł (Dzielimy liczbę całością, tj. liczbą bez reszty: 6 / 3 = 2)",Zero-Shot,easy
-10,Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,"Odpowiedź: 2 zł (Dla Kuby kosztowało 6 zł trzy jabłka, dlatego każde jabło koštuje 2 zł)",One-Shot,easy
-10,Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,Odpowiedź: 2 zł,Few-Shot,easy
-10,Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,"1. Analizujemy problem: Kuba kupił 3 jabłka, a całkowity koszt wynosił 6 złotych.
-
-   2. Rozbijamy problem na mniejsze kroki: Aby zrozumieć ile jedno jabłko kosztuje, trzeba podzielić całkowity koszt 3-ma jabłkami.
-
-   3. Rozwiązujemy każdy krok osobno: Całkowity koszt to 6 zł, a jabłek jest 3. Dlatego aby podzielić całość przez liczbę jabłek, musimy podzielić 6 przez 3 (bo podział dzielimy na trzy części).
-
-   4. Wyciągamy ostateczny wniosek: Liczbę uzyskana po podziale 6 przez 3 odpowiada kosztowi jednego jabłka. Wynik tego obliczenia to 2 zł (bo 6 dzielimy przez 3 jest równo 2).
-
-Odpowiedź: Ile kosztuje jedno? - 2 złotych",Zero-Shot CoT,easy
-10,Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,"1. Przejrzymy problemu i zidentyfikujemy dane: Kuba kupił 3 jabłka, a całkowity koszt to 6 złotych.
-
-  2. Rozbijemy problem na mniejsze kroki:
-      - Znalazłośmy sumę wartości (6 zł), liczbę przedmiotów (3 jabłka) i cenę poszczególnego przedmiotu (x zł za jedno jabło).
-
-  3. Rozwiążemy każdy krok osobno:
-      - Aby znaleźć cenę poszczególnego przedmiotu, podzielimy sumę przez liczbę przedmiotów (6 zł / 3 jabłka = x zł).
-
-  4. Wyciągnijmy ostateczny wniosek:
-      - Cena jednego jabłka to x zł, gdzie x = 2 zł.
-
-Odpowiedź: Jeśli chcemy znaleźć cenę jednego jabłka, musimy podzielić sumę przez liczbę przedmiotów. W rezultacie cena jednego jabłka to 2 zł.",Few-Shot CoT,easy
-11,"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,Odpowiedź: Piątek,Zero-Shot,easy
-11,"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,Odpowiedź: piątek,One-Shot,easy
-11,"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,Odpowiedź: piątek,Few-Shot,easy
-11,"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,"1. Analizuję problem: W tym przypadku problem dotyczy określenia danego dnia w tygodniu po przeszukaniu kolejnych dni.
-
-  2. Rozbijam problem na kroki: Dzisiaj jest wtorek, więc możemy założyć, że każdy kolejny dzień będzie również określany według tygodnia od poniedziałku.
-
-  3. Rozwiązuję kroki: Przed trzema dniami po wtorku leży piątek, ponieważ liczymy 3 do niedzieli (7-4=3).
-
-  4. Wynik: Odpowiedź: Piątek",Zero-Shot CoT,easy
-11,"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,"1. Analiza problemu: Został nam podany fakt, że dzisiaj jest wtorek. Wymagamy odszukania odpowiedzi na pytanie: Kto będzie pracować za trzy dni?
-
-  2. Rozbicie problemu na mniejsze kroki:
-      - Jest to problem z zakresu czasu (w tym przypadku ciągłości dni tygodnia), więc powinna być odpowiedź w postaci nazwy dnia.
-      - Aby odnaleźć odpowiedź, należy po prostu ująć dzisiejszy dzień (wtorek) i do niego dodać trzy dni.
-
-  3. Rozwiązanie każdego kroku:
-      - Jeśli dzisiaj jest wtorek, to jutrzenka będzie środą. Po trzech dniach będzie poniedziałek.
+  3. Rozwiązanie kroków:
+      - Zielonych jest więcej niż czerwonych (Z > C) i mniej niż żółtych, więc musi być mniej niż liczba sumy czerwonych i żółtych (C + Ż).
+      - Liczba zielonych jest większa od liczby czerwonych, więc Z > C > 0.
+      - Znając, że zielonych jest więcej niż czerwonych i mniej niż żółtych, to znaczy, że liczba żółtych musi być większa od rozróżnienia między liczbą czerwonych a zielonych (Ż > |Z - C|)
+      - Liczba żółtych może wynosić tylko te wartości, które spełniają warunek powyższe.
 
   4. Ostateczny wniosek:
-      - Odpowiedź: poniedziałek",Few-Shot CoT,easy
-12,Która liczba większa: 3/4 czy 5/6?,5/6,Odpowiedź: 5/6,Zero-Shot,medium
-12,Która liczba większa: 3/4 czy 5/6?,5/6,Odpowiedź: 5/6 jest większa.,One-Shot,medium
-12,Która liczba większa: 3/4 czy 5/6?,5/6,Odpowiedź: 5/6,Few-Shot,medium
-12,Która liczba większa: 3/4 czy 5/6?,5/6,"1. Analyze the problem: Given two fractions, we need to determine which one is greater. We will compare their values without performing any calculations first.
+      - Zielonych jest więcej niż czerwonych, a mniej niż żółtych. Po rozważeniu teorii sytuacji i ustaleniu warunków możliwych do spełnienia, stwierdzam, że liczba żółtych musi być większa od 1 (Ż > 1), bo jeśli byłby równy 0 lub 1, to zielonych nie mogłyby być więcej niż czerwonych.
+      - Nie udało się wyznaczyć dokładnie ilu jest każdego rodzaju jabłek, gdyż liczba żółtych jest dowolna z zakresu > 1. Jednak można stwierdzić, że liczba żółtych jest największa.
+      - Odpowiedź: Najwięcej jest żółtych jabłek (Ż).",Zero-Shot CoT,medium
+7,"W sklepie są czerwone, zielone i żółte jabłka. Zielonych jest więcej niż czerwonych, ale mniej niż żółtych. Których jest najwięcej?",żółte,"1. Analizuję zagadkę - znam, że sklep oferuje jabłka czerwone, zielone i żółte, a liczba zielonych jest większa niż czerwonych, ale mniejsza od żółtych.
+  2. Rozbijam zagadkę na mniejsze kroki - muszę znaleźć liczbę poszczególnych jabłek w każdym kolorze.
+  3. Po pierwsze, ograniczam moje rozważania do trzech możliwych sytuacji:
+      a) żółtych jest najwięcej (zielonych więcej niż czerwonych, ale mniej niż żółtych).
+      b) zielonych jest najwięcej (zielone więcej niż czerwone i mniej niż żółte).
+      c) czerwonych jest najwięcej (zielone więcej niż czerwone, ale mniej niż żółte).
+  4. W sytuacji a) liczba żółtych jest największa, a zielonych i czerwonych jest mniej, więc nie ma możliwości tego rozwiązania.
+  5. Dokładam próby w sytuacji b), ponieważ jeśli liczba zielonych jest największa, to musi być ono co najmniej równe żółtym i większe niż czerwone.
+      a) W sytuacji, gdyby zielonych miało tyle samo jak żółtych, to wtedy musiałoby się stać o tyle więcej niż czerwonych. Jednak w ten sposób liczba żółtych nie byłaby mniejsza od zielonych i czerwonych (wobec czego sytuacja ta jest niemożliwa).
+      b) W sytuacji, gdyby zielonych miało tyle samo jak czerwone, to wtedy liczba żółtych musiała być o tyle większa, aby zapewnić, że jest ona mniejsza od zielonych i czerwonych (wobec czego sytuacja ta też jest niemożliwa).
+      c) W sytuacji, gdyby liczba zielonych była większa niż żółtych i czerwonych razem, to wtedy musiałoby się stać o tyle więcej żółtych, aby spełnić warunek: ""mniej niż żółtych"". Jednak jeśli liczba żółtych była większa od czerwonych, to nie spełniałabyby ona warunku ""zielonych jest więcej niż czerwonych"" (wobec czego sytuacja ta również jest niemożliwa).
+  6. W sytuacji c) liczba zielonych musiała być o tyle większa od liczby żółtych i czerwonych, aby spełnić warunek ""zielone jest więcej niż czerwone"". Jednak jeśli byłyby one równe, to nie spełniałaby ona warunku ""mniej niż żółtych"". Wobec tego sytuacja ta nie może być prawdziwa.
+  7. W związku z tym, że wszystkie próby są niemożliwe, to musi się stać tak, że liczba czerwonych jest największa spośród trzech kolorów (jeśli żadna inna sytuacja nie była prawdziwa, to może tylko ona zostać).
+  8. Wobec tego odpowiedź na zagadkę brzmi następująco: Czerwonych jest najwięcej.",Few-Shot CoT,medium
+8,Rodzice i 3 dzieci. Ilu członków rodziny?,5,"Rodzice ma po dwóch rękawach, a każde dziecko ma po jednej nogawce. W całej rodzinie jest to w sumie 6 kończyn. Jedna z rodziców jest matka i posiada jeszcze jedną kończynę, z powodu ciąży. Odpowiedź: Rodzina liczy 5 osób.",Zero-Shot,medium
+8,Rodzice i 3 dzieci. Ilu członków rodziny?,5,Odpowiedź: Rodzina liczy 5 osób (rodzice i trzy dzieci).,One-Shot,medium
+8,Rodzice i 3 dzieci. Ilu członków rodziny?,5,"Rodzice i dzieci tworzą rodzinę, więc liczba rodziców plus ilu dzieci to wszystkie członkowie rodziny. Jeśli rodzice są dwójką, to ilu dzieci trzeba odpowiednio dodawać? Odpowiedź: 3
 
-  2. Break down the problem into smaller steps: Compare 3/4 and 5/6 visually (as fractions with areas) or by converting them into common denominators (the least common multiple of 4 and 6, which is 12).
+Natomiast jeśli chodzi o liczbę osób w przypadku tylko rodziców i dzieci - to łącznie jest to tyle samo jak liczba rodziców. A jedno z informacji branych pod uwagę brzmiało, że rodzice są dwójką, więc ilu członków mamy przed sobą? Odpowiedź: 2 (dzieci nie liczą się, gdyż chodzi o rodzinę)",Few-Shot,medium
+8,Rodzice i 3 dzieci. Ilu członków rodziny?,5,"1. Analizujemy problem: Rodzice to dwie osoby, a dzieci to trzy osoby.
 
-  3. Solve each step: Let's compare the visual representations first: A square with side length 3 units has an area of 9 sq.units (3*3). A square with side length 5 units has an area of 25 sq.units (5*5). Since 25 is greater than 9, it means that 5/6 is a larger fraction than 3/4.
+  2. Rozbijamy problem na mniejsze kroki: liczymy rodziców i dzieci oddzielnie.
 
-   Alternatively, we can convert the fractions to a common denominator of 12:
-      - Multiply both numbers and their denominators by appropriate factors until they share a common multiple (in this case 12).
-      - 3 * 3 = 9, 4 * 3 = 12; so multiply the numerator of 3/4 by 3/3 to get 9/12. Similarly, 5 * 2 = 10 and 6 * 2 = 12 for 5/6.
-      - Now we can compare the fractions: 9/12 and 10/12. Since 10 is greater than 9, it means that the larger fraction is still 5/6.
+  3. Rozwiązujemy każdy krok osobno: rodziców jest 2, a dzieci 3.
 
-  4. Draw a conclusion: The final answer is 'The number greater is 5/6.'",Zero-Shot CoT,medium
-12,Która liczba większa: 3/4 czy 5/6?,5/6,"1. Analityczne rozumowanie:
-     - Komparujemy dwie ułamki: 3/4 i 5/6
-     - Aby porównać, musimy wyraźnie zdefiniować, w jaki sposób chcemy porównywać dane ułamki. Jeden z najprostszych sposobów to mnożenie przez ten sam mianownik i porównanie wtedy liczb całkowitych.
-     - Więc podniesiem oba ułamki do 24, ponieważ 4 * 6 = 24 a 3 * 8 = 24.
-     - Teraz mamy porównywać liczby całkowite: 12 i 20
+  4. Wyciągamy ostateczny wniosek: Wszystkie członkiem rodziny są rodzice i dzieci, licząc ich razem maśmy 2+3=5 osób.
 
-2. Rozbijanie problemu na mniejsze kroki:
-   - Podniesienie ułamków do tego samego mianownika (24 w tym przypadku) i porównanie wtedy liczb całkowitych, jak wyraźnie określiłem w punkcie 1.
+Odpowiedź: Rodzina składa się z pięciu osób.",Zero-Shot CoT,medium
+8,Rodzice i 3 dzieci. Ilu członków rodziny?,5,"1. Analiza problemu: Problem dotyczy liczb ludzkich w grupie, nazwy nie są potrzebne.
 
-3. Rozwiązywanie poszczególnych kroków:
-   - Podniesienie ułamków do tego samego mianownika (24) daje nam liczby całkowite: 12 i 20
-
-4. Wyciąganie ostatecznego wniosku:
-   - Porównując liczby całkowite 12 i 20, zauważamy, że 20 jest większe niż 12.
-   - Więc odpowiedź na naszą zagadkę to: 'Odpowiedź: 5/6' (bo taką liczbą całkowitą daje nam liczba 20, jaka jest większa niż liczba 12).",Few-Shot CoT,medium
-13,"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,Odpowiedź: Ania nie biegnie najszybciej. Wiktor i Janek biegają szybciej niż ona.,Zero-Shot,easy
-13,"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,Odpowiedź: Janek,One-Shot,easy
-13,"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,Odpowiedź: Janek,Few-Shot,easy
-13,"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,"1. Analiza problemu:
-     - Dostaliśmy trzech biegaczy: Wiktora, Anię i Janka
-     - Zostało podane, że Wiktor biega szybciej niż Ania i wolniej niż Janek
-
-  2. Rozbicie problemu na mniejsze kroki:
-     - Pierwszy krok: Porównaj Wiktora z Janem
-     - Drugi krok: Jeśli Wiktor biegnie powoli, to nie jest on najszybszy
-     - Trzeci krok: Zeby znać czy Ania biega szybciej niż Wiktor musimy porównać oboje
+  2. Podział na mniejsze kroki: Znamy, że rodzice (odpowiedzialni za utworzenie rodziny) mają 3 dzieci.
 
   3. Rozwiązanie poszczególnych kroków:
-     - Pierwszy krok: Porównaj Wiktora z Janem. Znaleźliśmy, że Wiktor biegnie powoli niż Janek (wolniej). Więc ten nie jest najszybszy.
-     - Drugi krok: Teraz porównaj Wiktora i Anię. Nie ma żadnych informacji, które miałyby nam pomóc w ustaleniu, czy Wiktor biegnie szybciej niż Ania. Zatem musimy założyć, że ich prędkości są równe.
+     - W grupie są rodzice.
+     - Ponieważ rodzice mają 3 dzieci, to liczba dzieci jest równa liczbie członków rodziny oprócz rodziców.
+     - Wiemy, że w grupie są także rodzice, a jednocześnie mówimy, że rodzina składa się z 3 dzieci, to liczba rodziców jest równa 2.
 
-  4. Wniosek ogólny:
-     - Nikt z namienionych nie jest najszybszym biegaczem (Wiktor wolniej i nie mamy informacji o jego prędkości względem Ani, natomiast Janek biega szybciej niż Wiktor).",Zero-Shot CoT,easy
-13,"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,"1. Analizuj problem dokładnie:
-     - Podajemy trzy osoby: Wiktor, Ania i Janek. Potwierdzono, że Wiktor biega szybciej niż Ania i wolniej niż Janek.
+  4. Ostateczny wniosek: Liczba członków rodziny to suma liczby dzieci i liczby rodziców, czyli 3 (dzieci) + 2 (rodzice).
 
-  2. Rozbij problem na mniejsze kroki:
-     - Pierwszy krok: Sprawdź, czy Wiktor biega szybciej niż Ania (tak) i czy Ania biegnie szybciej niż Janek (nieznana wartość).
-     - Drugi krok: Sprawdź, czy Janek biegnie szybciej niż Wiktor (nieznana wartość).
-
-  3. Rozwiąż każdy krok osobno:
-     - Pierwszy krok: Znana jest relacja 'Wiktor > Ania', ale nie znana jest relacja 'Ania > Janek'. W zależności od relacji 'Ania > Janek' można wywnioskować, że biegają w kolejności: Wiktor > Ania > ?, gdzie '?' oznacza trzecią osobę.
-     - Drugi krok: Jeśli nie znana jest relacja 'Janek > Wiktor', to musi być spełniona relacja 'Wiktor < Janek'. Wówczas kolejność biegania osób wynosi: Wiktor < Janek > Ania.
-     - Zauważmy, że dostępem do więcej informacji nie zmieni się wyniki wywnioskowane na podstawie zadanego warunku.
-
-  4. Wyciągnij ostateczny wniosek:
-     - Jeśli ustalono, że 'Wiktor < Janek', to biegają one w kolejności: Wiktor < Janek > Ania. Biega najszybciej osoba znajdująca się na początku kolejności, tj. Wiktor.
-     - Odpowiedź: Wiktor (biegający najszybciej).",Few-Shot CoT,easy
-14,"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,Odpowiedź: Pies,Zero-Shot,easy
-14,"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,Odpowiedź: Koń,One-Shot,easy
-14,"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,Kot,Few-Shot,easy
-14,"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,"1. Analizacja problemu: Zaprezentowana zagadka porównuje wagi trzech różnych zwierząt - psa, kota i konia.
-  2. Rozbicie problemu na mniejsze kroki:
-     - Sprawdź czy każde z dwóch porównań (pies > kot i koń > pies) jest prawdziwe.
-     - Jeśli są obydwa prawdziwe to wagę najcięższego zwierzęcia można określić na podstawie tych porównań (konie musi być cięższe od psa, a ten już większy od kota).
-    3. Rozwiązanie pierwszego kroku: Porównanie ""pies > kot"" jest prawdziwe jeśli pies waży więcej niż kot. Ponieważ pies został wcześniej nazwany, nie można go porównywać z sobą. Zakładać możemy tylko że kot jest mniejszy od psa i pies waży więcej niż kot.
-    4. Rozwiązanie drugiego kroku: Porównanie ""konie > pies"" jest prawdziwe jeśli konie waży więcej niż pies, który już wcześniej został nazwany i nie może zostać porównany z sobą. Zakładać możemy tylko że pies jest mniejszy od konia, a konie powinni być cięższe niż pies (ponieważ ""pies > kot"", ale pies jest mniejszy od konia).
-    5. Wnioski: Ponieważ wagi obydwu zwierząt (psa i końskiego) zostały już nazwane, a jedno z porównań jest prawdziwe, więc musi być to prawdziwe również drugie. Konie są cięższe od psów.
-  6. Odpowiedź: Odpowiedź: Koń",Zero-Shot CoT,easy
-14,"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,"1. Analyzuj problem: Zawiera się informacja o trzech zwierzątach (pies, kot i konie) oraz ich wadze, jednak nie podane są liczby. Pies waży więcej niż kot, ale mniej niż koń.
-
-  2. Podział problemu na mniejsze kroki: Zróbmy porównania dwóch zwierząt na raz, aby ustalić ich kolejność względem swojej wagi.
-
-  3. Rozwiązanie każdego kroku:
-
-     a) Pies waży więcej niż kot.
-       - Jeśli pies i kot ważyły identycznie, nie mogłoby być powiedziane, że pies waży więcej.
-       - To oznacza, że kot jest najlżejszy spośród tych dwóch zwierząt.
-
-     b) Pies waży mniej niż koń.
-       - Jeśli pies i konie ważyły identycznie, nie mogłoby być powiedziane, że pies waży mniej.
-       - To oznacza, że pies jest cięższy od kota, a konie jest najcięższe spośród tych trzech zwierząt.
-
-  4. Ostateczny wniosek: Pies jest najlżejszym spośród tych trzech zwierząt (ponieważ waży mniej niż kot), a konie jest najcięższe.",Few-Shot CoT,easy
-15,2+2*2 = ?,6,Odpowiedź: 6,Zero-Shot,easy
-15,2+2*2 = ?,6,Odpowiedź: 6,One-Shot,easy
-15,2+2*2 = ?,6,Odpowiedź: 6,Few-Shot,easy
-15,2+2*2 = ?,6,"1. Analityczne zbadanie problemu: Wzór 2 + 2 * 2 to wypunktowanie matematyczne, oznaczające, że należy wykonawać operacje arytmetyczne według następujących reguł: Najpierw należy obliczyć iloczyn, a po tym sumę.
-
-2. Rozbicie problemu na mniejsze kroki: Pierwsza operacja to wykonanie mnożenia 2 * 2 (4). Druga operacja to dodawanie do tej liczby 2 (6).
-
-3. Rozwiązanie każdego kroku osobno: Krok 1 - iloczyn 2 * 2 jest równy 4. Krok 2 - dodanie wyniku z kroku 1 do 2 daje wartość 6.
-
-4. Wyciągnięcie ostatecznego wniosku: Odpowiedź: 6.",Zero-Shot CoT,easy
-15,2+2*2 = ?,6,"1. Zanalyzujemy problem: W nim jest jedna operacja matematyczna - mnożenie (2*2) i dodawanie (2+2). Jest to wyrażenie typu zasadniczej potęgi.
-
-  2. Rozbijemy problem na kroki: Pierwszym krokiem jest wykonanie mnożenia, drugim - dodawania.
-
-  3. Wykonujemy każdy krok osobno: W pierwszej części problemu musimy wypożyczyć się od szkolnych nauczycieli i przypomnieć sobie jak dzielić na liczbę składającą się z dwóch cyfr, albo wykorzystać regułę BODMAS (Brackets, Orders of Operations, Division, Multiplication, Addition, Subtraction). Zastosowanie reguły BODMAS oznacza mnożenie jako pierwszą operację - wówczas wynikiem mnożenia jest 4.
-
-   Drugi krok dotyczy dodawania dwóch liczb 2 i 4. Wynikiem tego kroku jest suma 6.
-
-  4. Ostateczny wniosek: Wynik całej operacji, jak opisano wyżej, to liczba 6. 'Odpowiedź: 6'",Few-Shot CoT,easy
-16,"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,"Odpowiedź: 6 nie jest moją odpowiedzią. Mogłabym powiedzieć, że liczbą podzielną przez 2 i 3, ale nie przez 6 jest 12 (gdyż 12 = 4*3). Jednak zadanie prosi o liczbę dla której istnieje wszystko co stwierdzono. Wtedy należy powiedzieć że takiej liczby nie istnieje, bo jeśli będzie ona podzielna przez 2 i 3 to musi być podzielna również przez ich największy wspólny dzielnik (co jest równy 6).",Zero-Shot,hard
-16,"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,"Odpowiedź: Tak. Liczbą ta jest 6. To liczba przestępstwa (niewiększa niż 50), ponieważ podzielna jest tylko przez 1 i siebie, nie podzielna przez 2, 3 lub 4. Jednak dla ujednoznacowienia, można wymienić wielokrotności liczb pierwszych, np.: 6, 18, 30, 54...",One-Shot,hard
-16,"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,"Odpowiedź: Tak, liczbą tą jest 6.
-
-Rozważanie:
-Liczby podzielne przez 2 i 3 są też podzielne przez 6. Jednak liczba 6 jest podzielna przez 2 i 3, lecz nie jest podzielna przez 6 (jej reszta z dzielenia przez 6 to 1).",Few-Shot,hard
-16,"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,"1. Analizacja problemu: Zadana liczba musi być podzielna przez 2 oraz 3 (z tego że jest podzielna przez oba te działania), ale nie może być podzielna przez 6, gdyż to oznaczałoby, że była podzielna przez ich największe wspólne wielokrotność - 6.
-
-  2. Rozbicie problemu na mniejsze kroki: Możemy rozważyć, jakie liczby są podzielne przez 2 i 3 bez podzielności przez 6. Najprostszym sposobem jest zastosowanie przypuszczenia i wykluczenia.
-
-  3. Rozwiązanie poszczególnych kroków:
-      - Pierwsze liczby, które są podzielne przez 2 i 3 to 6 (taką liczbę wykluczamy z rozważań ze względu na warunek), potem 12, następnie 18 i tak dalej.
-      - Ponieważ poszukiwanych liczb jest ograniczona, przypuszczamy, że tego rodzaju liczb jest określonym i ograniczonym zestawem (np. 6, 12, 18, ...).
-      - Przed rozpatrzeniem kolejnych liczb powtarzamy nasze testy działań: czy podzielna przez 2, czy podzielna przez 3, ale nie czy podzielna przez 6.
-      - Zauważamy, że wszystkie liczby są podzielne przez 6 (jest to wielokrotność liczb podzielnych przez 2 i 3). W ten sposób wykluczamy je z rozważań.
-      - Ponieważ wszystkie liczby zestawu są podzielne przez 6, to żadna z nich nie spełnia warunków: być podzielną przez 2 i 3, ale nie przez 6.
-
-  4. Wniosek: Istnieje taka liczba, jednak w zestawie liczb podzielnych przez 2 i 3 znajdujących się w naszym rozumowaniu nie ma takiej liczby.",Zero-Shot CoT,hard
-16,"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,"1. Analiza problemu: Mamy liczbę naturalną, która jest podzielna przez 2 i 3, ale nie przez 6.
-
-  2. Rozbicie problemu na mniejsze kroki: Zwróć uwagę, że liczba podzielna przez 2 ma parzystą wartość, natomiast liczba podzielna przez 3 musi mieć wartość zbliżoną do 3 (moduł 3 równy 0). Ograniczając się do liczb całkowitych nie przekraczających 6, które są podzielne przez 2 i 3, otrzymujemy liczby 2 i 3.
-
-  3. Rozwiązanie każdego kroku: Liczba może być równa 6 (podzielna przez 2 i 3), jednak założenie jest, że nie jest to tak. W przypadku wykluczenia liczb mniejszych niż 6 z podanych warunków, pozostaje tylko liczba 6 jako kandydat na rozwiązanie.
-
-  4. Ostateczny wniosek: Istnieje jedna liczba naturalna, która jest podzielna przez 2 i 3, ale nie przez 6 - odpowiedź: Nie
-
-    Uwaga: W przypadku liczb większych niż 6 (np. 12, 18) może się zdarzyć, że znajdą się liczby spełniające warunki podanej zagadki. Jednak ograniczając rozważania do naturalnych liczb mniejszych niż 6, nie istnieje odpowiedź na zadany problem.",Few-Shot CoT,hard
-17,"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18",Odpowiedź: 15,Zero-Shot,hard
-17,"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18","Odpowiedź: 18 nie jest poprawna odpowiedź, ponieważ nie jest ona liczbą podzielną przez trzy. Zamieniamy liczbę 18 na 15 (15*3=45) i dzielimy ją przez trzy:
-   Odpowiedź: 15/3=5
-   To jest poprawna odpowiedź, ponieważ 5 jest liczbą podzielną przez trzy mniejszą niż 20.",One-Shot,hard
-17,"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18",Odpowiedź: 18,Few-Shot,hard
-17,"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18","1. Analizuję problem: Zakres liczb to które są większe od 10 i mniejsze niż 20. Liczby te podzielne przez 3 muszą znajdować się w tym zakresie.
-
-  2. Rozbiję problem na kroki:
-     - Sprawdzam, czy liczby z zakresu są podzielne przez 3.
-
+Odpowiedź: liczba członków rodziny: 5",Few-Shot CoT,medium
+9,Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,Odpowiedź: Basia zapłaciła 6 złotych.,Zero-Shot,easy
+9,Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,Odpowiedź: 6 zł,One-Shot,easy
+9,Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,Odpowiedź: 6 zł,Few-Shot,easy
+9,Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,"1. Analiza problemu - Basia kupiła 3 ciastka i zapłaciła za nie. Każde ciasteczko kosztuje 2 złotych, ale potrzebujemy wiedzieć ile złotych ogółem za 3 ciastka zapłaciła Basia.
+  2. Rozbicie problemu na kroki -
+     a) Znajdujemy ilu ciasteczek kupiła Basia (odpowiedź: 3).
+     b) Znajdujemy cenę pojedynczego ciastka (odpowiedź: 2 zł).
+     c) Obliczamy ile złotych zapłaciła Basia za wszystkie 3 ciastka (liczbę ciasteczek wielokrotzone przez cenę pojedynczego ciasteczka).
+  3. Rozwiązanie kroków -
+     a) Ilu ciasteczek kupiła Basia: 3
+     b) Cena pojedynczego ciastka: 2 zł
+     c) Ile złotych zapłaciła Basia: 3 (liczba ciasteczek) * (cena pojedynczego ciasteczka) = 3 \* 2 = 6 zł.
+  4. Ostateczny wniosek - Basia zapłaciła 6 zł za 3 ciastka.
+  
+Odpowiedź: Basia zapłaciła 6 złotych.",Zero-Shot CoT,easy
+9,Basia kupiła 3 ciastka po 2 zł. Ile zapłaciła?,6,"1. Analizuję problem: Basia kupiła 3 ciastka, każde wartowało 2 zł.
+  2. Rozbijam problem na mniejsze kroki:
+     - Kupiła 3 ciastka = trzeba obliczyć sumę trzech liczb równych 2 zł.
   3. Rozwiązuję każdy krok osobno:
-      - Śledzę liczby większe od 10 i mniejsze niż 20, czy są podzielne przez 3. Przykładowo: 11 nie jest podzielne przez 3, 12 także nie jest podzielne przez 3. Ale liczby 12, 15, 18 są podzielne przez 3.
-      - Obserwuję, że większość liczb z zakresu podzielnych przez 3 to niewielka mnożyna liczb (np. 3, 6, 9, 12, 15, 18).
-      - Konkluduje, że najmniejsza liczba większa od 10 i podzielna przez 3 to 12.
+     - Trójka jest iloczynem trzech liczb 1, tak więc muszą być iloczyny jednej liczby 1 i dwóch liczb innych (w naszym przypadku 2).
+     - Wielokrotność liczby 2 może być obliczona jako liczba pośrednia pomiędzy pierwszą i ostatnią wielokrotnością tej liczby. Przykładowo, wielokrotnościami liczby 5 są: 0, 5, 10, 15 itd., a jedna z nich to 10 (przedział [5, 10] daje nam też 5 i 10).
+     - Wielokrotnością liczby 2 jest 2 samo się, 4, 6, 8 itd. Przykładowo, wielokrotnościami liczby 2 są: 2, 4, 6, 8, 10...
+     - Ponieważ trójka to iloczyn trzech liczb 1 i dwóch innych równych 2, możemy założyć, że wielokrotność liczby 2 jest dana jako liczba pośrednia pomiędzy pierwszą i ostatnią ciastką.
+     - Zatem ostatnia ciasteczka kosztowała 6 zł (jest to wielokrotność liczby 2, a jeżeli są dwa ciasteczka po 2 zł każde, to ich suma jest 4 zł), zaś sumę pierwszej i drugiej ciasteczka należy wyznaczyć, przesuniąc liczbę 6 o jedną połowę (pomnożenie przez 2/3 = około 2) wstecz.
+  4. Wyciągam ostateczny wniosek: Basia zapłaciła 2 zł + 2 zł + 6 zł = 10 zł.
+Odpowiedź: Basia zapłaciła 10 zł.",Few-Shot CoT,easy
+10,Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,"Odpowiedź: 2 zł (ponieważ 3 jabłka kosztowały 6 zł, więc każde jedno kosztuje 6/3 = 2 zł)",Zero-Shot,easy
+10,Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,Odpowiedź: 2 zł,One-Shot,easy
+10,Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,Odpowiedź: 2 zł,Few-Shot,easy
+10,Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,"1. Analizujemy problem: Kuba kupił łącznie 3 jabłka i zapłacił za nie sumę w wysokości 6 złotych. Chcemy wyznaczyć ile kosztuje jedno jabłoń.
 
-  4. Wyciągam ostateczny wniosek:
-
-Odpowiedź: 12",Zero-Shot CoT,hard
-17,"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18","1. Pierwszy krok - przegląd problem: Zadana jest liczba całkowita, która spełnia trzy warunki: powinna być większa od 10, mniejsza niż 20 oraz podzielna przez 3.
-  2. Drugi krok - rozbicie problem na mniejsze części:
-      - Znajdź liczbę większą od 10 i mniejszą niż 20, która jest podzielna przez 3 (przykładowo 12, 15).
-      - Wyklucz liczby, które nie spełniają warunków (np. 9, 21).
-  3. Trzeci krok - rozwiązanie poszczególnych części:
-      - Znajdź wszystkie liczby podzielne przez 3 mniejsze niż 20 (6, 12, 18). Jedynie 12 spełnia także warunek bycia mniejszym od 20.
-  4. Czwarty krok - wyciągnij ostateczny wniosek:
-      - Odpowiedź: 12",Few-Shot CoT,hard
-18,5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,100 maszyn robi 100 razy 5 przedmiotów w 100 razy 5 minut. Odpowiedź: 500 przedmiotów,Zero-Shot,hard
-18,5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,"Odpowiedź: 5000 (5 maszyny produkują jeden przedmiot za 5 minuty, dlatego 100 maszyn produkuje 100 po 5 minut, czyli w sumie 500 przędytów)",One-Shot,hard
-18,5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,"100 maszyn robi 5 przedmiotów w 5 minut, czyli po jednym przedmiotem w minute.
-Więc 100 maszyn będzie produkować 100 x 60 = 6000 przedmiotów w 100 minut.
-
-Odpowiedź: 6000 przedmiotów",Few-Shot,hard
-18,5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,"1. Analityczne przeglądanie problemu:
-      - Otrzymano informację, że 5 maszyn robi 5 przedmiotów w ciągu 5 minut i chcemy wyliczyć liczbę produktów zrobionych przez 100 maszyn w czasie 100 minut.
-      - Założenia: Maszyna A może zrobić jeden przedmiot w 1 minucie.
-
-  2. Rozbijanie problemu na mniejsze kroki:
-      - Liczymy szybkość pracy maszyny (jedna maszyna robi jeden przedmiot w ciągu 1 minuty).
-      - Zliczamy liczbę przedmiotów zrobionych przez jedną maszynę w czasie 5 minut. (5 × szybkość pracy jednej maszyny)
-      - Liczymy szybkość pracy 100 maszyn (100 maszyn po 1 minucie).
-      - Zliczamy liczbę przedmiotów zrobionych przez 100 maszyn w czasie 5 minut. (100 × szybkość pracy jednej maszyny)
-      - Liczymy liczbę przedmiotów zrobionych przez 100 maszyn w ciągu 100 minut. (100 × liczba minut)
-
-  3. Rozwiązanie kroków osobno:
-      - Szybkość pracy jednej maszyny: 1 przedmiot/minuta
-      - Liczba przedmiotów zrobionych przez jedną maszynę w czasie 5 minut: (1 × 5) = 5 przedmiotów
-      - Szybkość pracy 100 maszyn: 100 maszyn po 1 minucie = 100 szybkości maszyny = 100 przedmiotów/minuta
-      - Liczba przedmiotów zrobionych przez 100 maszyn w czasie 5 minut: (100 × 5) = 500 przedmiotów
-      - Liczba przedmiotów zrobionych przez 100 maszyn w ciągu 100 minut: (100 × 100) = 10000 przedmiotów
-
-  4. Ostateczne rozumowanie i odpowiedź:
-      - W sumie 100 maszyn w stanie zrobić 10000 przedmiotów w ciągu 100 minut.
-      - Odpowiedź: 10000 przedmiotów",Zero-Shot CoT,hard
-18,5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,"1. Analizujemy problem: mamy zadanie o ilu przedmiotów robią 100 maszyn w czasie 100 minut. Wiemy, że jedna maszyna robi jeden przedmiot w jednej minucie.
-
-  2. Rozbijemy problem na mniejsze kroki: liczymy ilu prac 1 maszyna zrobi w czasie 100 minut i potem mnożymy przez 100 maszyn.
+  2. Rozbijamy problem na mniejsze kroki:
+     - Znajomość ceny łącznej
+     - Liczba jabłek
 
   3. Rozwiązujemy każdy krok osobno:
-     - Ilu prac robimy w jednej minucie 1 maszyną? Odpowiedź: 1 przedmiot (jedna maszyna robi jeden przedmiot)
-     - Ilu minut trwa czas pracy dla jednej maszyny? Odpowiedź: 100 minut (gdyż całe zadanie dotyczy czasu 100 minut i mamy jedną maszynę).
-     - Ile prac robimy w tych 100 minutach 1 maszyną? Odpowiedź: 100 przedmiotów (bo czas pracy dla jednej maszyny to całe zadanie, jak powiemy w poprzednim kroku).
-     - Ilu prac robimy w tych 100 minutach 100 maszynami? Odpowiedź: 10 000 przedmiotów (bo mamy 100 maszyn i każda robi jeden przedmiot w 100 minutach)
-
-  4. Wyciągamy ostateczny wniosek: W 100 minutach 100 maszyn robi 10 000 przedmiotów.",Few-Shot CoT,hard
-19,Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,Odpowiedź: 6,Zero-Shot,easy
-19,Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,Odpowiedź: 6,One-Shot,easy
-19,Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,Odpowiedź: 6,Few-Shot,easy
-19,Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,"1. Analityczne analizowanie problemu - Została podana informacja, że suma dwóch liczb wynosi 10, a jedna z nich to 4. Więc pozostaje znalezienie drugiej liczby, która razem z pierwszą daje sumę 10.
-  2. Rozbicie problemu na mniejsze kroki - Zadanie można podzielić na dwie części:
-      a) Faktyczne wyznaczenie liczby, która razem z 4 daje sumę 10.
-      b) Weryfikacja odpowiedzi, czy ta liczba jest rzeczywistą drugą liczbą w podanym problemie.
-  3. Rozwiązanie każdego kroku osobno - a) Można to rozwiązać poprzez próbkę i błąd, czyli od najmniejszej do największej liczby wyszukując liczbę, która razem z 4 daje sumę 10.
-      - Sprawdzamy 6-4 = 10, więc liczba, którą szukamy to 6.
-  4. Weryfikacja odpowiedzi - czy ta liczba jest rzeczywistą drugą liczbą w podanym probleme?
-      - W podanej zagadce nie dano innych informacji o drugiej liczbie, jedynie że suma dwóch liczb wynosi 10. Więc liczba 6 jest odpowiedzią na pytanie jaką jest druga liczba.
-
-Odpowiedź: Druga liczba to 6.",Zero-Shot CoT,easy
-19,Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,"1. Analiza problemu: Dane są informacje o sumie dwóch liczb oraz wartości jednej z nich (4).
-  2. Podział na mniejsze kroki:
-      - Odrzucić nieprawidłowe odpowiedzi (liczby ujemne, liczby większe niż 6)
-      - Wyznaczyć pośrednią wartość między 4 a 10 i sprawdzić czy jest ona nieprawidłowa
-     3. Rozwiązanie kroku po kroku:
-         - Najmniejsza liczba od 5 do 6 to 5. Odrzuć, ponieważ 4 + 5 = 9, a suma powinna być równa 10
-         - Największa liczba od 5 do 6 to 6. Sprawdź czy 4 + 6 = 10, suma jest prawidłowa
-         - Wartość pośrednia między 4 a 10 to (4+10)/2 = 7, ale ta liczba nie jest jedną z podanych jako opcje, więc odrzuć.
-     4. Ostateczny wniosek:
-         - Rozważając tylko liczby od 5 do 6 i pośrednią wartość między 4 a 10, odpowiedzią na pytanie jest: 6.",Few-Shot CoT,easy
-20,Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,Odpowiedź: Zosia ma 6 cukierków.,Zero-Shot,easy
-20,Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,"Odpowiedź: Zosia ma 6 cukierków. (Dla pewności, jeśli Bartek ma 2, to Zosia musi mieć trzy razy więcej, czyli 6.)",One-Shot,easy
-20,Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,Odpowiedź: Zosia ma 6 cukierków.,Few-Shot,easy
-20,Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,"1. Analizuję problem:
-     - Zosia ma trzy razy więcej cukierków niż Bartek
-     - Bartek posiada 2 cukierki
-
-  2. Rozbijam problem na mniejsze kroki:
-     - Wiem, że Zosia posiada więcej cukierków od Barteka i liczba ta jest trzy razy większa od liczby cukierków u Barteka
-     - Znać muszę ilu cukierków posiada Bartek, aby móc wyliczyć ilu cukierków ma Zosia (jest to liczba trzy razy większa)
-
-  3. Rozwiązuję każdy krok osobno:
-     - Bartek posiada 2 cukierki, a Zosia posiada trzy razy więcej cukierków od niego. Wiedzę, że trzy razy większa liczba to mnożenie tej liczby przez trzy
-     - Liczba otrzymana poprzez pomnożenie dwóch jest 6 (2 * 3 = 6)
-     - A teraz po prostu daję Bartekowi ilu cukierków Zosia ma, czyli trzy razy więcej od liczby cukierków u Barteka, tzn. 6 + 2 = 8
-
-  4. Wyciągam ostateczny wniosek:
-     - Odpowiedź: Zosia ma 8 cukierków",Zero-Shot CoT,easy
-20,Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,"1. Problem jest zdefiniowany w sposób jasny i rozwikłany. Mamy dwa osobniki (Zosia i Bartek) oraz liczbę cukierków u Barteka (2). Informacja podana dotyczy iloczynu Zosii i Barteka, który wynosi trzy razy większy od ilości cukierków u Barteka.
-
-  2. Rozbijemy problem na mniejsze kroki:
-     a. Jak wiele cukierków ma Zosia, jeśli posiada ona trzy razy więcej niż Bartek?
-     b. Ile cukierków musi mieć Zosia, aby miała trzy razy tyle, ile Bartek posiada?
-
-  3. Rozwiązujemy kroki osobno:
-     a. Iloczyn dwóch liczb jest równy ich sumie. Wiemy, że iloczyn wynosi 3 * 2 = 6, dlatego też liczby muszą spełniać warunek: 6 = liczba1 + liczba2
-     b. Musimy odnaleźć liczbę Zosii, która jest trzykrotnie większa od 2 cukierków Barteka. Wiemy, że iloczyn dwóch liczb spełnia warunek 6 = x + 2 (z zachowaniem zasady, że Zosia ma trzy razy więcej niż Bartek). Rozwiązując równanie 6 = x + 2 otrzymamy:
-       x = 6 - 2 = 4
-     Więc Zosia ma 4 cukierków.
+     - Cena łączna (6 zł) dzieli się przez liczbę jabłek (3), aby uzyskać cenę jednego jabłka
 
   4. Wyciągamy ostateczny wniosek:
 
-Odpowiedź: Zosia ma 4 cukierków",Few-Shot CoT,easy
-21,Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,Odpowiedź: 1 kanapek,Zero-Shot,easy
-21,Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,Odpowiedź: 1,One-Shot,easy
-21,Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,Odpowiedź: 1,Few-Shot,easy
-21,Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,"1. Analityczne analizowanie problemu:
-     - Pięć osób zjeły 5 kanapek razem w 5 minut, czyli po jednej kanapce na minutę każdej z nich.
+Odpowiedź: 2 zł",Zero-Shot CoT,easy
+10,Kuba kupił 3 jabłka za 6 zł. Ile kosztuje jedno?,2,"1. Analizujemy problem: Kuba kupił łącznie 3 jabłka. Znajomoymy wartością, że cena za 3 jabłka wynosi 6 złotych.
+
+   2. Rozbijamy problem na mniejsze kroki:
+      - Pobieramy 1 jabłko, czyli zgromadziliśmy połowę z zapłaconych jabłek (1.5 zł).
+      - Ponownie pobieramy 1 jabłko, tym razem pozostało nam jedno jabłko (0.5 zł).
+      - Wreszcie, po trzecim nakupie, pozbywają się ostatniego jabłka i zapłacili za niego 0 zł.
+
+   3. Rozwiązywanie każdego kroku:
+      - Przeanalizowaliśmy cały proces zakupu, więc musimy teraz znaleźć odwrotną operację i wyliczyć cenę za jedno jabłko. W przypadku kolejnych nakupów widzieliśmy, że koszty rosną z płynnością do ostatniego zakupu, więc mamy na razie:
+        - 0.5 zł za jedno jabłko (kolejne zakupy były już taniejsze)
+      - Zaznajomimy się z tym faktem i podzielimy cenę, którą zapłaciliśmy dla 3 jabłek przez liczbę jabłek, w których rozdzielono koszty:
+        - 6 zł / 3 = 2 zł za jedno jabłko (liczba 3 pochodzi ze zmiennych: 1.5 + 0.5 + 0, co jest sumą zakupów)
+
+   4. Wnioskiem jest:
+      - Odpowiedź: 2 zł",Few-Shot CoT,easy
+11,"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,Odpowiedź: Piątek,Zero-Shot,easy
+11,"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,Odpowiedź: piątek,One-Shot,easy
+11,"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,Odpowiedź: piątek,Few-Shot,easy
+11,"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,"1. Analiza problemu: To zagadka dotyczy porównania i określenia dnia, który będzie w przyszłości, gdy teraz jest wtorek.
+
+  2. Rozbicie problemu na mniejsze kroki: Ponieważ teraz jest wtorek (wtornik), należy wyznaczyć dzień po trzech dniach od tego, który teraz minął.
+
+  3. Rozwiązanie każdego kroku:
+     - Ponieważ jest wtorek, to ten dzień był poprzedni piątek (wolny dzień).
+     - Po trzech dniach od piątku przypada ponownie wtorek.
+
+  4. Wynik: 'Odpowiedź: Wtorek'",Zero-Shot CoT,easy
+11,"Jeśli dzisiaj jest wtorek, jaki dzień będzie za trzy dni?",piątek,"1. Analityczne przetwarzanie problemu: Jeśli dzisiaj jest wtorek, oznacza to że kolejnymi daniami są środę i czwartek. Po trzech dniach od wtorku będzie poniedziałek.
+  2. Rozbicie problemu na mniejsze kroki: Przyjmuję, że dzisiaj jest wtorek (Hypotesa).
+  3. Rozwiązanie każdego kroku:
+     - Jeśli Hypotesa jest prawdziwa, to kolejnym dniem będzie środę. Po drugim dniu (środa) następny dzień jest piątek. Po trzecim dniu (poniedziałek) jest już po piątku.
+     - Zatem Hipotesa, że dzisiaj jest wtorek, prowadzi do wyniku, że za trzy dni będzie poniedziałek.
+  4. Wyciągnięcie ostatecznego wniosku: Odpowiedź: poniedziałek.",Few-Shot CoT,easy
+12,Która liczba większa: 3/4 czy 5/6?,5/6,Odpowiedź: 5/6 jest większa od 3/4.,Zero-Shot,medium
+12,Która liczba większa: 3/4 czy 5/6?,5/6,Odpowiedź: 5/6,One-Shot,medium
+12,Która liczba większa: 3/4 czy 5/6?,5/6,Odpowiedź: 5/6,Few-Shot,medium
+12,Która liczba większa: 3/4 czy 5/6?,5/6,"1. Analizuję problem - Zestawiam dwie ułamki (3/4 i 5/6) i próbuję odpowiedzieć na pytanie: Która liczba większa?
+
+2. Rozbijam problem na mniejsze kroki - Zastosowując wspólną linię działania na obydwu ułamkach, znormalizuję ich liczniki i mianowniki do tego samego wartości podstawowej. Więc będę porównywać dwie zmienione liczby.
+
+3. Rozwiązuję każdy krok osobno:
+   - Normalizacja ułamka 3/4: Podwóję licznik, a mianownik podwoję wartość (1x3 = 3 i 2x4 = 8)
+     Więc nowy ułamek będzie 6/8
+   - Normalizacja ułamka 5/6: Podwóję licznik, a mianownik podwoję wartość (1x5 = 5 i 2x6 = 12)
+     Więc nowy ułamek będzie 10/12
+
+4. Porównam zmienione ułamki: Podaję wyniki porównania liczb, które otrzymałem po normalizacji:
+    6 < 10
+
+Odpowiedź: Która liczba większa: 3/4 czy 5/6? - Odpowiedź: 5/6",Zero-Shot CoT,medium
+12,Która liczba większa: 3/4 czy 5/6?,5/6,"1. Analiza problemu: Porównujemy dwie ułamki. Zadaniem jest wyznaczenie tego, który z nich jest większy.
 
   2. Rozbicie problemu na mniejsze kroki:
-     - Zamienione wcześniej stwierdzenie o siedmiu równoczesnych procesach (zjeżeniu kanapek) zostało przeniesione na osiem jednoczesnych procesów, czyli każda z pięciu osób wraz z jedną z pięciu minut.
+      - Ustalenie czy ułamek 3/4 jest równy lub mniejszy od ułamka 1 (ułamek 3/4 = 0,75 < 1)
+      - Porównanie ułamka 3/4 z ułamkiem 1 i wyznaczenie, czy jest on większy lub równy. (Odpowiedź: nie)
+      - Ustalenie czy ułamek 5/6 jest równy lub mniejszy od ułamka 1 (ułamek 5/6 = 0,83 < 1)
+      - Porównanie ułamka 5/6 z ułamkiem 3/4 i wyznaczenie, czy jest on większy lub równy. (Odpowiedź: tak)
 
-  3. Rozwiązanie każdego kroku osobno:
-     - W pierwszej minucie każda osoba zjeła pojedynczą kanapkę, czyli 5 osób zjeły łącznie 5 kanapek.
-     - W kolejnych pięciu minutach nie ma dodatkowych procesów zjeżenia kanapek, ponieważ każda osoba już je zjeła.
+  3. Rozwiązanie kroków: Ułamek 5/6 jest większy od ułamka 3/4.
+
+  4. Wniosek finalny: Odpowiedź: 5/6",Few-Shot CoT,medium
+13,"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,Odpowiedź: Janek,Zero-Shot,easy
+13,"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,Odpowiedź: Nie można ustalić kto biega najszybciej z podanych informacji.,One-Shot,easy
+13,"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,Odpowiedź: Janek,Few-Shot,easy
+13,"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,"1. Analizuję problem dokładnie:
+     - Zadanie porównuje trzech osób (Wiktor, Ania i Janek) pod względem szybkości biegania.
+     - Potwierdzono, że Wiktor biega szybciej niż Ania (czyli nie wolniej), jednakże wolniej niż Janek. To oznacza, że obaj Janek i Wiktor biegają szybciej od Ani, ale nie wiemy czy w ogóle Janek biega szybciej niż Wiktor.
+
+  2. Rozbiję problem na mniejsze kroki:
+     - Porównajemy tylko Wiktora z Janem, aby zrozumieć, kto jest najszybszy.
+
+  3. Rozwiążę każdy krok osobno:
+     - Wiktor biega szybciej niż Ania (czyli nie wolniej), ale wolniej niż Janek. To oznacza, że Wiktor biegający z Janem będzie mniejszością.
+     - Wiedzimy również, że Janek nie biega szybciej niż Ania, tylko nie wolniej. Z tego powodu Janek i Ania biegają tę samą prędkość (Ania jest średnią osobą).
+     - Teraz jeśli Wiktor jest mniejszością w tej grupie (biegając z Janem), to on nie może być najszybszym. Zatem Janek biega szybciej od Wiktora i Ani.
+
+  4. Wyciągnij ostateczny wniosek:
+     - Odpowiedź: Janek biega najszybciej.",Zero-Shot CoT,easy
+13,"Wiktor biega szybciej niż Ania, ale wolniej niż Janek. Kto biega najszybciej?",Janek,"1. Analizujemy problemy: Załóżmy, że mamy trzech sprinterów Wiktora, Anię i Janka. Według zadania Wiktor biega szybciej niż Ania (W > A), ale wolniej niż Janek (J > W).
+
+  2. Rozbijamy problem na mniejsze kroki: Sprawdźmy po kolei każdego z sprinterów i porównajmy ich prędkość.
+
+  3. Rozwiązujemy każdy krok osobno:
+     - Sprzedziemy, że W > A, czyli Wiktor biega szybciej od Ani.
+     - Następnie sprawdźmy czy W < J, czyli czy Wiktor jest wolniej od Janka. Założenia zadania mówią nam to tak. Więc W < J.
 
   4. Wyciągnięcie ostatecznego wniosku:
-     - W jednej minucie 1 osoba zjeła tyle samo kanapek (pojedyncza) jak całe pięć osób razem zjeły w 5 minut.
+     - Zanalizowaliśmy cały problem i dowiedzieliśmy, że Wiktor biega wolniej od Janka (W < J). Nie mamy już informacji czy Ania jest szybsza od Janka. Wiemy tylko, że niektóre osoby (Wiktor i Ania) są wolniejsze niż Jacek, jednak nie wiemy o ich relacjach prędkości do siebie. Przedstawienie konkretnej odpowiedzi bez tego informacji nie jest możliwe.
 
-Odpowiedź: 1 osoba w 5 minut zjeły 1 kanapeczkę.",Zero-Shot CoT,easy
-21,Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,"1. Analiza problemu: W problemie tym mówi się, że pięciu osobom podarowano po jednej kanapce i zjedły one wszystkie w ciągu 5 minut. Pyta się, jak wiele kanapek zje 1 osoba w ten czas.
+W przypadku braku odpowiedzi dokładnie takiej jaką wymaga zagadka, może to oznaczać, że na podanej formule oparta jest błędna logika, brakuje danych lub informacji lub problemy są nie rozstrzygalne na podstawie tych danych.",Few-Shot CoT,easy
+14,"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,"1. Ponieważ pies waży więcej niż kot, to nie może ważyć tak samo jak kot.
 
-  2. Rozbicie problemu: Zauważamy, że liczba kanapek (5) jest równa liczbie osób i liczbie minut (5), więc możemy przypuszczać, że zjadły one po jednej kanapce w ciągu każdej minuty.
+2. Znając, że pies waży więcej niż kot, ale mniej niż koń, to pies musi ważyć mniej niż koń, lecz nie mniej niż kot.
 
-  3. Rozwiązanie kroku: Aby zjeść jedną kanapkę, każda osoba potrzebuje 1 minutę. Pytany jest o jedną osobę, a ona też zjeła jedną kanapkę w ciągu 5 minut (bo tak szybko i inne osoby), czyli po 1 kanapce na minutę.
+3. Ponieważ pies waży mniej niż koń i znaczy to, że nie może być najcięższym z wymienionych zwierząt. Podsumowując - kot jest najcieższe spośród trzech podanych zwierząt.
 
-  4. Wnioski: Odpowiedź: 1",Few-Shot CoT,easy
-22,Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,Odpowiedź: Siódmy (7-ty) dzień to Sobota.,Zero-Shot,easy
-22,Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,Odpowiedź: środę,One-Shot,easy
-22,Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,Odpowiedź: piątek,Few-Shot,easy
-22,Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,"1. Analyzing the problem: The question asks for which day of the week corresponds to the eighth day, given that Monday is the first day. Since days of the week repeat in a cycle of seven days, we can determine this by counting forward 7 days from Monday.
+Odpowiedź: Kot",Zero-Shot,easy
+14,"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,Odpowiedź: Koń,One-Shot,easy
+14,"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,Odpowiedź: Koń,Few-Shot,easy
+14,"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,"1. Przejrzymy problem i zrozumiemy, że mamy trzy różne zwierzęta – psa, kota i końa – i nie wiemy ich mas. Nasza misją jest ustalić, który z nich jest najcięższe.
+  2. Zbudujmy drzewko dowodów:
+     - Pies waży więcej niż kot, ale mniej niż koń (zadana informacja)
+  3. Rozważmy możliwe wagę każdego z zwierząt i przetestujmy czy spełniają warunki ustalone:
+     - Pies nie może ważyć najwięcej, bo jest cięższy od kota.
+     - Kot nie może być najcięższym, bo jest lekki od psa.
+     - Koń musi albo być najcięższy lub albo nie spełnia warunków:
+        - Jeśli koń waży więcej niż kot i ten więcej niż pies, to jest najcięższe, a nasze rozumowanie się skończy.
+        - Jeśli koń nie spełnia warunku (zostałby zdekonstruowany na dwie części: lekki jak kot i cięższy od psa), to nie może być najcięższym i musimy szukać innego zwierzątka.
+  4. Ustalenie końca drzewa dowodów:
+     - Jeśli koń jest lekki jak kot, to wiedząc że pies jest cięższy od kota, musi być najcięższe albo koń, albo pies. Ale kot już się wykluczył jako najcięższe.
+     - Jeśli koń jest lekki jak kot i jednocześnie nie ma żadnego innego zwierzątka, to najcięższym musi być pies.
+  5. Odpowiedź: Pies jest najcięższe.",Zero-Shot CoT,easy
+14,"Pies waży więcej niż kot, ale mniej niż koń. Które zwierzę jest najcięższe?",koń,"1. Analizuję problem i ustalam, że porównywane są trzy różne zwierzęta: pies, kot i koń. Wartość ich masy jest nieznana, a jedynie wiadomo, że pies waży więcej niż kot (lecz mniej niż koń).
 
-  2. Breaking down the problem: Let's count the days:
-     - Monday (1st)
-     - Tuesday (2nd)
-     - Wednesday (3rd)
-     - Thursday (4th)
-     - Friday (5th)
-     - Saturday (6th)
-     - Sunday (7th)
+  2. Rozbijam problem na mniejsze kroki i sprawdzam możliwe relacje pomiędzy masami zwierząt:
+       - Pies > Kot, więc pies > Koń (bo jest cięższy od kota)
+       - Jeśli jeszcze nie moja odpowiedź to Koń > Kot, bo w przeciwnym razie byłoby to sprzeczne z informacją o masie psa.
 
-  3. Solving each step: Since we need the 8th day, we continue counting from where we left off (Sunday):
-     - Monday (1st + 7 = 8th)
-     - This means that the 8th day is Monday.
+  3. Wyniki każdego kroku:
+       - Pies > Kot, ale mniej niż Koń (nie wiem czy Koń jest cięższe od psa, więc jeszcze nie ma odpowiedzi)
 
-  4. Drawing a conclusion: The final answer is: 'Odpowiedź: poniedziałek'.",Zero-Shot CoT,easy
-22,Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,"1. Analiza problemu: Zadana jest wypowiedź mówiąca, że poniedziałek to pierwszy dzień tygodnia. Więc kolejne dni będą miały sukcesywnie numerowane numery całkowite, zaczynając od 2 (wtórek) i kończąc na 7 (sobota).
+  4. Na podstawie wyników z kroków 2 i 3 można stwierdzić, że pies i kot są lekkiej masy niż koń. Więc zwierzę, które jest najcięższe - to koniec końca koń - Koń.
+
+Odpowiedź: Kto jest najcięższe? Koniec końca koń - Koń.",Few-Shot CoT,easy
+15,2+2*2 = ?,6,Odpowiedź: 6,Zero-Shot,easy
+15,2+2*2 = ?,6,4 (Odpowiedź: 4),One-Shot,easy
+15,2+2*2 = ?,6,Odpowiedź: 6,Few-Shot,easy
+15,2+2*2 = ?,6,"1. Problem: Otrzymujemy wynik z równania 2 + 2 * 2
+  2. Rozbiór problemu na mniejsze kroki: Najpierw wykonamy wszystkie operacje mnożenia, a następnie sumowanie.
+  3. Pierwszy krok: Wykonanie mnożenia: 2 * 2 = 4
+  4. Drugi krok: Wykonanie dodawania: 2 + 4 = 6
+  5. Ostateczny wniosek: Odpowiedź: 6",Zero-Shot CoT,easy
+15,2+2*2 = ?,6,"1. Analizacja problemu: To problem matematyczny, dotyczy działań arytmetycznych. Zawiera dodawanie i mnożenie z liczbami naturalnymi.
+
+2. Podział na kroki:
+    - Krok 1: Rozwiązanie wzoru (2+2)*2
+    - Krok 2: Wykonanie pierwszego działania (2+2)
+    - Krok 3: Wykonanie drugiego działania ((4)*2)
+
+3. Rozwiązanie każdego kroku:
+    - Krok 1: (2+2)*2
+    - Krok 2: 4*2 = 8
+
+4. Wyswietlenie ostatecznej odpowiedzi:
+
+Odpowiedź: 8",Few-Shot CoT,easy
+16,"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,"Odpowiedź: 6
+
+Rozważanie:
+1. Liczby, które są podzielne przez 2 to te, które mają parzyste wartości (z wyjątkiem 0).
+2. Liczby, które są podzielne przez 3 to te, które kończą się na cyfrze 3 lub 6 (w systemie dziesiętnym).
+3. Liczba jest podzielna przez 6 wtedy i tylko wtedy, gdy jest podzielna przez 2 i 3.
+4. Jeśli chcemy znaleźć liczbę, która jest podzielna przez 2 i 3, ale nie przez 6, musimy znaleźć taką, dla której jest spełniona warunek pierwszy i drugi, a jednocześnie nie jest podzielna przez 6.
+5. Liczba, która kończy się na cyfrze 3 lub 6 i jest nieparzysta, nie może być podzielna przez 2.
+6. Dlatego mamy jedynie tylko liczbę 6, gdyż 6 jest podzielne przez 2 i 3 (jest liczbą parzystą oraz jej ostatnia cyfra to 6), ale nie jest podzielne przez 6 (bo nie jest podzielne przez 2 ani 3).
+7. Podsumowując: 6 jest jedyną liczbą, która jest podzielna przez 2 i 3, ale nie przez 6.",Zero-Shot,hard
+16,"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,"Odpowiedź: Tak, liczbą jest 6.",One-Shot,hard
+16,"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,"Odpowiedź: Tak, liczbą podaję 6.",Few-Shot,hard
+16,"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,"1. Analiza problemu: Wyrażenie ""liczba podzielna przez 2 i 3"" oznacza, że liczba jest wielokrotnością 2 lub wielokrotnością 3 (lub obydwu). Oznacza to, że można znaleźć takie całe liczby, że 2 * liczba = podstawowa liczba i 3 * liczba = podstawowa liczba.
+
+  2. Rozbicie problemu na mniejsze kroki: Podobno szukamy liczby całkowitej, która jest podzielna przez 2 i 3, ale nie przez 6. Założymy, że takiej liczby nie ma i ostatecznie pokażemy to na końcu.
+
+  3. Rozwiązanie każdego kroku:
+     - Szukamy najpierw wielokrotności 2 (liczb parzystych), ponieważ musi być też wielokrotnością 3, ale nie przez 6, więc nie może być liczba parzysta, która jest równoległa do 6.
+     - Pokażemy to za pomocą wykluczenia: Jeśli liczba parzysta jest równoległa do 6, wtedy jej reszta z dzieleniem przez 6 musi być 0, 2 lub 4 (ponieważ jest ona liczbą parzystą). Z kolei jeśli jest podzielna przez 3, wtedy jest równoległa do 3, co oznacza, że reszta z dzieleniem przez 3 musi być 0 lub 3. Ale jeśli reszta z dzieleniem przez 6 jest 0 (co oznacza, że jest wielokrotnością 6), to nie spełnia warunku ""nie podzielna przez 6"".
+     - Nie możemy znaleźć żadnej liczby całkowitej, która byłaby podzielna przez 2 i 3, ale nie przez 6.
+
+  4. Ostateczny wniosek: Wynikiem rozumowania jest to, że takiej liczby nie ma. 'Odpowiedź: Nie'.",Zero-Shot CoT,hard
+16,"Liczba podzielna przez 2 i 3, ale nie przez 6. Czy istnieje?",nie,"1. Analiza problemu: Wymaga się znalezienia liczby, która może być podzielna tylko przez 2 i 3, ale nie przez 6. Można to wyjaśnić jako szukanie liczbierzych pierwszych wspólnych dzielników (PPWD) dla liczb 2 i 3, które nie są PPWD dla liczby 6 (odpowiednio 1 i 1).
+
+  2. Rozbicie problemu na mniejsze kroki:
+     - Szukamy liczbierzych PPWD dla liczb 2 i 3 bez podziału przez 6.
+
+  3. Rozwiązanie każdego kroku:
+     - Liczby pierwiasteczne (liczby niedzielone) nie mają PPWD oprócz samej liczby i liczby 1. Więc wszystkie liczby, które są podzielne przez 2 oraz 3, są również podzielne przez 6 (bo jest to wielokrotność dwójki), ale nie jest to warunek dla liczb niedzielonych.
+     - Z tego powodu najmniejsza liczba, która jest podzielna tylko przez 2 i 3, to najmniejszy wspólny mianownik (LCS) liczb 2 i 3, czyli 6. Jednak z warunków wynika, że nie jest to rozwiązanie.
+     - Aby znaleźć właściwe rozwiązanie, należy szukać kolejnych liczb niedzielonych podzielonych przez 2 i 3 (tzn. liczb 6n + 1 i 9n + 1).
+     - Szukając kolejnych liczb tej postaci, można zauważyć, że po każdej 5-tej liczbie zostaje dodana podstawa (6 lub 9) podzielna przez 3. Aby znaleźć liczbę podzielną tylko przez 2 i 3 (nie dzielną przez 6), należy odpowiednio dopasować kolejny podstawek, który nie jest dzielnikiem 3.
+     - W ten sposób możemy znaleźć liczby takie jak: 5, 14, 23, 32, 41, i ostatecznie 48 (czyli wszystkie liczby tej postaci, które są podzielne przez 5).
+     - Zauważmy, że liczba 48 jest zarówno podzielna przez 2 (24) jak i przez 3 (16). Więc nie będzie ona spełniać warunków.
+     - Ostatecznie najmniejsza liczba, która może być podzielna tylko przez 2 i 3, to następna liczba podzielna przez 5: 50.
+
+  4. Wniosek końcowy:
+     - Odpowiedź: 50",Few-Shot CoT,hard
+17,"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18",Odpowiedź: 15,Zero-Shot,hard
+17,"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18","Odpowiedź: 18 nie jest odpowiedzią, ponieważ nie jest podzielne przez 3. Odpowiedź może być 12 lub 15 (nie ma jednak żadnej z tych dwóch liczb w zakresie mniejszym niż 20, który jest wymagany).",One-Shot,hard
+17,"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18",Odpowiedź: 18,Few-Shot,hard
+17,"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18","1. Analizacja problemu: Zadanie zagadki polega na znalezieniu liczby naturalnej spełniającej trzy warunki: większa od 10, mniejsza niż 20 i podzielna przez 3.
 
   2. Rozbicie problemu na kroki:
-     - Wyznaczenie numeru poniedziałku w tygodniu
-     - Wyznaczenie kolejnych dni poprzez ich sukcesywną liczbowanie od drugiego dnia do siódmego dnia.
+     - Znajdź liczbę naturalną spełniającą pierwszą dwie warunki (większą od 10, mniejszą niż 20).
+     - Sprawdź czy znaleziona liczba spełnia również trzecią warunek (podzielna przez 3).
+
+  3. Rozwiązanie kroku 1: Najmniejsza liczba większa od 10 i mniejsza niż 20 to 11, ale jest ona nieparzysta i niepodzielna przez 3. Następne liczby są 12, 13, 14, 15...
+   - Przejdźmy do kolejnej liczby spełniającej pierwsze dwie warunki, która jest podzielna przez 3: 12 + 3 = 15, ale już nie spełnia warunku być mniejszą od 20.
+   - Przejdźmy do kolejnej liczby większej od 12 i spełniającej warunek podziału przez 3: 15 + 3 = 18, ale już nie spełnia warunku być mniejszą od 20.
+   - Przejdźmy do kolejnej liczby większej od 18 i spełniającej warunek podziału przez 3: 18 + 3 = 21, ale już nie spełnia warunku być mniejszą od 20.
+   - Przejdźmy do kolejnej liczby większej od 21 i spełniającej warunek podziału przez 3: 21 + 3 = 24, ale już nie spełnia warunku być mniejszą od 20.
+   - Połączmy najbliższe większe liczby i sprawdźmy je na podział przez 3:
+     - 15 + 3 = 18, ale już nie spełnia warunku być mniejszą od 20.
+     - 18 + 3 = 21, ale już nie spełnia warunku być mniejszą od 20.
+   - Połączmy te liczby i sprawdźmy je na podział przez 3: (15 + 3) + 3 + (18 + 3) = 34, ale już nie spełnia warunku być mniejszą od 20.
+
+  4. Wyciągnięcie ostatecznego wniosku: W zadanej zagadce nie istnieje liczba naturalna spełniająca wszystkie trzy warunki (większa od 10, mniejsza niż 20 i podzielna przez 3).
+
+Odpowiedź: Nie ma takiej liczby.",Zero-Shot CoT,hard
+17,"Liczba większa od 10, mniejsza niż 20, podzielna przez 3. Jaka?","12,15,18","1. Analizuję problem: Używam zasady podanej w instrukcji - liczba musi być większa od 10, mniejsza niż 20 oraz podzielna przez 3.
+
+   2. Rozbiję problem na kroki:
+      - Znajduję liczbę większą od 10, ale mniejszą niż 20, która jest podzielna przez 3.
+
+   3. Rozwiązuję poszczególne kroki:
+      - Sprawdzam czy 12 jest podzielne przez 3. Odpowiedź: Tak.
+
+   4. Wyciągnij ostateczny wniosek:
+
+   Odpowiedź: 12",Few-Shot CoT,hard
+18,5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,Odpowiedź: 5000 produktów,Zero-Shot,hard
+18,5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,Odpowiedź: 5000 przedmiotów,One-Shot,hard
+18,5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,"100 maszyn robi po 5 przedmiotów w ciągu 5 minut, to całkowita liczba przedmiotów zrobionych przez 100 maszyn w ciągu 100 minut wynosi:
+
+Odpowiedź: 5000",Few-Shot,hard
+18,5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,"1. Analizujemy problem: Liczba maszyn i czas są pomnożone przez siebie. Każda maszyna robi jeden przedmiot w jednej minucie, więc liczba maszyn wzrasta wprost z liczbą minut.
+
+  2. Rozbijamy problem na kroki: Przyjmijmy że 5 maszyn w 5 minutach robi 5 przedmiotów, czyli każda maszyna produkuje po jednym przedmiotem.
+
+  3. Rozwiązywanie kroków: Jeśli mamy 100 maszyn (20 razy więcej niż początkowo), to otrzymujemy 100-krotnie więcej przedmiotów w tym samym czasie. Aby zmienić liczbę minut na wielokrotność odpowiedniej liczby, należy podzielić ją przez 5 i mnożyć wynikiem o 100.
+
+  4. Ostateczny wniosek: Wynik po dzieleniu 100 przez 5 jest równy 20. Mamy więc 20 minut, w których 100 maszyn produkuje 100-krotnie więcej przedmiotów od początkowej liczby. Wynosimy to iloczyn 100 na 5, czyli 2000 przedmiotów.
+
+Odpowiedź: 2000 przedmiotów",Zero-Shot CoT,hard
+18,5 maszyn robi 5 przedmiotów w 5 minut. Ile 100 maszyn w 100 minut?,2000,"1. Analiza problemu:
+     - Liczba maszyn (M) produkuje określoną liczbę przedmiotów (P) w określonym czasie (T).
+     - Zadaniem jest wyliczenie ilu przedmiotów robi 100 maszyn w czasie 100 minut.
+
+  2. Rozbicie problemu na mniejsze kroki:
+     - Pokaż, ile przedmiotów produkuje 1 maszyna w 1 minucie (P/T)
+     - Wykorzystaj wzór linijkowy aby obliczyć ilu przedmiotów produkuje jedna maszyna w czasie podanym (linia równa liczbie maszyn mnożoną przez szybkość pracy jednej maszyny P/T).
+     - Następnie pomnoż liczbę przedmiotów produkowanych w 100 minut przez liczbę maszyn (P*m) aby otrzymać ilu przedmiotów produkuje 100 maszyn w czasie 100 minut.
 
   3. Rozwiązanie kroków:
-     - Poniedziałek to pierwszy dzień, więc jego numer to 1.
-     - Następny dzień po poniedziałku (wtórkę) otrzymamy poprzez dodanie 1 do liczby poniedziałku: 2 = 1 + 1
-     - Dzień trzeci (środa) otrzymamy poprzez kolejne dodawanie 1: 3 = 2 + 1
-     - Dzień czwarty (czwartek) otrzymamy poprzez kolejne dodawanie 1: 4 = 3 + 1
-     - Dzień piąty (piątek) otrzymamy poprzez kolejne dodawanie 1: 5 = 4 + 1
-     - Dzień szósty (sobota) otrzymamy poprzez kolejne dodawanie 1: 6 = 5 + 1
-     - Ostatni dzień to niedziela, która jest siódmym dniem tygodnia.
+     - Liczba jednej maszyny (M=1), czas (T=1), P/T = P/1, ponieważ jedna minuta to 1 część czasu. Znając, że produkuje 5 przedmiotów w 5 minutach (P*T=5), więc P/T=5/5 = 1.
+     - Wzór linijkowy: P*M = P/T * M
+     - Otrzymamy ilu przedmiotów produkuje jedna maszyna w czasie 100 minut (P/T * M) = (1 * 100) = 100.
+     - Teraz obliczamy ile przedmiotów produkuje 100 maszyn w czasie 100 minut (P*M) = (100 * 100).
 
-  4. Wniosek ostateczny: Jaki dzień 8-go?
-     - Nie ma 8-go dnia w tygodniu, jako że liczba dni w tygodniu wynosi siedem.",Few-Shot CoT,easy
-23,Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,Odpowiedź: Monika ma 10 książek. (Ile ma Monika to 30 - ilu ma Adam).,Zero-Shot,medium
-23,Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,Odpowiedź: Monika ma 10 książek (odpowiedź: Monika ma 10 książek),One-Shot,medium
-23,Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,"Odpowiedź: Monika ma 10 książek. (Aby rozwiązać zagadkę, można powiedzieć, że Adam ma x+10 książek. Wtedy x = 30-10 = 20, a więc Adam ma 20+10=30 książek, więc Monika ma 10 książek).",Few-Shot,medium
-23,Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,"1. Analizuję problem: Adam i Monika posiadają łącznie 30 książek, ale Adam ma więcej niż Monika o iloczyn 5.
+  4. Wniosek: Odpowiedź: 10 000",Few-Shot CoT,hard
+19,Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,Odpowiedź: 6,Zero-Shot,easy
+19,Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,Odpowiedź: 6,One-Shot,easy
+19,Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,Odpowiedź: 6,Few-Shot,easy
+19,Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,"1. Analizuję problem: Zadaniem jest ustalenie drugiej liczby, która razem z podaną (4) daje sumę 10.
+  2. Rozbijam problem na mniejsze kroki: Po pierwsze, muszę wyznaczyć liczbę do dodania do 4 w celu uzyskania 10.
+  3. Rozwiązuję każdy krok osobno: Ostatnia możliwa liczba odpowiadająca warunkowi jest 6 (bo jeśli by była mniejsza, to suma zbyt nie większa).
+  4. Wyciągam ostateczny wniosek: Liczbę 6 uzyskuję poprzez odjęcie 10 od 14 (bo jeśli była większa, to suma zbyt duża). Jednakże ta liczba nie jest podana w formułce, więc musi być inna. Moja pierwsza liczba to 4, zaś w przypadku dodawania do 4 liczb odpowiednio mniejszej niż ona, suma rośnie, a przy kolejnej dodatkowej liczbie powstaje suma 10. Więc moja druga liczba to 6 (bo 4 + 6 = 10).
 
-  2. Rozbijam problem na mniejsze kroki:
-      - Wyraźnie określono liczbę ogólna książek (30), oraz to, że Adam posiada więcej niż Monika o iloczyn 5.
+Odpowiedź: Druga liczba to 6.",Zero-Shot CoT,easy
+19,Suma dwóch liczb wynosi 10. Jedna to 4. Jaka jest druga?,6,"1. Analizuję problem: Dla podanej liczby 4, mam znaleźć drugą liczbę taką, żeby suma tych dwóch była równa 10.
+
+  2. Rozbiję problem na mniejsze kroki: Zaczynam od ostatniej możliwej wartości i odszukuję liczbę, która po dodaniu 4 daje 10.
+
+  3. Rozwiążę każdy krok osobno: Jeśli liczba jest większa od 6, to suma będzie przekraczała 10. Rozpatrując kolejno 5, 4, 3, 2 i 1 (od najmniejszej do największej) - wartość 6 jest zbyt duża, a pozostałe są za małe.
+   Moja ostatnia próba miała być liczbą 6, ale daje 10, czyli jest zbyt duża. Zatem poprzednia wartość musi być równa 4.
+
+  4. Wyciągnij ostateczny wniosek: Jeśli liczba pierwszą jest 4, to drugą liczbę może być tylko jedna - 6.
+
+Odpowiedź: Druga liczba to 6.",Few-Shot CoT,easy
+20,Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,Odpowiedź: Zosia ma 6 cukierków.,Zero-Shot,easy
+20,Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,Odpowiedź: Zosia ma 6 cukierków (bo 3 razy więcej niż 2),One-Shot,easy
+20,Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,Odpowiedź: Zosia ma 6 cukierków.,Few-Shot,easy
+20,Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,"1. Analiza problemu:
+     - Mamy dwie osoby, Zosia i Bartek. Zosia posiada więcej cukierków niż Bartek. Wiemy ilu ma Bartek (2 cukierki).
+
+  2. Rozbicie problemu na kroki:
+     - Krok 1: Jak wiele ma Bartek? (Odpowiedź: 2)
+     - Krok 2: Jak wiele musi mieć Zosia, aby miała trzy razy więcej niż Bartek? (Różnica = Zosia - Bartek, rozdziel przez 3)
+
+  3. Rozwiązanie każdego kroku:
+     - Krok 1: Wiemy ilu ma Bartek (Odpowiedź: 2)
+     - Krok 2: Różnica między Zosia a Bartek = 3 * (liczba cukierków Barteka) (wiemy liczbę cukierków Barteka, to znaczy wiemy ilu musi mieć Zosia)
+       - Wiemy że różnica powinna być trzy razy większa niż liczba cukierków Barteka (2), zatem Zosia ma 3 * 2 = 6 cukierków.
+
+  4. Wnioski:
+     - Odpowiedź: Zosia ma 6 cukierków.",Zero-Shot CoT,easy
+20,Zosia ma trzy razy więcej cukierków niż Bartek. Bartek ma 2. Ile ma Zosia?,6,"1. Analiza problemu: Dla porównania dwóch osób (Zosia i Bartek) należy porównać ich ilość cukierków.
+
+  2. Rozbicie problemu na kroki:
+      - Określenie ilości cukierków u Barteka
+      - Obliczenie ilości cukierków u Zosii (gdy wiadomo, że ta ma trzy razy więcej niż Bartek)
+
+  3. Rozwiązanie każdego kroku:
+      - Bartek ma 2 cukierki (zadana wartość)
+      - Zosia ma trzy razy więcej cukierków niż Bartek, to znaczy 2 * 3 = **6** cukierków
+
+  4. Wynik: Zosia ma **6** cukierków",Few-Shot CoT,easy
+21,Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,"Odpowiedź: 1 kanapek (jedna osoba zje jedną czwartą część, a więc jeden kanapek z jeściem pięciu osób oznacza, że każda spośród nich zje jeden kanapek w okresie 5 minut)",Zero-Shot,easy
+21,Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,Odpowiedź: 1 kanapek,One-Shot,easy
+21,Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,Odpowiedź: 1 kanapek,Few-Shot,easy
+21,Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,"1. Analityczne przebadanie problemu: Z problemu wynika, że pięć osób zjeły w całości pięć kanapek w ciągu pięciu minut. Oznacza to, że każda osoba spożyła po jednej kanapce, ale nie jest jasne, jak długo trwał jej posiłek.
+  2. Rozbicie problemu na mniejsze kroki: Chcemy znaleźć ilu kanapek zjeła 1 osoba w 5 minut. Aby to uzyskać, należy podzielić sumę kanapek i czas na liczbę osób.
+  3. Rozwiązanie każdego kroku: Wiemy, że jest 5 kanapek i 5 osób. Ponieważ wszyscy zjeły w całości swoją część, to musi ona być równa pojedynczej kanapce, a nie fragmentowi jej. Dlatego ilu kanapek spożyła jedna osoba? Liczba ta powinna wyniknąć z podziału liczby kanapek przez liczbę osób.
+  4. Wyciągnięcie ostatecznego wniosku: Podział 5 przez 5 daje nam 1, czyli każda osoba zjeła po jednej kanapce w ciągu 5 minut.
+Odpowiedź: Każda osoba zjeła po jednej kanapce w 5 minut.",Zero-Shot CoT,easy
+21,Pięć osób zje 5 kanapek w 5 minut. Ile kanapek 1 osoba w 5 minut?,1,"1. Analizujemy problem: W pokoju jest pięć osób, a każda z nich jeden raz zjeła kanapkę w czasie 5 minut. Proszę wyobrazić sobie, że wszyscy jedzą tę samą ilość i tę samą ilość czasu potrzebują na jeść.
+
+  2. Rozbijemy problem na mniejsze kroki: Jaką ilość kanapek jest spożyta przez pojedynczą osobę w ciągu 5 minut?
+
+  3. Rozwiązujemy każdy krok osobno: Ilość kanapek, które zjadła jedna osoba w czasie 5 minut wynosi jeden (ponieważ jest to jej część całej ilości kanapek spożytych przez pięcioro osób).
+
+  4. Wyciągamy ostateczny wniosek: Więc jedna osoba zjada jedną kanapkę w ciągu 5 minut, dlatego całkowitym wynikiem jest odpowiedź: 'Odpowiedź: 1'.",Few-Shot CoT,easy
+22,Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,Odpowiedź: Siódmy dzień (dzisiaj jest siódmym dniem tygodnia jeśli Poniedziałek jest pierwszym dniem).,Zero-Shot,easy
+22,Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,Odpowiedź: sobota,One-Shot,easy
+22,Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,Odpowiedź: piątek,Few-Shot,easy
+22,Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,"1. Analiza problemu: To jest zagadka liczbowa dotycząca porządku posunięcia się od dnia Poniedziałku do kolejnych dni tygodnia.
+
+  2. Podział na kroki:
+     - Wiemy, że Poniedziałek to 1-szy dzień. Teraz musimy ustalić jakie kolejne dni tygodnia są w następnych pozycjach w porządku liczbowym i jaki jest 8-my dzień.
+     - Po kolei: Wtorek to 2, Środa to 3, Czwartek to 4, Piątek to 5, Sobota to 6, Niedziela to 7.
+
+  3. Rozwiązanie każdego kroku:
+     - Wiemy, że Poniedziałek to 1-szy dzień w tygodniu, więc wiemy też, że Środa to trzeci dzień i to 3.
+     - Teraz szukamy kolejnego liczby, która jest równa sumie 1 i 3 (wspomniane numery porządkowe dni tygodnia). W ten sposób znajdujemy Czwartek, który to 4.
+     - Teraz szukamy kolejnego liczby, która jest równa sumie 1 i 4 (wspomniane numery porządkowe dni tygodnia). W ten sposób znajdujemy Piątek, który to 5.
+     - Teraz szukamy kolejnego liczby, która jest równa sumie 1 i 5 (wspomniane numery porządkowe dni tygodnia). W ten sposób znajdujemy Sobotę, który to 6.
+     - Teraz szukamy kolejnego liczby, która jest równa sumie 1 i 6 (wspomniane numery porządkowe dni tygodnia). W ten sposób znajdujemy Niedzielę, który to 7.
+     - Teraz szukamy kolejnego liczby, która jest równa sumie 1 i 7 (wspomniane numery porządkowe dni tygodnia). W ten sposób znajdujemy Poniedziałek, który to 8. Oczywiście warto zauważyć, że była to już pierwotna pozycja Poniedziałku i nie mamy do niej dostępu ponownie (nie ma 9-tego dnia tygodnia).
+     - W ten sposób możemy stwierdzić, że 8-my dniem tygodnia jest Poniedziałek.
+
+  4. Ostateczny wniosek: 'Odpowiedź: Poniedziałek'",Zero-Shot CoT,easy
+22,Poniedziałek to 1-szy dzień. Jaki dzień 8-go?,poniedziałek,"1. Analiza problemu:
+     - Zadana jest relacja pomiędzy dniami tygodnia i liczbą 8.
+     - Wiemy, że poniedziałek to pierwszy dzień tygodniu (nie zapomnijmy o sobotach i niedzielach).
+
+2. Rozbicie problemu na mniejsze kroki:
+   - Znajdujemy liczbę, ile jest dni po poniedziałku.
+   - Pamiętajmy, że w tygodniu 7 dni.
+
+3. Rozwiązanie każdego kroku:
+   - Jeśli jesteśmy po piątku to liczba jest 5.
+   - Przesuwając się naprzód do soboty, otrzymujemy liczbę 6.
+   - Przesuwając się do niedzieli, otrzymujemy liczbę 7.
+   - Przesuwając się dalej o kolejne dni, liczba wzrasta (ponownie zaczynamy od poniedziałku).
+
+4. Wyprowadzenie końcowej odpowiedzi:
+   - Nie trzymamy się zasady nie nawiązywać do sobot i niedzieli, gdyż tylko dni półtygodnia są interesujące w kontekście liczb 1-8.
+   - Jeśli jesteśmy po piątku (liczba 5), to na kolejny dzień po tym jest sobotę (6). Na kolejny po niej jest niedziela (7). Po niedzieli ponownie zaczynamy liczyć od poniedziałku (1).
+   - Wobec tego, jeśli chcemy na liczbę 8, musimy zacząć po sobotach lub po niedzielach. To znaczy, że jesteśmy wtedy po jednej z dwóch kolejnych niedziel (7 i 14).
+   - Możemy też zauważyć, że jest tylko jedna możliwość, bo jeśli jesteśmy po drugiej niedzieli, to już na kolejny dzień wskakujemy do poniedziałku (15), a nie chcemy liczb 8.
+   - Więc odpowiedź to siódme kolo: Niedziela.",Few-Shot CoT,easy
+23,Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,Odpowiedź: Monika ma 10 książek.,Zero-Shot,medium
+23,Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,Odpowiedź: Monika ma 10 książek.,One-Shot,medium
+23,Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,"Odpowiedź: Monika ma 10 książek. (Rozwiązanie: Jeśli Adam ma 5x książek więcej niż Monika, to całkowita liczba książek obu mężczyzn jest równa 30. Z tego wynika, że liczba książek Moniki to 10.)",Few-Shot,medium
+23,Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,"1. Analizuję problem: Adam i Monika razem mają 30 książek, a Adam posiada więcej książek niż Monika o ilu razy.
+
+  2. Rozbiję problem na mniejsze kroki:
+     - Od razu ustale, ilu książek ma Adam (Adam = A) i poszukaj wzorca dla liczby książek Moniki (Monika = M).
+     - Wiemy również, że A = 5*M.
+     - Razem mają 30 książek (A + M = 30).
 
   3. Rozwiązuję każdy krok osobno:
-      - Ponieważ liczba książek Adam ma jest większa od liczby książek Moniki o iloczyn 5, to różnica między liczbą jego i jej książek musi być liczbą złożoną z iloczynu 5 i danej liczby. Z kolei suma ich liczb musi wynosić 30.
-      - Tym samym, jeśli liczba książek Moniki będzie 'x', to liczba książek Adama jest '5*x + x'. Suma tych dwóch jest równa 30.
+     - Z wzorca A = 5*M, wiemy że jeśli pomnożymy M przez 5, uzyskamy liczbę książek Adama (A).
+     - Wiemy także, że A + M = 30.
+     - Ustalając M i pomnożenie przez 5, uda nam się zidentyfikować A.
+     - Po ustaleniu liczby książek Adama (A), odbiorę tej samej liczby od Moniki (M = A).
 
-  4. Wyciągam ostateczny wniosek:
-      - Rozwiązuję równanie: '5*x + x = 30', czyli '6x = 30'. Odpowiedź: Monika ma 5 książek.",Zero-Shot CoT,medium
-23,Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,"1. Analityczne rozbijanie problemu: Adam ma 5x więcej książek od Moniki, a razem mają 30.
-    2. Rozbicie na kroki: Przejść do równań matematycznych i wyznaczenie liczby książek u Moniki (x) oraz liczby książek u Adama (5x).
-    3. Rozwiązanie kroku 1: Równanie ogólne: Adam + Monika = 30
-            - Podstawienie wartości zależnej (Monika = x) do równania powyżej: 5x + x = 30
+  4. Wyciągnij ostateczny wniosek:
+    - Ustalając M jako 6 (bo jeśli M = 5, to A = 30, ale wtedy Adam miałby równą liczbę książek co Monika), otrzymujemy, że Monika posiada 6 książek.
+    - Zatem, Odpowiedź: Monika ma 6 książek.",Zero-Shot CoT,medium
+23,Adam ma 5x więcej książek niż Monika. Razem mają 30. Ile ma Monika?,5,"1. Analiza problemu: Ustalenie informacji dotyczących liczby książek, którą posiada Adam i ilu razem mają Adam i Monika.
 
-    4. Rozwiązanie kroku 2: W celu ułatwienia obliczeń, odejmuje się zarazem liczbę Adama od liczby razem mających (30): 5x + x = 30 → 6x = 30
+2. Rozbicie problemu na mniejsze kroki: Wyznaczenie iloczynu liczb książek u Adama i Moniki oraz porównanie go z wartością 30.
 
-    5. Rozwiązanie kroku 4: Odejmowanie liczby całkowitej (6) od liczby zależnej (x) pozwala nam otrzymać wartość x: 6/6 * x = 30 → x = 5
+3. Rozwiązanie każdego kroku osobno:
+   - Wyznaczamy ilość książek u Adama (A) = 5x,
+   - Wyznaczamy iloczyn ilości książek u Adama i Moniki (AM): AM = A * M, gdzie M to liczba książek Moniki.
+   - Porównujemy iloczyn (AM) z wartością 30: 30 = A * M => AM = 30, czyli AM jest równa 30.
 
-Odpowiedź: Monika ma 5 książek.",Few-Shot CoT,medium
-24,Stół ma 4 nogi. 5 stołów ile nóg?,20,"1. Początkowe liczby stołów: 5
-  2. Każdy stół posiada 4 nogi
-  3. Łączna ilość nóg wszystkich stołów: 5 * 4 = 20
-  4. Odpowiedź: 20 nogi",Zero-Shot,medium
-24,Stół ma 4 nogi. 5 stołów ile nóg?,20,Odpowiedź: 20,One-Shot,medium
-24,Stół ma 4 nogi. 5 stołów ile nóg?,20,"Odpowiedź: 20 nogi (ponieważ każdy stół ma po 4 nogi, a w sumie jest 5 stołów)",Few-Shot,medium
-24,Stół ma 4 nogi. 5 stołów ile nóg?,20,"1. Analiza problem: Jest mowa o liczbie nog stółów, nie o żadnej z ich nóg indywidualnie. Rozważa się wszystkie 5 stołów razem.
+4. Wnioski:
+   - Wyznaczamy liczbę książek Moniki M z iloczynu znalezionego w kroku 3: M = AM / A = 30 / 5x, gdzie x jest nieznana i nie można wyznaczyć odpowiedzi bez podania wartości x.
 
-   2. Podział na kroki: Sprawdź ilu ma każdy z nich nóg, a potem sumuj liczby.
+Zakładając, że x=1, otrzymujemy: Monika ma M = 6 książek. Jeśli x=2 to M=12, a gdy x=3 to M=20 itd.",Few-Shot CoT,medium
+24,Stół ma 4 nogi. 5 stołów ile nóg?,20,"1. Pierwszy stół posiada 4 nogi, a każdy z kolejnych stołów te same.
+  2. Liczba nóg na stołach jest iloczynem liczby stołów i liczby nóg na jednym stoliku.
+  3. Iloczyn 5 przez 4 daje wynik 20.
+  4. Więc, ile nóg ma 5 stołów? Odpowiedź: 20.",Zero-Shot,medium
+24,Stół ma 4 nogi. 5 stołów ile nóg?,20,Odpowiedź: 20 nogi,One-Shot,medium
+24,Stół ma 4 nogi. 5 stołów ile nóg?,20,Odpowiedź: 20 nóg,Few-Shot,medium
+24,Stół ma 4 nogi. 5 stołów ile nóg?,20,"1. Analiza problemu: Zauważ, że w problemie mówi o liczbie nog stołów, nie o ilości nóg każdego stół.
 
-   3. Każdy stół ma 4 nogy, więc ilu mają 5 stołów razem?
+2. Rozbicie problemu na kroki: W pierwszym kroku należy wyjaśnić, ile nóg ma jeden stół. Potem liczbę takich stołów podniesiemy do piątej potęgi.
 
-   4. Odpowiedź: 5 stołów posiadają 5 × 4 = 20 nóg w sumie.",Zero-Shot CoT,medium
-24,Stół ma 4 nogi. 5 stołów ile nóg?,20,"1. Analiza problemu: Mamy stół, który ma 4 nogi. Zadaniem jest określenie ile nogami posiada 5 takich stołów.
+3. Rozwiązanie każdego kroku: Jeden stół ma 4 nogi. Więc ilu stołów, jeśli wszyscy mają po cztery nogi - to jeden stół 4 razy.
 
-   2. Rozbicie problemu na mniejsze kroki:
-      a) Jaką liczbę nóg ma każdy stół? Każdy stół ma 4 nogi.
-      b) Ile stołów jest? W zadaniu nie podano tego, ale wiemy, że chcemy wyszukać ilu ma stołów posiadających łącznie 5 x 4 = 20 nóg, bo każdy stół ma 4 nogi.
-      c) Ile stoły musimy sprawdzać, aby otrzymać sumę 20? Teraz trzeba rozważyć wszystkie liczby możliwe dla tej ilości nóg stołu i zastosować regułę wykluczenia pomyłek.
+   - Ilu stołów, jeśli wszyscy mają po cztery nogi? Jedna para (dwoje) nóg na stolik to jeden stół. Liczba par (dwójek) nóg na wszystkie stoły to liczba stołów.
+     Ilu jest dwójek na wszystkich 4 nogach jednego stolu? Jedna para to dwoje, a wszystkie 4 nogi pojedynczego stołu dają 4 razy dwoje = 8 (pary). Więc ilu jest par na wszystkich 4 nogach wszystkich stołów? Liczba stołów równa się liczbie par na wszystkich ich nogach.
+     W sumie, jeden stół ma 4 nogi, a 4 razy dwoje daje 8, co oznacza, że jeden stół daje 8 par (dwojek). Jednak zadanie mówi o liczbie stołów, nie o liczbie nóg. Więc liczba stołów równa się liczbie par na wszystkich 4 nogach wszystkich stołów. Zatem jeden stół daje 8 par (dwojek) i liczba stołów będzie równa liczbie nóg każdego z nich podniesionej do piątej potęgi.
+     Jednak w przybliżeniu, gdybyśmy mieli tylko 10 stołów, to 4 razy dwoje będzie równo 80 (lub okolo 80). Ponieważ zadanie mówi o liczbie stołów podniesionej do piątej potęgi, ostateczna ilość nóg nie jest precyzyjną liczbą, ale może być określona za pomocą liczby siedmiu (7^5 = 20.97152) - to znaczy bardzo duża liczba.
 
-   3. Rozwiązanie kroków:
-      a) Jaką liczbę nóg ma każdy stół? 4 nogi.
-      b) Ile stołów jest? W zadaniu nie podano tego, ale wiemy, że chcemy wyszukać ilu ma stołów posiadających łącznie 20 nóg, bo każdy stół ma 4 nogi.
-      c) Ile stoły musimy sprawdzać, aby otrzymać sumę 20? Można przesunąć 2 i pozostawić 10 (bo liczba jest podzielna przez 5). Teraz należy zobaczyć jakie są możliwe ilości stołów, aby otrzymać liczbę równą 10. Można to wyszukać poprzez dzielenie 10 przez 4 i odpowiednio mnożenie o 1 lub 2, aby uzyskawać pełne liczby stołów (np. 2 + 3 = 5 stołów). Tak więc zostaniemy sprawdzać stół o 4 nogi, który daje nam 4 x 5 = 20 nóg i 3 stoły po dwa stoły, czyli 6 x 2 = 12 nóg. Zatem łącznie musimy sprawdzić liczbę stołów równą 5 + 3 = 8.
-      d) Ile jest możliwych sposobów ułożenia 8 stołów, aby otrzymać sumę 20 nóg? Teraz należy rozważyć wszystkie możliwe sposoby ułożenia 8 stołów tak, aby nie było powtórzenia żadnego stół. Warto skorzystać z faktu, że najmniej jest stoli, jeśli ciągle dodajemy kolejne.
-      e) Po ułożeniu 5 stołów otrzymujemy sumę równą 20 nóg (4 x 5 + 3 x 2 = 20). Pozostaje więc sprawdzić jeszcze 3 stoły i obliczyć liczbę nogi.
-      f) Sprawdzimy kolejne możliwe ułożenia:
-          1. Pierwszy stół – 4, drugi stół – 4, trzeci stół – 2, czwarty stół – 4, piąty stół – 4, szósty stół – 2, siódmy stół – 2 i ostatni stół – 2. Suma równa jest 18, trzeba dodać jeszcze 2.
-          2. Pierwszy stół – 4, drugi stół – 4, trzeci stół – 4, czwarty stół – 2, piąty stół – 2, szósty stół – 2, siódmy stół – 4 i ostatni stół – 2. Suma równa jest 18, trzeba dodać jeszcze 2.
-          3. Pierwszy stół – 4, drugi stół – 4, trzeci stół – 4, czwarty stół – 2, piąty stół – 2, szósty stół – 4, siódmy stół – 2 i ostatni stół – 4. Suma równa jest 18, trzeba dodać jeszcze 2.
-      g) Jakość możliwych ułożenia wyszukanych stołów jest zbyt duża (brakują nam tylko 2 nóg). Zatem musimy sprawdzić kolejne ułożenia:
-          1. Pierwszy stół – 4, drugi stół – 4, trzeci stół – 2, czwarty stół – 2, piąty stół – 4, szósty stół – 4, siódmy stół – 4 i ostatni stół – 4. Suma równa jest 20.
-      h) Otrzymaliśmy ułożenie stołów, w którym suma liczby nóg wszystkich stołów daje nam 20. Teraz musimy potwierdzić, że ilość stołów jest równa 8 (bo każdy stół ma 4 nogi i w zadaniu chcemy wyszukać 5 takich stołów).
-      i) Zobaczyliśmy, że suma liczby nóg wszystkich stołów jest równa 20 i ilość stołów jest równa 8. Teraz możemy potwierdzić, że zadanie zostało rozwiązane prawidłowo.
+4. Wniosek: Zadana ilość nóg 5 stołów nie da się bezpośrednio obliczyć, ale ilość nóg dla 10 stołów (czyli 7 podniesione do piątej potęgi) daje bardzo dużą liczbę.",Zero-Shot CoT,medium
+24,Stół ma 4 nogi. 5 stołów ile nóg?,20,"1. Analizuję problem: Stół ma 4 nogi, czyli każdy stół ma 4 nogi. Zadaniem jest obliczenie liczby nóg u wszystkich stołów razem.
 
-   4. Ostateczny wniosek: Ile nóg posiada 5 takich stołów? Całkowita liczba nóg na tych stołach wynosi 8 x 4 = 32 nogi, ale chcemy wyszukać ilość stołów, więc musimy podzielić sumę nóg przez liczbę nóg na jednym stoliku. Więc liczba stołków to całkowita liczba nóg wszystkich stołków dzielona przez 4 (liczbę nóg na jednym stoliku). Więc Ile nóg posiada 5 takich stołów? Odpowiedź: 32 nogi dzielone przez 4 daje nam 8 stołków.",Few-Shot CoT,medium
+   2. Rozbijam zagadkę na mniejsze kroki:
+   - Każdy stół posiada 4 nogi, tj. liczba nóg jednego stolu to 4.
+   - Aby obliczyć liczbę nóg wszystkich stołów, potrzeba liczyć liczbę stołów i pomnożyć ją przez 4 (gdyż każdy stół posiada tyle samej ilości nóg).
+
+   3. Rozwiązuję każdy krok osobno:
+   - Liczba stołów to 5 (użytkownik podał, że jest 5 stołów).
+   - Potem liczba nóg wszystkich stołów to iloraz liczby stołów przez liczbę nóg jednego stolu: 5 x 4 = 20.
+
+   4. Wyciągam ostateczny wniosek: 'Odpowiedź: 20'.",Few-Shot CoT,medium
 25,Anna ma więcej jabłek niż Basia. Basia ma więcej niż Celina. Kto ma najwięcej jabłek?,Anna,Odpowiedź: Anna,Zero-Shot,easy
 25,Anna ma więcej jabłek niż Basia. Basia ma więcej niż Celina. Kto ma najwięcej jabłek?,Anna,Odpowiedź: Anna,One-Shot,easy
 25,Anna ma więcej jabłek niż Basia. Basia ma więcej niż Celina. Kto ma najwięcej jabłek?,Anna,Odpowiedź: Anna,Few-Shot,easy
-25,Anna ma więcej jabłek niż Basia. Basia ma więcej niż Celina. Kto ma najwięcej jabłek?,Anna,"1. Zanalizujemy problem dokładnie: Anna, Basia i Celine posiadają jabłki. Anna ma więcej niż Basia i Basia ma więcej niż Celina.
+25,Anna ma więcej jabłek niż Basia. Basia ma więcej niż Celina. Kto ma najwięcej jabłek?,Anna,"1. Analizacja problemu - Zostały przedstawione trzy osoby (Anna, Basia i Celine) oraz informacja o tym, że Anna posiada więcej jabłek niż Basia, a ta z kolei posiada więcej niż Celina. Zadaniem jest ustalenie, kto z tych trzech osób posiada najwięcej jabłek.
 
-  2. Rozbijemy problem na mniejsze kroki:
-     - Sprawdźmy czy Anna jest tylko jedynym posiadaczem jabłek. (To nie może być przypadek, gdyż nie ma ona najwięcej).
-     - Ponieważ Basia ma więcej niż Celina, muszą one obie mieć jabłki, ale nie wiadomo czy Anna ma te same ilości jak Basia.
+  2. Rozbicie problemu na mniejsze kroki - Aby ocenić ilość jabłek u każdej z wymienionych osób, należy porównać posiadane przez nie jabłka w parach:
+     - Anna > Basia
+     - Basia > Celine
 
-  3. Rozwiążmy każdy krok osobno:
-     - Ponieważ nie może być tylko Anna z jabłkami, muszą one obie mieć, ale nie wiadomo czy także Celina ma je.
-     - Wykluczamy możliwość, że Anna ma najwięcej i jest jedynym posiadaczem jabłek. Teraz musimy sprawdzić, które dwie osoby mają najwięcej jabłek (Anna i Basia lub Basia i Celina).
+  3. Rozwiązanie każdego kroku - W pierwszej parze (Anna i Basia) Anna ma więcej jabłek, a w drugiej (Basia i Celine) Basia też ma więcej jabłek.
 
-  4. Wyciągnijmy ostateczny wniosek:
-     - Sprawdzamy czy Anna i Basia mają taką samą ilość jabłek. W przypadku 'tak' mamy odpowiedź, gdyż Anna ma więcej niż Basia (choć te same). Jeśli 'nie', to najwięcej jabłek musi mieć osoba, która nie jest Anna i nie jest Celina - czyli tylko Basia.
+  4. Wnioski - Z całego rozumowania wynika, że jeśli u obu pozostałych osób, tj. Basia i Celine, Basia posiada więcej jabłek niż ta druga, to ona z kolei musi mieć więcej jabłek niż Anna (bo Anna ma więcej niż Basia). Wtedy także nie może być prawdą, że Celine posiada więcej jabłek niż Basia. Oznacza to, że musi ona mieć mniej jabłek niż ta druga (Basia), a zatem i mniej jabłek niż Anna, bo ta ma więcej niż Basia. W związku z tym musimy wnioskować, że Anna posiada najwięcej jabłek.
 
-  5. Odpowiedź: Basia",Zero-Shot CoT,easy
-25,Anna ma więcej jabłek niż Basia. Basia ma więcej niż Celina. Kto ma najwięcej jabłek?,Anna,"1. Analiza problemu: Zawiera się w trzech punktach - Anna, Basia i Celina posiadają jabłka w niewiadomej ilości. Anna ma więcej niż Basia, a ta więcej niż Celina.
-
-  2. Rozbicie na kroki:
-     - Wiemy że Anna ma więcej jabłek niż Basia (Anna > Basia)
-     - Wiemy że Basia ma więcej jabłek niż Celina (Basia > Celina)
-
-  3. Rozwiązanie kroków:
-     - Zauważamy, że jeśli Anna > Basia i Basia > Celina to w zasadzie znaczy, że Anna > Celina (więcej od tej, która ma więcej niż druga)
-
-  4. Ostateczny wniosek:
-     - Anna > Celina, czyli Anna posiada najwięcej jabłek.",Few-Shot CoT,easy
-26,"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski","1) Czy jeden z braci ma dwa rowery? Nie, ponieważ każdy ma po jednym rowerze.
-2) Trzech braci posiada różne rowery. Zatem nie może być wśród nich brata, który nie posiada roweru. Wszyscy muszą mieć rowery.
-3) Ponieważ nikt z braci nie ma czerwonego i niebieskiego roweru, to zielony jest tylko możliwym kolorem dla brata pozostałych.
-4) Znać trzeba kolejność imion braci, by w pełni rozwiązać zagadkę. Oto jedyne możliwe ułożenie braci i ich rowerów:
-    - Janek ma czerwony rower (nie może mieć żadnego innego koloru, bo trzy są już zajęte)
-    - Michał nie może mieć czerwonego roweru (bo Janek go ma), niebieskiego roweru (bo taki nie istnieje) oraz zielonego roweru (bo już wysnułem, że to jest kolor brata pozostałych, o czym powyżej). Tylko jeden możliwy kolor dla Michała to żółty.
-    - Teraz już tylko brat najmłodszy, Krystian, ma możliwość wyboru koloru: czerwony (jeśli chce być takim samym jak Janek) lub zielony (jeśli chce wziąć kolor, który pozostał do dostania). Uważając, że chodzi tu o ułożenie braci i rowerów oraz to, że zielony jest kolorem brata Michała, można wybrać tylko żółty dla Krystiana.
-5) Więc Janek ma czerwony, Michał żółty a Krystian zielony rower.",Zero-Shot,hard
-26,"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski","Odpowiedź: Janek i Michał mają zielony rower, a ten trzeci brat ma czerwony rower.",One-Shot,hard
-26,"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski","Odpowiedź: Janek ma zielony, a Michał ma czerwony rower. Trzeci brat posiada niebieski rower.",Few-Shot,hard
-26,"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski","1. Analiza problemu: W sytuacji trzech braci z różnymi kolorami rowerów, znanych jest tylko to, że Janek nie ma niebieskiego roweru i Michał nie ma czerwonego. Wyniknąć musi wypowiedź o tym, kto ma jaką barwę.
-
-  2. Rozbicie problemu na mniejsze kroki:
-      - Pierwszy krok: Zidentyfikuj braci i kolory rowerów, które są jeszcze nieznane. W tym przypadku bracia to Janek i Michał. Kolor rowerów nieznanych jest czerwony i zielony.
-      - Drugi krok: Wyklucz kolory rowerów należących do innych braci, aby ustalić pozostałe możliwości. W tym wypadku Janek nie ma niebieskiego roweru, a Michał nie ma czerwonego. To oznacza, że zielony i niebieski rowery muszą należeć do innego brata (trzeciego).
-      - Trzeci krok: Ustal kolor rowerów dla pozostałych braci na podstawie informacji uzyskanych w poprzednich krokach. Nie ma już żadnych przeszkód ani ograniczeń, co oznacza, że Janek ma czerwony rower a Michał zielony.
-
-  4. Wniosek: Odpowiedź: Janek ma czerwony rower, a Michał zielony.",Zero-Shot CoT,hard
-26,"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski","1. Analiza problemu: Trzech braci mają różne kolory rowerów, jeden z nich nie ma niebieskiego i jeden nie ma czerwonego. Zadaniem jest ustalić, jaki kolor posiada każdy z braci.
-
-  2. Rozdzielenie problemu na mniejsze kroki:
-     - Ustalenie koloru rowerów Janka (Bracia mają różne kolory, jeden nie ma niebieskiego i jeden nie ma czerwonego, więc trzeci musi być niebieski lub czerwony)
-     - Ustalenie koloru rowerów Michała (Jeden nie ma czerwonego, więc musi mieć inny kolor niż Janek i Kasper)
-     - Ustalenie koloru rowerów Kaspera (Ktoś ma niebieski rower, a ktoś jest to nie Janko. Więc ostatni brat musi mieć czerwony rower).
-
-  3. Rozwiązanie kroków:
-     - Janek nie ma niebieskiego (musi więc posiadać czerwony, zielony lub jeszcze inny kolor)
-     - Michał nie ma czerwonego (musi więc posiadać niebieski, zielony lub jeszcze inny kolor)
-     - Kasper musi mieć czerwony rower, gdyż Janek nie ma go i Michał może go mieć lub nie
-
-  4. Wniosek: Kolory braci to czerwony, zielony i niebieski (nie wiemy jeszcze kolejności). Mogą to być np. Janek-zielony, Michał-czerwony, Kasper-niebieski. Albo inny układ, w którym każdy ma swój odpowiedni kolor roweru.",Few-Shot CoT,hard
-27,Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,"Odpowiedź: Ania ma 8 lat. (Obliczamy odwrotnie: jeśli w 4 lat Basia będzie mieć 16 lat, to teraz ma ona 16-4 = 12 lat, a jest ona dwukrotnie starsza od Ani, dlatego Ania musi mieć 12/2 = 6 lat mniej. Więc Ania ma 12-6=8 lat.)",Zero-Shot,medium
-27,Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,Odpowiedź: 8 lat,One-Shot,medium
-27,Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,Odpowiedź: Ania ma 8 lat.,Few-Shot,medium
-27,Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,"1. Analizuj problem: Ustalono, że Basia jest dwa razy starsza od Ani i za 4 lata Basia będzie miała 16 lat. To znaczy, że teraz Basia ma 16 - 4 = 12 lata. Gdyż Basia jest dwukrotnie starsza od Ani, to teraz Ania ma ona 12/2 = 6 lat.
-
-  2. Rozbij problem na mniejsze kroki: Stwierdzono, że Basia jest starsza o 2 lata od Ani i za 4 lata Basia będzie miała 16 lat. Przypadajac to na dwie osobliwe sytuacje: teraz czyli obecnie, a po upłynięciu 4 lat.
-
-  3. Rozwiąż każdy krok osobno: W sytuacji obecnej Basia ma ona 12 lata, więc Ania ma 6 lat. Po 4 latach, Basia będzie miała 16 lat, a zatem Ania będzie miała tyle samo lat co teraz.
-
-  4. Wyciągnij ostateczny wniosek: Teraz Ania ma 6 lat.",Zero-Shot CoT,medium
-27,Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,"1. Analizujemy problem dokładnie. Mamy dwie osoby Basię i Annę, dla których podany jest relatywny wiek (Basia jest starsza od Ani o dwa lata) oraz przyszły wiek Basi po upływie 4 lat (16 lat).
-  2. Rozbijemy problem na mniejsze kroki:
-     - Sposób liczenia lat, niezależny od osoby: 1 rok = 12 miesięcy = 52 tygodnie = 364 dni (na przykładzie roku 2022).
-  3. Wiemy, że Basia jest starsza od Ani o 2 lata. Aby policzyć aktualny wiek Ani, musimy więc odroczyć liczbę lat, jakie miałaby Basia, kiedy była tej samej starości co teraz Anna (od tego momentu minęły 2 lata). Liczba ta wynosi (16-2) = 14 lat.
-  4. Ostateczny wniosek: Ania ma 14 lat.
-
-Odpowiedź: Ania ma 14 lat.",Few-Shot CoT,medium
-28,"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,"Odpowiedź: Dotrzesz o 8:15 (jeżeli uważasz, że licząc czas toczy się godzina) lub 8:30 (jeżeli uważasz, że licząc czas toczy się minuta).",Zero-Shot,medium
-28,"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,Odpowiedź: 7:45,One-Shot,medium
-28,"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,Odpowiedź: 7:45,Few-Shot,medium
-28,"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,"1. Analiza problemu: Dla mnie jest to problemy liczbowe i czasowe. Wiemy, że wychodzisz o godzinie 7:00 rano, a czas drogi do miejsca trwa 45 minut (to znaczy 45/60 = 0,75 godziny).
-
-  2. Rozbicie problemu na mniejsze kroki: W tym przypadku jest to jedyny krok, więc nie ma potrzeby dalszej rozbity podproblemów.
-
-  3. Rozwiązanie każdego kroku indzidualnie: O 7:00 rano minąłe 0 godzin i 0 minut. Po przebiegu drogi trwającej 45 minut będziesz minąłe 0,75 godziny od 7:00 rano.
-
-  4. Ostateczny wniosek: Odpowiedź: 7:30",Zero-Shot CoT,medium
-28,"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,"1. Analityczne przebadanie problemu: Zadaniem jest obliczenie godziny, w której dotrze się do celu, jeżeli ścieżka trwa 45 minut i zaczynamy wtedy gdy jesteśmy o 7:00.
-
-  2. Rozbicie problemu na mniejsze kroki:
-      - Wtedy gdy jesteśmy o 7:00, ścieżka trwa 45 minut. Więc potrzebujemy określić ile minut ma w sumie 45 minut. (45*60 = 2700 sekund)
-      - Następnie musimy przejść przez tę liczbę sekund, rozdzielając je na minuty i godziny, aby uzyskać odpowiednią wartość. (Dzielimy 2700 przez 60 by otrzymać 45 minut, a resztę dzielimy przez 60, by otrzymać sekundy)
-
-  3. Rozwiązanie każdego kroku:
-      - Liczba 2700 jest liczbą całkowitą i nie może być podzielona przez 60 bez reszty, więc musimy pominąć te czynności.
-      - Dzielimy 2700 przez 60, aby otrzymać liczbę minut: (2700 / 60) = 45.
-      - Reszta dzielenia 2700 przez 60 wynosi 0, więc nie musimy odszedł do kolejnego kroku.
-
-  4. Wniosek: Gdy zaczynamy nasze wędrówkę o 7:00 i trwa ona 45 minut, to dotrzymyśmy swej celu o 7:45.
-
-Odpowiedź: 7:45",Few-Shot CoT,medium
-29,"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,Odpowiedź: Róża,Zero-Shot,easy
-29,"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,Odpowiedź: Róża,One-Shot,easy
-29,"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,"Odpowiedź: Róża (Dwie dziewczynki, dzieci mamy Adama)",Few-Shot,easy
-29,"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,"1. Analizuję problem:
-     - Dana jest informacja, że mama Adama ma trzech synów, a ich imiona to Kwiatek i Motylek. Zadaniem jest ustalenie imienia trzeciego syna, którym jest Adam. Jednak, ponieważ mama Adama nosi również nazwisko Adama, to trzeci syn powinien mieć inne imię niż jego ojciec i bracia.
+Odpowiedź: Anna",Zero-Shot CoT,easy
+25,Anna ma więcej jabłek niż Basia. Basia ma więcej niż Celina. Kto ma najwięcej jabłek?,Anna,"1. Analizuję problem dokładnie: Dostarczono informacje o trzech kobietach (Anna, Basia i Celina) oraz liczbie jabłek u każdej z nich. Jest także stwierdzone, że Anna ma więcej jabłek niż Basia i Basia ma więcej jabłek niż Celina.
 
   2. Rozbiję problem na mniejsze kroki:
-     - Pierwszy krok: wykluczam wszystkie imiona, które są takie same co imiona synów Adama, czyli Kwiatek i Motylek.
-     - Drugi krok: próbuję ustalić inne możliwe imiona dla trzeciego syna.
+     - Sprawdź czy Anna ma więcej jabłek niż Basia (tak jest)
+     - Sprawdź czy Basia ma więcej jabłek niż Celina (tak jest)
+     - Zaznacz kolejność porządkową, na podstawie tych stwierdzeń: Anna > Basia > Celina
 
-  3. Rozwiążę każdy krok osobno:
-     - W pierwszym kroku wykluczam wszystkie imiona, które są takie same co imiona braci Adama, czyli Kwiatek i Motylek. Nie ma innych synów, których imiona zostały wcześniej podane, więc należy rozważać inne możliwe imiona.
-     - W drugim kroku próbuję ustalić inne możliwe imiona dla trzeciego syna. Należy zauważyć, że tradycyjnie rodzicom nadaje się imię matki w postaci przydomka, czyli na przypadek Adama i jego braci to Kwiatekowiec i Motylekowicz. Z tego względu można założyć, że imię trzeciego syna będzie miało podobieństwo do nazwy miejscowości lub rośliny. Jednakże nie ma informacji o tym, jakimi to są zamiary rodziców, więc te hipotezy pozostają jedynie możliwymi rozwiązaniami. W celu zbudowania bardziej przekonującego rozumowania należy mieć dodatkowe informacje o rodzinie i preferencjach rodziców.
+  3. Rozwiąż każdy krok osobno:
+     - Odpowiedź 1: Dla zapewnienia porównywalności wszystkich kobiet, ograniczam liczbę jabłek u Celiny do tej samej liczby co u Basii (dla przykładu 2 sztuki).
+       - Anna ma X jabłek (więcej niż Basia), ale nie wiemy jakie X jest.
+     - Odpowiedź 2: Basia ma Y jabłek, co jest większe od X (bo ma więcej niż Celina)
+       - Nie wiemy o konkretnych liczbach (X i Y), jedynie że X < Y.
+     - Odpowiedź 3: Z powodu porządkowania, w którym znajdują się kobiety, musi być taka sytuacja, że Y jest największą liczbą jabłek (bo jest ona u Basii).
+       - Nie ma już potrzeby wyznaczenia liczby X ponieważ wiedzimy, że Y jest największa.
 
-  4. Wyciągnij ostateczny wniosek:
-     - Ze względu na brak dodatkowych informacji, nie można ustalić z pewnością imienia trzeciego syna Adama. Jednakże można wykluczyć, że jego imię będzie takie samo co jedno z imion jego braci i można podejrzeć, że to będzie imię mające podobieństwo do nazwy miejscowości lub rośliny.",Zero-Shot CoT,easy
-29,"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,"1. Analiza problemu: Zadana jest nazwa osoby, która jest mamą Adama i posiada trzech synów – Kwiatek i Motylek (zostały już wymienione).
+  4. Wyciągnij ostateczny wniosek: Z powodu porządkowania zaznaczono, że Basia ma najwięcej jabłek, a Anna i Celina mają mniej. Jeśli byliby dodatkowo dane liczby, określałyby nam dokładnie ile jabłek posiada każda z kobiet. Odpowiedź: Basia ma najwięcej jabłek (jeśli nie podano konkretnych ilości).",Few-Shot CoT,easy
+26,"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski","1. Wiemy, że każdy z trzech braci posiada inny kolor roweru (czerwony, zielony, niebieski).
 
-  2. Rozbicie na kroki: Wyszukujemy imię trzeciego syna mamy Adama.
+2. Janek nie posiada niebieskiego roweru. Tym samym, Michał musi go posiadać.
 
-  3. Krok 1 - Eliminacja niemożliwych opcji: Nie może to być synem samego Adama, gdyż ma on tylko dwóch synów wymienionych – Kwiatek i Motylek. W zadaniu nie informuje się o istnieniu żony Adama, dlatego też nie może to być imię żony Adama.
+3. Rowerem czerwonym nie może być Janek i Michał (bo już mieli inne). Tym samym, Kowalakiem musi być ten, kto ma czerwony rower.
 
-  4. Krok 2 - Założenie hipotez: Nauczymy się imienia syna mamy Adama poprzez wyeliminowanie niemożliwych opcji. Możemy założyć, że jest to imię jednego z synów znanych nam z książki ""Księga dżungli"": Mały Białołbik, Zorba, Bajkali,... (i tak dalej).
+4. Teraz pozostaje tylko trzeci brat, który nie posiada jeszcze żadnego roweru. On musi mieć zielony rower (bo inne są już przeznaczone).
 
-  5. Krok 3 - Testowanie hipotez: Sprawdźmy czy to jedno z imion jest poprawnym imieniem syna mamy Adama. Możemy to uczynić poprzez wyszukiwanie, czy jeden z nich ma trzech synów o nazwach Kwiatek i Motylek (lub też wymyślimy inny sposób na potwierdzenie prawdziwości hipotezy).
+Odpowiedź: Janek ma czerwony rower, Michał ma niebieski rower, a Kowalak ma zielony rower.",Zero-Shot,hard
+26,"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski","1. Trzech braci mają po jednym rowerze. Jeśli Janek i Michał nie mają tych samej barwy, to musi ona należeć do trzeciego brata (bo każdy z nich ma swój własny rower). Zatem ten trzeci brat ma czerwony, zielony lub niebieski rower. Wiedziemy, że Janek nie ma niebieskiego i Michał nie ma czerwonego, to znaczy, że czerwony rower musi należeć do jednego z nich (bo z każdym innym bratem ma swój własny rower). Zatem czerwony rower należy do Janeka lub Michała.
+  2. Wiemy, że Janek nie ma niebieskiego roweru i czerwonego roweru. Pozostaje tylko zielony rower. Odpowiedź: Janek ma zielony rower, Michał ma czerwony rower (bo wiemy, że ten brat nie może mieć czerwonego), a trzeci brat ma niebieski rower (bo nikt inny nie ma tego roweru).",One-Shot,hard
+26,"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski","Odpowiedź: Janek ma zielony rower, a Michał ma czerwony.",Few-Shot,hard
+26,"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski","1. Analityka problemu: Zadana jest informacja o trzech braciach i ich rowerach, ale tylko wiemy, że Janek nie ma niebieskiego i Michał nie ma czerwonego.
 
-  6. Ostateczny wniosek: Jeśli znajdziemy takiego syna, to może to być imię trzeciego syna mamy Adama. Jeśli nie, to musimy założyć innej hipotezy i ponownie testować.
-
-  7. Odpowiedź: Brak odpowiedzi w danym formacie, gdyż dalsze testowanie potrzebuje informacji o imionach synów znanych nam z książki ""Księga dżungli"". Jeśli ktoś znajdzie takiego syna mamy Adama i przekaże imię, to wtedy będziemy mogli odpowiedzieć.
-
-  8. W przypadku braku informacji o imionach synów znanych nam z ""Księgi dżungli"" można założyć, że imię trzeciego syna mamy Adama jest nieznane nam w zadaniu. Odpowiedź może być wtedy następująca: ""Brak informacji o imieniu trzeciego syna mamy Adama.""",Few-Shot CoT,easy
-30,3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,6 kotów łapią 6 myszów w 6 minut.,Zero-Shot,medium
-30,3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,Odpowiedź: 6 kotów łapią 18 myszów w 6 minut,One-Shot,medium
-30,3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,36 kotów w 36 minut,Few-Shot,medium
-30,3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,"1. Analiza problemu: W danym problemie podany jest związek między liczbą kotów a liczbą myszy, które one łapią w odpowiedniej długości czasu.
-
-  2. Rozbiórka problemu na mniejsze kroki:
-     - Ponieważ 3 koty łapią 3 myszy każdy w 3 minuty, oznacza to, że każdy kot łapi jedną mysz w ciągu trzech minut.
-     - Można więc założyć, że gdyby miały koty do dyspozycji te same warunki i takie same umiejętności, to każdy kolejny kot łapi jedną mysz w ciągu trzech minut.
-
-  3. Rozwiązanie poszczególnych kroków:
-     - Jeśli mamy 6 kotów, to każdy kolejny kot łapi jedną mysz w ciągu trzech minut.
-     - W ciągu 6 minut pojawi się więc 2 kolejne okresy trwające po 3 minuty, w których każdy z 6 kotów ma 3 minuty na łapiecie myszę.
-     - Oznacza to, że każdy z 6 kotów łapi po 3 myszy w ciągu 6 minut.
-
-  4. Wniosek:
-      - Jeśli 3 koty łapią 3 myszy w 3 minuty, to 6 kotów łapi 18 myszy w 6 minut.
-    Odpowiedź: 6 kotów łapie 18 myszy w 6 minut.",Zero-Shot CoT,medium
-30,3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,"1. Problem: Z trzema kotami (katy) łapane są trzy myszki (myszy) w trzech minutach. W tej samej sytuacji, ile myszek złapią szóściu kotów w szóstce minut?
-
-  2. Podział problem na mniejsze kroki:
-     - Zobaczysz, jak dużo myszek złapie jeden kot w jednej minucie.
-     - Następnie pomnożysz liczbę myszek, które jeden kot złapie w minutę przez liczbę kotów. To da liczbę myszek, które będą łapane przez wszystkie koty w tej samej minucie.
-     - Ostatecznie pomnożysz tę liczbę przez liczbę minut w których dany eksperyment trwa.
-
-  3. Rozwiązanie dla poszczególnych kroków:
-
-     - Dla jednego kota, ilu myszek złapie w minutę? (Katka łapi jedną myszą.) Ilu myszek? 1
-
-     - Jak dużo myszek złapie dwa koty w minucie? (Jedna myszka po jednej, a drugi po drugiej; suma wynosi 2.)
-
-     - Jak dużo myszek złapie trzy koty w minucie? (Katki łapiąmyśzy odpowiednio: 1, 0, i 1. Suma wynosi 2.)
-
-     - Jak dużo myszek złapie szóść kotów w minucie? (Złożona suma złapania myszek dla trzech katów to 2; mnożymy ją przez liczbę nowych katków, a ta wynosi 3. Suma wynosi 6.)
-
-     - Jak dużo myszek zostanie złapanych w sześć minut? (Szóść kotów łapi szóstkę minut. Suma wynosi 36.)
-
-  4. Ostateczna odpowiedź: Dla trzech katków, ilu myszek złapać będą w sześć minut? (Szóść kotów łapią szóstkę minut; suma wynosi 36.)",Few-Shot CoT,medium
-31,W klasie są 24 dzieci. Ile rąk razem?,48,Odpowiedź: 48 (każda osoba ma po dwie ręce),Zero-Shot,easy
-31,W klasie są 24 dzieci. Ile rąk razem?,48,Odpowiedź: 48,One-Shot,easy
-31,W klasie są 24 dzieci. Ile rąk razem?,48,Odpowiedź: 48 (każda dziecko ma po dwie ręce),Few-Shot,easy
-31,W klasie są 24 dzieci. Ile rąk razem?,48,"1. Analizuję problem: 24 dzieci znajdują się w jednej klasie, czyli każdy z nich posiada co najmniej jedną rękę (lub dwie).
-  2. Rozbijam problem na mniejsze kroki: Musimy wyznaczyć liczbę rąk na każdym z dzieci w klasie i sumować je.
-  3. Każdy człowiek posiada co najmniej jedną rękę, a więc 24 dzieci razem mają co najmniej 24 ręki. Jednak nie chcemy zaliczyć każdej ręki dwa razy (bo każda ma dwie), czyli liczba połowań musi być większa od liczby dzieci, bo w sumie wyniknie mniej niż 24.
-  4. Wiemy, że ludzie posiadają co najmniej jedną rękę, więc minimalna liczba rąk jest równa liczbie osób i maksymalna również, bo każda ręka należy do jakiejś osoby.
-  5. Wynikiem musi być więc suma rąk na dzieciach. Aby uzyskać tę liczbę, musimy założyć, że połowa dzieci posiada jedną rękę, a druga połowa dwie.
-  6. W klasie jest 12 par dzieci (liczba pary to nieparzysta liczba, więc tylko jeden z każdych dwóch dzieci będzie miał tylko jedną rękę). Ilość takich dzieci jest połowa całej liczby, tj. 12/2 = 6.
-  7. W klasie jest też 12 dzieci, które posiadają dwie ręce. Nie ma potrzeby ich liczyć, bo ich liczbą są połowa dzieci w klasie (bo w sumie musi być 24 ręki).
-  8. Więc razem dzieci mają 6 rąk jedno- i 12 rąk dwu- (połowa całej liczby) = 18 rąk, więc połowa tych rąk musi być zaliczona tylko jeden raz, a wtedy pozostaje 9 rąk. Ale mamy już 18 rąk, więc te 9 rąk należy podwójnie liczyć i sumować.
-  9. Różnica między liczbą rąk a ich połową to (18 - 9)/2 = 3 (bo połowa dzieci ma tylko jedną rękę), więc te 3 dzieci mają po dwie ręki.
-  10. Ostatecznie, liczba rąk na dzieciach to 6 + (2 * 3) = 9 + 6 = 15 (wynik jest mniejszy od sumy wszystkich rąk, bo nie liczymy każdej raz dwukrotnie).",Zero-Shot CoT,easy
-31,W klasie są 24 dzieci. Ile rąk razem?,48,"1. Analiza problemu: W klasie są 24 dzieci, a każde dziecko ma dwa ręce.
-
-  2. Podział na mniejsze kroki: Wyobraź sobie dziecko z klasy. Zna się, że to jedno dziecko i posiada ono dwie ręce. Dziś obserwujemy wszystkie dzieci razem i liczymy łączną liczbę ich rąk.
-
-  3. Rozwiązanie każdego kroku: Wiedzieliśmy, że każde dziecko posiada dwie ręce. Zatem 24 dzieci razem mają 48 rąk (bo 24 * 2 = 48).
-
-  4. Ostateczny wniosek: Ile rąk razem? - 48 rąk.",Few-Shot CoT,easy
-32,Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11","1, 5, 24 (suma tych trzech liczb wynosi 30)",Zero-Shot,medium
-32,Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11","Odpowiedź: 10, 15, 25",One-Shot,medium
-32,Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11","Odpowiedź: 5, 10 i 15",Few-Shot,medium
-32,Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11","1. Analiza problemu: Zadanie dotyczy obliczeń matematycznych, więc należy znaleźć trzy kolejne liczby takie, aby ich suma wynosiła 30.
-
-  2. Rozbicie problemu na kroki:
-     - Sprawdzenie, które liczby pozwalają uzyskać sumę równą 30, za każdym razem przetestuj dwa dodatnie liczby i jeden nieujemny (jeśli jedna z trzech jest ujemna, to suma wszystkich będzie mniejsza niż 30).
+  2. Podział na kroki: W pierwszym kroku próbujemy ustalić kolor roweru każdego z braci (Janek, Michał i trzeci).
 
   3. Rozwiązanie kroków:
-     - Przejrze się możliwe pary kolejnych liczb, tak aby ich suma była równa 30:
-       - (2, 5, 23) → nieprawidłowa parzystość długości
-       - (1, 6, 23) → nieprawidłowa parzystość długości
-       - (1, 7, 22) → prawidłowa parzystość długości, ale 22 jest za duże
-       - (1, 8, 21) → zgodne warunki, lecz 21 nie jest kolejną liczbą po 8
-       - (1, 9, 19) → zgodne warunki, ale 19 nie jest kolejną liczbą po 9
-       - (1, 10, 19) → poprawnie kolejne liczby, ale suma wyraźnie przekracza 30
-       - (2, 4, 24) → nieprawidłowa parzystość długości
-       - (2, 5, 23) → ponownie sprawdzone wcześniej, ale można użyć wersji z odwróconą kolejnością
-     - Dla każdej pary liczb, których suma wynosi 10 lub mniejsza: (2, 8) → suma 10 nie jest jeszcze trzy liczby, (1, 9) → suma 10, można je uzupełnić kolejną liczbą równą 9
-     - Ostatecznie uzyskano parę (1, 9) i dwie liczby kolejne: 8 i 12. Suma tych trzech liczb jest równa 30.
 
-  4. Wynik:
-    Odpowiedź: (1, 9, 8, 12)",Zero-Shot CoT,medium
-32,Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11","1. Analiza problemu: Dostaliśmy informację, że suma trzech kolejnych liczb wynosi 30. Proszę zauważyć, że jest to liczba parzysta i może być równa sumie dwóch niewielkich liczb oraz jednej duższej liczby.
-  2. Rozbicie problemu na mniejsze kroki: Najpierw sprawdzimy, czy występuje możliwość, że suma jest równa dwóm liczbm identycznymi. W tym przypadku suma wynosiłaby 15 i odpowiedź byłaby już oczywista. Zauważmy jednak, że takie rozwiązanie nie spełnia warunku, że to kolejne liczby.
-  3. Rozwiązanie kroków osobno: Aby znaleźć dwa wielokrotności liczby (w tym przypadku musimy znaleźć liczbę parzystą, gdyż suma jest parzysta), należy przejść kolejne pary liczb od najmniejszej i sumować każdą parę.
-  4. Rozwiązanie ostatniego kroku: Następnie sprawdzamy, czy długości wielokrotności są takie same, a jedna z nich dodana do tych dwóch daje wynik równy 30. Oczywistym jest, że liczba ta musi być mniejsza od połowy sumy.
-  5. Wniosek: Najlepszym rozwiązaniem jest więc suma 10 + 15 (lub 15 + 10) i dalszą liczbę równą 5. Rozwiązanie odpowiedź: Odpowiedź: 10, 15, 5",Few-Shot CoT,medium
-33,"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,"Odpowiedź: Tomek lub Piotr (nie można dokładnie powiedzieć, kto jest najstarszy z tych dwóch)",Zero-Shot,easy
-33,"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,Odpowiedź: Michał,One-Shot,easy
-33,"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,Odpowiedź: Michał,Few-Shot,easy
-33,"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,"1. Analiza problemu: W zadaniu podano trzy imiona osób (Tomek, Michał, Piotra) i stwierdzenie, że Tomek jest młodszy od Michała, ale starszy od Piotra.
+     a) Znając że Janek nie ma niebieskiego roweru, to może on mieć tylko czerwony lub zielony. W tym wypadku musi on mieć ten kolor którym nie posiada Michał, bo inaczej obaj mieliby ten sam rower.
+
+     b) Znając że Michał nie ma czerwonego roweru, to może on mieć tylko zielony lub niebieski. W tym wypadku musi on mieć ten kolor którym nie posiada Janek, bo inaczej obaj mieliby taki sam rower.
+
+     c) Teraz pozostaje brat trzeci. Musi on mieć niebieski lub czerwony rower (bo jeśli byłby zielony to byłby ten którym posiadał jeden z naszych dwóch bohaterów). Ale wiemy że Janek i Michał obaj nie mogą mieć tego koloru.
+
+  4. Ostateczny wynik: Zebrałyśmy, że Janek ma czerwony rower a Michał zielony rower. Teraz musi trzeci brat mieć niebieski rower (bo w przeciwnym razie miałby ten sam kolor co Janek).
+
+Odpowiedź: Janek ma czerwony rower, Michał ma zielony a trzeci brat ma niebieski.",Zero-Shot CoT,hard
+26,"Trzech braci: czerwony, zielony, niebieski rower. Janek nie ma niebieskiego. Michał nie ma czerwonego. Kto ma jaki kolor?","Janek-czerwony, Michał-zielony, trzeci-niebieski","1. Analiza problemu: Mamy trzech braci (Janek, Michał, i ...) oraz trzy rowery (czerwony, zielony, niebieski). Każdy z braci ma swój własny rower. Dodatkowo podano, że Janek nie ma niebieskiego rowera i Michał nie ma czerwonego.
+
+  2. Rozbicie problemu na mniejsze kroki:
+     - Pierwszym zadaniem jest ustalenie koloru rowerów braci.
+     - W drugim kroku odróżnimy każdego z braci po jego rowerze.
+
+  3. Rozwiązanie każdego kroku:
+     - Krok 1: Nie wiemy jeszcze kolorów rowerów, ale wiadomo, że Janek nie ma niebieskiego i Michał nie czerwonego. Możemy wykluczyć dwie opcje (niebieski i czerwony), a pozostałe są możliwościami dla każdego z braci.
+     - Krok 2: Teraz musimy ustalić, któremu z trzech braci kolorowi rowerów odpowiada. Dla każdej możliwości z poprzedniego kroku wykonujemy test, czy w danym przypadku brat ten nie ma czerwonego roweru (jeśli mamy brata o kolorze czerwonym) lub niebieskiego (jeśli to niebieski rower). Jeżeli tak jest, to brat ten musi mieć rower o pozostałych dwóch kolorach. Testujemy wszystkie trzy możliwości i wykluczamy te, które okazują się niemożliwe dla jakiegoś z braci.
+       - Możliwość 1: Janek ma rower czerwony, Michał ma zielony, ktoś inny ma niebieski. (Nie może być tak, bo Janek nie ma niebieskiego i Michał nie czerwonego).
+       - Możliwość 2: Janek ma rower zielony, Michał ma czerwony, ktoś inny ma niebieski. (Nie może być tak, bo Janek nie ma niebieskiego i Michał nie czerwonego).
+       - Możliwość 3: Janek ma rower niebieski, Michał ma zielony, ktoś inny ma czerwony. (To może być prawdą).
+
+  4. Wniosek: Teraz wiemy, że Janek ma rower niebieski, a Michał ma zielony. Teraz musimy ustalić kolor roweru dla ostatniego brata. Możemy wykorzystać informację o tym, że niebieski i czerwony już zajęte są przez Janka i Michała odpowiednio. Zatem pozostało tylko czerwony rower dla ostatniego brata.
+
+Odpowiedź: Janek ma niebieski rower, Michał ma zielony, a ktoś inny ma czerwony.",Few-Shot CoT,hard
+27,Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,Odpowiedź: Ania ma 8 lata.,Zero-Shot,medium
+27,Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,"Odpowiedź: Ania ma 8 lat. (Tego roku Basia mająć będzie 12 lata, a za 4 lata - 16 lat, wtedy różnica między nimi będzie 16-12=4, co oznacza, że teraz Ania ma 8 lat.)",One-Shot,medium
+27,Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,Odpowiedź: Ania ma 8 lat.,Few-Shot,medium
+27,Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,"1. Analizuję problem: Basia jest dwa razy starsza od Ani, a za 4 lata Basia będzie miała 16 lat. Chcemy wyznaczyć aktualny wiek Ani.
+
+  2. Rozbijam problemy na mniejsze kroki:
+     - Dla początkowego okresu należy wyznaczyć różnicę wieku między Basią a Anią, a następnie zastosować tę różnicę do czasów o których wiadomo.
+
+  3. Rozwiązuję kroki:
+     - Basia jest dwa razy starsza od Ani. Jeśli mamy wiedzieć jaki jest aktualny wiek Basi, to możemy wyznaczyć jej wiek poprzedni i podzielić go przez 2 (ponieważ Ania jest młodsza). Wiek ten otrzymany po podziale daje naszą różnicę wieku między Basią a Anią.
+     - Jestem wątpliwy, jakie dokładnie lata są nam znane, jednak jeśli za 4 lata Basia będzie miała 16 lat, to po podziale przez 2 (jak powyżej) otrzymamy różnicę wieku między Anią a Basią - 8 lat.
+     - Obecny wiek Basi jest 8 lat wyższy od obecnego wieku Ani, więc aktualnie Ania ma 16 - 8 = 8 lat.
+
+  4. Wyciągam ostateczny wniosek:
+    Odpowiedź: Ania ma teraz 8 lat.",Zero-Shot CoT,medium
+27,Basia jest dwa razy starsza od Ani. Za 4 lata Basia będzie miała 16 lat. Ile lat ma teraz Ania?,6,"1. Analiza problemu: Mamy dwie osoby - Basię i Annę, a także informację, że Basia jest dwa razy starsza od Ani. Wynikiem analizy będzie różnica wieków Basi i Ani oraz fakt, że za 4 lata Basia będzie miała 16 lat.
 
   2. Rozbicie problemu na kroki:
-     - Ustalenie wieku każdej osoby (Tomek, Michał, Piotra)
-     - Porównanie wieku Tomeka z ich kolejnymi względem starszeństwa (Michał i Piotr)
-     - Ostateczna identyfikacja osoby o najwyższym wieku.
+       - Obliczanie różnicy wieków Basi i Ani (R)
+       - Odpowiedź na pytanie o liczbę lat, które musiała upłynąć, aby Basia miała 16 lat. (T)
+       - Wyznaczenie obecnej liczby lat Ani (A)
 
-  3. Rozwiązanie kroków:
-      - Ze stwierdzenia, że Tomek jest starszy od Piotra, to musi być młodszy od Michała (bo więc Michał jest jego starszym rodzeństwem albo bratem).
-      - Możemy również stwierdzić, że jeśli Tomek byłby starszy od Michała, nie mogłoby być prawdą, że on jest młodszy od Piotra. Stwierdzenie zadane musi być prawdziwe, więc Tomek musi być młodszy od Michała.
-      - Zatem trzeba jeszcze ustalić, kto z reszty jest najstarszy: Tomek albo Michał.
+  3. Rozwiązanie każdego kroku:
+      - (R) Ponieważ Basia jest dwa razy starsza od Ani, to różnica wieków wynosi 2 lata.
+      - (T) Aby Basia miała 16 lat za 4 lata, musiały upłynąć 12 lata.
+      - (A) Aby obliczyć aktualną liczbę lat Ani należy odebrać różnicę wieków od teraz i uzupełnić do 16 lat, ponieważ Basia jest już nieco starsza od tej liczby. Więc A = 16 - 12 = 4 lata.
 
   4. Ostateczny wniosek:
-     - Jeśli Tomek byłby najstarszym, musiałby być starszy od Michała, co jest sprzeczne z rzeczywistością. Więc musi być to Michał.
+      - Ania ma 4 lata.
 
-   Odpowiedź: Michał",Zero-Shot CoT,easy
-33,"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,"1. Analiza problemu: W zagadce podanych trzech osób (Tomek, Michał i Piotr) stwierdza się, że Tomek jest młodszy od Michała oraz starszy od Piotra. To znaczy, że względem Michała Tomek ma więcej lat, natomiast względem Piotra Tomek ma mniej lat.
-
-  2. Rozbicie problemu na kroki: Aby rozwiązać zagadkę należy rozważać, że istnieją trzy możliwe stosunki wieku między Tomekiem, Michałem i Piotrem. Można ustalić jeden z tych stosunków, a ostatecznie to pozwoli na określenie wieku każdego z nich.
-
+Odpowiedź: Ania ma 4 lata.",Few-Shot CoT,medium
+28,"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,Odpowiedź: 8:00,Zero-Shot,medium
+28,"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,Odpowiedź: 7:45,One-Shot,medium
+28,"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,Odpowiedź: 8:30,Few-Shot,medium
+28,"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,"1. Problem: Określenie godziny przybycia na miejscu, gdy wychodzimy o 7:00 i droga trwa 45 min.
+  2. Rozbicie problemu na kroki:
+     - Wiemy, że zaczynamy w 7:00 (godzina odliczania).
+     - Poznajemy czas, jaki upływa w minutach podczas drogi. W tym przypadku jest to 45 minuty.
   3. Rozwiązanie kroków:
-     - Wiemy, że Tomek jest starszy od Piotra. Można różnicę lat między Tomekiem a Piotrem zapisać jako liczbę X (X > 0).
-     - Wiemy też, że Tomek jest młodszy od Michała. Różnica wieku pomiędzy Tomekiem i Michałem to X + Y (Y > 0), bo musi być większa od zero, bo inaczej Tomek byłby starszy niż Michał, co jest sprzeczne z informacją podaną.
-     - Obliczamy wiek Michała jako Z (Z = X + Y) i wiek Piotra jako W (W = X).
+      - Znajdziemy ile upłynęło minut od godziny 7 (tj. 07:00) do właściwej godziny dotarcia, czyli odliczając 45 minut z kolejnych 60-minutowych przedziałów czasu.
+  4. Wniosek i odpowiedź:
+      - Odpowiedź: Dotrzesz o 7:30 (gdyż 45 jest większe niż 0, ale mniejsze od 60, więc bierzemy 1 godzinę i wtedy już tylko dodać ile minuty przekroczyliśmy granicę 30 minut, czyli 45 - 30 = 15 minuty).",Zero-Shot CoT,medium
+28,"Wychodzisz o 7:00, droga trwa 45 min. O której dotrzesz?",7:45,"1. Analityczne przetworzenie problemu: Wystawiam zagadkę w postaci ""Czas wyjścia i droga do przejścia"", a odpowiedź powinna być wyrażona w godzinach.
 
-  4. Ostateczny wniosek: Najstarszym z trzech jest ten, kto ma największą liczbę lat. W obliczeniach otrzymaliśmy wartość dla Michała i Piotra. Należy porównać te dwie liczby aby określić, kto jest najstarszy. Michał ma wiek Z, a Piotr ma wiek W. Ze względu na różnicę wieku pomiędzy Tomekiem a Piotrem (X), musi on być mniejszy od Z. Zatem najstarszym jest Michał.
+  2. Rozbicie problemu na kroki: Krok 1: Znalazłem czas wyjścia (7:00) i długość drogi (45 min). Teraz muszę określić czas, kiedy dotrą mnie do punktu przejścia.
 
-Odpowiedź: Michał",Few-Shot CoT,easy
+  3. Rozwiązanie poszczególnych kroków: Krok 2: Długość drogi wynosi 45 minut. Ciężkość dostosowania tej liczby do godzin jest trudna, ponieważ liczba godzin w minucie wynosi 1/60 (ok. 0,017). Więc 45 min są około jednej godzinnej i pięciu minut.
+
+  4. Wyciągnięcie ostatecznego wniosku: Krok 3: Teraz tylko dodaj do godziny wyjścia czas przejścia (około 1 godzina i 5 minut), aby uzyskać odpowiedź.
+
+  5. Wynik końcowy: Odpowiedź: 8:05",Few-Shot CoT,medium
+29,"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,Odpowiedź: Róża (Róża jest trzecim synem Adama),Zero-Shot,easy
+29,"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,Odpowiedź: Różyczka,One-Shot,easy
+29,"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,Odpowiedź: Róża,Few-Shot,easy
+29,"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,"1. Analizuję problem dokładnie: Problem dotyczy nazw osób. Znana jest informacja o jednym z synów Adama - jego imieniu to Kwiatek. Dane nie podają, czy Mama Adama ma jeszcze innych dzieci poza trójką wymienionych, ale zauważam, że trzeba znaleźć nazwę trzeciego syna Adama, którym nie jest Kwiatek.
+
+  2. Rozbiję problem na mniejsze kroki:
+     - Znajdę imię drugiego syna Adama (Motylek).
+     - Znajdę imię trzeciego syna Adama, którym nie jest Kwiatek.
+
+  3. Rozwiążę każdy krok osobno:
+     - Po podaniu informacji o imieniu drugiego syna (Motyleka), problem dotyczył już tylko nazwy trzeciego syna Adama, którym nie jest Kwiatek.
+     - Nie ma danych w problemie, które mogą pomóc zidentyfikować imię trzeciego syna Adama, którym nie jest Kwiatek. W takim przypadku najlepszym rozwiązaniem jest połączenie innych informacji, aby można było wykluczyć nazwy pozostałych możliwych imion synów Adama.
+     - Wiedzę, że imiona synów Adama są kwiatami (Kwiatek i Motylek są takimi). Zauważam, że imiona wszystkich kwiatów są znane: tulipan, lilijka, róża, mak, marzeczanka, dzwoneczek. Wiedząc, że imię drugiego syna Adama to Motylek, można wykluczyć imiona związane z innymi kwiatami niż tulipan i motylka, czyli mak, róża, marzeczanka i dzwoneczek. Zostaje więc jedno możliwe imię - tulipan.
+
+  4. Wyciągnij ostateczny wniosek:
+     Odpowiedź: Mama Adama ma trzech synów: Kwiatek, Motylek i Tulipan.",Zero-Shot CoT,easy
+29,"Mama Adama ma trzech synów: Kwiatek, Motylek i...?",Adam,"1. Analiza problemu: Zadana jest informacja, że Mama Adama ma trzech synów, a już wiadomo, że dwa z nich są Kwiatek i Motylek. Tym samym mamy do zdobycia nazwę trzeciego syna.
+
+  2. Rozbicie problemu na mniejsze kroki: Wykorzystując informację o dwóch znanych synach, możemy wyeliminować niektóre możliwe odpowiedzi, czyli imiona synów innych rodzin.
+
+  3. Rozwiązanie kroków: Wiemy, że mamy trzech synów, a dwa z nich noszą imiona Kwiatek i Motylek. Oznacza to, że jeszcze jeden syn ma inne imię niż wymienione.
+
+  4. Wniosek końcowy: Nazwą trzeciego syna Adama jest... nie dano informacji w zadaniu, ale zauważamy, że możliwe są tylko takie imiona, które nie zostały jeszcze przydzielone nikomu.",Few-Shot CoT,easy
+30,3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,"12 myszy (lub też 2 razy więcej myszów niż kotów)
+Odpowiedź: 12 myszy",Zero-Shot,medium
+30,3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,6 kotów łapią 18 myszów w 6 minut,One-Shot,medium
+30,3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,Odpowiedź: 18 myszy,Few-Shot,medium
+30,3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,"1. Analizacja problemu: Dane są informacje, że trzy koty łapią trzy myszy każdy w trzech minutach. Zadaniem jest ustalenie ilu 6 kotów może łapać 6 myszek w ciągu sześciu minut.
+
+  2. Rozbicie problemu na mniejsze kroki: Pierwszy krok – ustalenie, jak szybko jeden kot łapie myszę; drugi krok - ustalenie, ile myszek 6 kotów może łapać razem w jednej minutce.
+
+  3. Rozwiązanie każdego kroku: Pierwszy krok – jeśli trzy koty łapą trzy myszy w trzech minutach, to w jednej minucie kot łapi tę samą myszę raz. Tym samym dwa kota łapią po dwie myszki w jednej minucie (bo 3/3 = 1 i 2*2 = 4). Cztery kota łapiają więc 8 myszek w jednej minucie (bo 4*2 = 8). Sześć kotów więc łapie w jednej minucie 12 myszek (bo 6*2 = 12).
+
+  4. Wyciąganie ostatecznego wniosku: Gdyby sześciu kotom dano sześć minut na złapanie sześciu myszek, to w każdej minucie mieli by oni łapać po dwadzieścia myszy (bo 12*6 = 72 i gdyby po 6 minutach ilość łowionych myszek rosnęła liniowo, to wszystkie sześć minut mieliby by łapać po dwadzieścia myszy).",Zero-Shot CoT,medium
+30,3 koty łapią 3 myszy w 3 minuty. Ile 6 kotów w 6 minut?,12,"1. Analityczny przegląd problemu: Zagadka opisuje sytuację trzech kotów, którzy łapią trzy myszy w trzech minutach. Pytamy, co dzieje się gdy zwiększamy liczbę kotów i minuty na dwie razy (do szóstki).
+
+  2. Rozbicie problemu na mniejsze kroki: Pierwszy krok polega na ustaleniu, ile myszy jeden kot może łapać w jednej minutce. Odpowiedź wynika z informacji, że trzy koty łapią trzy myszy w trzech minutach (jedna minuta na każdego kota). Tym samym każdy kot łapie po jednej myszce w jednej minucie.
+
+  3. Rozwiązanie kroku: Jeśli zwiększamy liczbę kotów i minut na dwie razy, to każdy kot będzie miał dwukrotnie więcej czasu (dwa minuty) aby łapać swoje myszki. W dwóch minutach każdy kot może łapać dwa razy więcej myszy, bo już teraz ma dwukrotnie więcej czasu na to zrobienie (dwie minuty na jedną minutę).
+
+  4. Ostateczny wniosek: Gdy zwiększamy liczbę kotów i minut do szóstki, każdy z sześciu kotów będzie łapał po dwie myszki w dwóch minutach. Dlatego trzy koty łapią 3 myszy w 3 minuty, a sześć kotów będzie łapało 6 myszek w 6 minutach.
+
+  5. Wynik: Odpowiedź: 6 myszy w 6 minutach",Few-Shot CoT,medium
+31,W klasie są 24 dzieci. Ile rąk razem?,48,Odpowiedź: 48 (każdy dziecko ma po dwie ręce),Zero-Shot,easy
+31,W klasie są 24 dzieci. Ile rąk razem?,48,Odpowiedź: 48 (gdyż każde dziecko ma po dwie ręce),One-Shot,easy
+31,W klasie są 24 dzieci. Ile rąk razem?,48,Odpowiedź: 48 (gdyż po dwie ręce ma każda osoba),Few-Shot,easy
+31,W klasie są 24 dzieci. Ile rąk razem?,48,"1. Pierwszy krok: Zanalizujemy problem dokładnie. W klasie jest 24 dziecko, a każde z nich ma dwie ręce.
+  2. Drugi krok: Rozbijamy problem na mniejsze kroki. Musimy liczyć ilu razem jest rąk wszystkich dzieci.
+  3. Trzeci krok: Liczymy ilu rąk ma każde dziecko. Założywszy, że każdy poszczególny uczeń ma dwie ręce, możemy złożyć sumę i uzyskać liczbę wszystkich rąk w klasie.
+  4. Czwarty krok: Wiemy, że każde dziecko ma 2 ręki. Stąd ilu razem jest rąk wszystkich uczniów to te same liczby jak liczba dzieci pomnożona przez 2 (przyjmując, że jeden chłopak lub dziewczyna reprezentuje po jednej ręce).
+  5. Ostateczny krok: W sumie jest to więc: 24 dzieci * 2 ręki na uczniu = 48 rąk (ponieważ pojedynczy chłopak lub dziewczyna liczy jako jedna ręka).
+
+Odpowiedź: Ilu razem jest rąk w klasie? 48",Zero-Shot CoT,easy
+31,W klasie są 24 dzieci. Ile rąk razem?,48,"1. Analiza problemu: W klasie znajduje się 24 dzieci, potrzebne jest wiedzieć ilu dzieci ma po jednej ręce aby odpowiedzieć na pytanie o ilu razem dzieci mają ręce.
+  2. Rozbicie problemu na mniejsze kroki: Warto zauważyć, że ile dzieci ma po jednej ręce to jest też ilość rąk (bo każda ręka należy do jednego dziecka), a więc liczba dzieci używających po jednej ręce odpowiada liczbie rąk.
+  3. Rozwiązanie poszczególnych kroków: Jeżeli każde dziecko ma dwie ręce, to 24 dzieci mają łącznie 2*24 = 48 rąk. Jednak w klasie są tylko 24 dzieci. Wiemy, że ilu dzieci ma po jednej ręce, to też ile razem mają ręki, bo każda ręka należy do jednego dziecka. Zatem nie wszystkie dzieci muszą mieć dwie ręce.
+  4. Ostateczny wniosek: W klasie musi być 24-x dzieci, które mają po dwie ręce i x dzieci, które mają po jednej ręce. Suma rąk jest zatem 48 (2*24), ale możemy ją rozdzielić na część z dziećmi posiadającymi po dwie ręce oraz część z dziećmi posiadającymi po jedną. Dlatego x + 2*24 = 48, a więc x=48-2*24 = 0. Zatem nie ma dzieci które mają pojedynczą rękę.
+
+Odpowiedź: W klasie nie ma dzieci z jedną ręką.",Few-Shot CoT,easy
+32,Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11","Odpowiedź: 10, 15 i 25 (suma: 30)",Zero-Shot,medium
+32,Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11","Odpowiedź: 10, 15, 30 (nie zapisuje się tu liczby powtórzonej, ale trzy kolejne liczby dodane do siebie dają 30)",One-Shot,medium
+32,Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11","Odpowiedź: 8, 9, 13",Few-Shot,medium
+32,Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11","1. Analizuję problem i zauważam, że chodzi o sumę trzech kolejnych liczb. Pamiętam, że w matematyce, aby uzyskać sumę liczb kolejnych, należy znaleźć ich pierwszy człon i wyrażenie, które pozwala na odnalezienie każdej kolejnej liczby.
+  2. Rozbijam problem na mniejsze kroki:
+     - Znajdę pierwszy człon sumy trzech liczb kolejnych.
+     - Wyrafinuję wyrażenie, które pozwoli mi odnaleźć każdej kolejnej liczby z tej sumy.
+  3. Rozwiązuję każdy krok osobno:
+     - Pierwszy człon sumy trzech liczb kolejnych to L1 (najmniejsza z nich).
+     - Drugą liczbę kolejną od L1 można znaleźć poprzez dodanie do L1 jedynki. Nazwijmy ją L2.
+     - Trzecią liczbę kolejną (największą) otrzymujemy poprzez dodanie do L2 dwóch razy jedynki. Nazwijmy ją L3.
+  4. Wyciągam ostateczny wniosek:
+     - Suma trzech kolejnych liczb to L1 + L2 + L3 = L1 + (L1 + 1) + (L1 + 1 + 1) = 3 * L1 + 2.
+     - Aby mniejsza z sumy trzech kolejnych liczb była równa 30, to należy znaleźć taką liczbę L1, że jej trzykrotne plus dwa wynosi 30. Znamy kilka metod do tego typu rozwiązywania równań, jedna z nich polega na próbkowaniu odpowiednich liczb i sprawdzeniu, czy ich trzykrotne plus dwa jest równe 30. Zaczynamy od najmniejszej liczby i przechodzimy do kolejnych.
+     - Wtedy okazuje się, że jeśli L1 = 8, to suma trzech kolejnych liczb kolejnych wynosi 30 (8 + 9 + 13 = 30).
+
+Odpowiedź: Liczby są 8, 9 i 13.",Zero-Shot CoT,medium
+32,Suma trzech kolejnych liczb wynosi 30. Jakie to liczby?,"9,10,11","1. Analizuję problem - mamy trzy nieznane liczby, które tworzą sumę równą 30. Należy je znaleźć.
+
+2. Rozbijam zagadkę na kroki - muszę odgadnąć kolejno każdą liczbę i sprawdzić, czy ich suma jest równa 30.
+
+3. Pierwszy krok - oznaczę jedną z nieznanych liczb jako 'a'.
+
+4. Drugim krokiem - wypiszę dwie kolejne liczby, które stanowią sumę równą 27 (bo znam już 'a' i wieć, że liczby są kolejne i całkowite). Oznaczę drugą liczbę jako 'b'.
+Następnie oznaczę trzecią liczbę jako 'c', gdzie c = 30 - (a + b) (bo wiem, że suma trzech liczb to 30).
+
+5. Sprawdzam poprawność wyników - sprawdzam, czy a+b+c = 30. Jeśli tak, otrzymam odpowiedź:
+
+Odpowiedź: a = 4, b = 13, c = 13 (bo trzeba, byby te liczby były kolejne) lub a = 5, b = 12, c = 13.",Few-Shot CoT,medium
+33,"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,"Odpowiedź: Tomek jest starszy od Piotra, ale nie możemy powiedzieć, kto jest najstarszy spośród trójki, gdyż tylko dwa z nich porównaliśmy.",Zero-Shot,easy
+33,"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,Odpowiedź: Michał,One-Shot,easy
+33,"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,Odpowiedź: Michał,Few-Shot,easy
+33,"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,"1. Analiza problemu: Otrzymuję dane o trzech osobach - Tomek, Michał i Piotr. Informacja mówi, że Tomek jest młodszy od Michała oraz starszy od Piotra. Zadaniem jest ustalenie, kto z trójki jest najstarszy.
+
+  2. Rozbicie problemu na mniejsze kroki:
+    - Dla każdej pary (Tomek-Michał, Tomek-Piotr, Michał-Piotr) sprawdzamy czy jest możliwość, że jedna osoba jest starsza od drugiej.
+    - Jeśli jest możliwość, to określamy stosunek wieku między nimi (Tomek młodszy od Michała -1, Tomek starszy od Piotra - 1, Michał starszy od Piotra -1)
+    - Po wyliczeniu stosunków dla wszystkich par zwracam się do danej relacji (Tomek młodszy od Michała, Tomek starszy od Piotra), aby określić ostatnią nieznaną relację (czy Michał jest starszy od Piotra).
+    - W razie możliwości zbudowania dwa stosunki -1, to najstarszym jest ten kto ma więcej stosunków -1.
+
+  3. Rozwiązanie każdego kroku:
+    - Tomek-Michał: (Tomek młodszy od Michała) - 1, czyli Michał jest starszy od Tomeka.
+    - Tomek-Piotr: (Tomek starszy od Piotra) - 1, czyli Piotr jest młodszy od Tomeka.
+
+  4. Wniosek:
+    - Nie ma informacji o relacji pomiędzy Michałem i Piotrem.
+    - Na podstawie posiadanych danych można stwierdzić, że Tomek jest młodszy od Michała, a starszy od Piotra. Zatem musi istnieć trzecia osoba (najstarsza) która jest starsza niż Tomek i młodsza od Michała, ale nie wiadomo czy jest starsza od Piotra.
+    - Najlepiej uzupełnić informacje o relacji pomiędzy Michałem a Piotrem, aby zorientować się kto jest najstarszy.",Zero-Shot CoT,easy
+33,"Tomek jest młodszy od Michała, ale starszy od Piotra. Kto jest najstarszy?",Michał,"1. Analiza problemu: Zadana jest relacja wieku między trzema osobami (Tomek, Michał i Piotr). Wskazano, że Tomek jest młodszy od Michała oraz starszy od Piotra.
+
+  2. Rozbicie problemu na kroki: Sprawdzenie wieku Tometka, Michała i Piotra, a potem porównanie ich wieków, aby określić, kto jest najstarszy.
+
+  3. Rozwiązanie pierwszego kroku:
+     - Nie podano informacji o wieku Tometka, więc nie możemy go ustalić w tej chwili.
+     - Nie podano informacji o wieku Michała i Piotra, więc nie możemy porównać ich wieków i określić kto jest najstarszy.
+
+  4. Rozwiązanie drugiego kroku:
+     - Jeśli Tomek jest starszy od Piotra, to wskazuje to na fakt, że jego wiek jest większy od wieku Piotra, ale mniejszy od wieku Michała.
+     - W związku z tym, możemy stwierdzić, że wiek Tometka leży między wiekiem Michała a wiekiem Piotra.
+     - Zatem nie może być najstarszym spośród trójki (ponieważ jest starszy od Piotra, ale młodszy od Michała).
+
+  5. Rozwiązanie trzeciego kroku:
+     - Jeśli Tomek jest najmłodszy z trzech osób, to może być Michał lub Piotr, który jest starszy od niego.
+     - Nie ma informacji, które pozwalają określić, kto jest starszy, ani kogo z nich Tomek jest młodszy.
+     - Więc możemy stwierdzić tylko, że Tomek jest najmłodszy spośród trójki i nie da się określić, który z Michała i Piotra jest starszy.
+
+  6. Ostateczne rozumowanie:
+     - Nie można stwierdzić, kto jest najstarszy spośród Tometka, Michała i Piotra. Więc w odpowiedzi powinno być takie, aby nikt nie był określony jako najstarszy (nie ma odpowiedzi).",Few-Shot CoT,easy
 34,Liczba 9 większa niż 6. Prawda czy fałsz?,prawda,Odpowiedź: Prawda,Zero-Shot,easy
 34,Liczba 9 większa niż 6. Prawda czy fałsz?,prawda,Odpowiedź: Prawda,One-Shot,easy
 34,Liczba 9 większa niż 6. Prawda czy fałsz?,prawda,Odpowiedź: Prawda,Few-Shot,easy
-34,Liczba 9 większa niż 6. Prawda czy fałsz?,prawda,"1. Analiza problemu: Zadanie polega na porównaniu dwóch liczb (9 i 6) i wyrażeniu zdania czy ta pierwsza jest większa od drugiej.
+34,Liczba 9 większa niż 6. Prawda czy fałsz?,prawda,"1. Analizujemy problem: Podano dwie liczby - 9 i 6. Prosimy się o porównanie ich wielkości.
 
-  2. Rozbicie problemu na mniejsze kroki:
-     - Sprawdzenie, której z dwóch liczb jest większa (9 lub 6).
-     - Stwierdzenie czy wynik tego porównania spełnia warunek zadanej zagadki (czy 9 jest większa od 6).
+2. Rozbijamy problem na mniejsze kroki: Sprawdzamy, czy liczba 9 jest większa od liczby 6.
 
-  3. Rozwiązanie poszczególnych kroków:
-     - Liczba 9 jest większa od liczby 6 (to sprawdzenie można wykonać poprzez dodawanie lub odejmowanie, zachowując porządek, a następnie porównywanie wartości).
-     - Zdanie ""9 jest większa od 6"" spełnia warunek zadanej zagadki (porównanie liczb 9 i 6 wynosi prawda).
+3. Rozwiązujemy każdy krok osobno:
+   - Sprawdzenie, czy liczba 9 większa jest niż 6. Wiemy, że 9 > 6 więc odpowiedź na pytanie czy 9 jest większa niż 6 to 'Prawda'.
 
-  4. Wniosek: Odpowiedź: Prawda",Zero-Shot CoT,easy
-34,Liczba 9 większa niż 6. Prawda czy fałsz?,prawda,"1. Analiza problemu: Przyjęć, że otrzymano liczby 9 i 6, aby porównać które z nich większa.
+4. Wyciągamy ostateczny wniosek:
+   - Odpowiedź: Prawda (lub T, gdy chodzi o skrótową odpowiedź)",Zero-Shot CoT,easy
+34,Liczba 9 większa niż 6. Prawda czy fałsz?,prawda,"1. Analiza problemu: Dokładnie sprawdzamy, czy liczba 9 jest większa od liczby 6.
 
-   2. Rozbicie problemu na mniejsze kroki: Porównajmy liczbę 9 do liczby 6 i oceniem czy 9 jest większa od 6.
+  2. Rozbicie problemu na mniejsze kroki: Sprawdzenie liczb różnic: 9 - 6 = 3.
 
-   3. Rozwiązanie każdego kroku osobno: Liczba 9 jest większa niż liczba 6.
+  3. Rozwiązanie kroku: Liczba 3 jest pozytywna, co oznacza, że 9 jest większa od 6.
 
-   4. Wnioski: W przypadku gdy liczba A (9) większa od liczby B (6), to prawda. Stwierdzamy, że stwierdzenie ""Liczba 9 większa niż 6"" jest prawdą.
-
-Odpowiedź: Prawda",Few-Shot CoT,easy
+  4. Wniosek końcowy: Która liczba jest większa: 9 czy 6? Odpowiedź: 9",Few-Shot CoT,easy
